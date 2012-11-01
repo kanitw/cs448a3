@@ -361,15 +361,17 @@ body.inverted {
   width:120px;
   min-height:30px;
   margin-left: -60px;
-  border: 1px #ddd solid;
-  border-radius: 5px;
 }
 
 .axis-overlay {
   height:30px;
+  border: 1px #ddd solid;
+  border-radius: 5px;
+  
 }
 
 .bottom-overlay{
   text-align: center;
   font-size:10px;
+  color: navy;
 }

@@ -3,6 +3,12 @@
   window.ORDINAL_TYPE = "ordinal";
   window.ID_TYPE = "id";
 
+  window.COL_SPLIT = "$";
+
+  window.dim_col_name = function(full_name){
+    return full_name.substr(full_name.indexOf(COL_SPLIT)+1);
+  }
+
   window.parallel = function(model,dimensionType) {
     var self = {},
         dimensions,
@@ -156,7 +162,7 @@
         .style("left",function(d){
           return position(d)+m[3];
         }).html(function(d){
-          return "Constraints for "+d;
+          return "";
         });
 
     // Add a group element for each dimension.
@@ -259,6 +265,21 @@
             max: extents[i][1]
           }
         });
+
+        bottom_overlays.html(function(d){
+          if(!y[d].brush.empty()){
+            var extent = y[d].brush.extent();
+            if(dimensionType[d] == ORDINAL_TYPE || dimensionType[d]==ID_TYPE){
+              return "*filtered*";
+            }
+
+            return Math.floor(extent[0]).toString() + "&lt;" + dim_col_name(d) + "&lt;" + Math.ceil(extent[1]).toString();
+          }else {
+            return "";
+          }
+
+        });
+
         model.set({filter: filter, y: y, dimensionType: dimensionType});
         /***/
         foreground.style("display", function(d) {
