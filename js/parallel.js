@@ -146,22 +146,19 @@
 
     var overlays = d3.select("#overlays").selectAll(".axis-overlay")
       .data(dimensions.getActive());
+    overlays.style("left",position_div);
     overlays.exit().remove();
     overlays.enter().append("div")
       .attr("class","axis-overlay")
-      .style("left",function(d){
-        return position(d)+m[3];
-      });
+      .style("left",position_div);
 
     var bottom_overlays = d3.select("#bottom-overlays").selectAll(".bottom-overlay")
       .data(dimensions.getActive());
-
+    bottom_overlays.style("left",position_div);
     bottom_overlays.exit().remove();
     bottom_overlays.enter().append("div")
         .attr("class","bottom-overlay")
-        .style("left",function(d){
-          return position(d)+m[3];
-        }).html(function(d){
+        .style("left",position_div).html(function(d){
           return "";
         });
 
