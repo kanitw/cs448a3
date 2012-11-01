@@ -17,7 +17,8 @@
 (function(undefined) {
   window.Filter = Backbone.Model.extend({
     defaults: {
-      filter: {}
+      filter: {},
+      data: null
     },
 
     initialize: function() {
@@ -29,7 +30,7 @@
         this.run();
       });
     },
-  
+
     add: function(filter) {
       newFilter = this.get('filter');
       newFilter[filter.field] = {

@@ -1,6 +1,6 @@
 (function(d3) {
 
-  window.parallel = function(model) {
+  window.parallel = function(model,dimensionType) {
     var self = {},
         dimensions,
         dragging = {},
@@ -13,10 +13,52 @@
         foreground;
   
     var cars = model.get('data');
+    var dimensionType = dimensionType;
+    var checkbox = {};
+    var x=null, y=null;
     
     self.update = function(data) {
       cars = data;
     };
+
+    var init = function(){
+
+      dimensions = d3.keys(cars[0]).filter(function(d) {
+        return d != "name";
+        
+      });
+
+      // FILTER DIMENSION SECTION
+
+
+      dimensions.getActive = function(){
+        return this.filter(function(d){
+          return checkbox[d]["checked"];
+        });
+      }; 
+
+      d3.select("#control").selectAll("input")
+        .data(dimensions)
+        .enter().append("div").each(function(d){
+
+          var div = d3.select(this); 
+          div.append("input").attr("type","checkbox")
+            .attr("checked",true)
+            .each(function(d){
+            checkbox[d] = this;
+          }).on("click", function(d,i){
+            console.log(dimensions.getActive());
+            self.render();
+          });
+          div.append("span").html(d);
+        });
+
+      // END OF FILTER DIMENSION SECTION
+    };
+
+    init();
+
+
     
     self.render = function() {
     
@@ -27,29 +69,34 @@
           w = bounds[0] - m[1] - m[3],
           h = bounds[1] - m[0] - m[2];
 
-      var x = d3.scale.ordinal().rangePoints([0, w], 1),
-          y = {};
+      x = d3.scale.ordinal().rangePoints([0, w], 1);
+      y = {};
 
 
-  var margin = {top: 30, right: 10, bottom: 10, left: 10},
-      width = 960 - margin.right - margin.left,
-      height = 500 - margin.top - margin.bottom;
+      _(dimensions).each(function(d) {
+        if(dimensionType[d]=="ordinal"){
+          // scale data to work with ordinal
+          cols = cars.map(function(row){return row[d]}).sort().reverse();
+          // console.log(cols);
+          y[d] = d3.scale.ordinal()
+            .domain(cols)
+            .rangePoints([h, 0],1);
+        } else {
+          
+          y[d] = d3.scale.linear()
+            .domain(d3.extent(cars, function(p) { return +p[d]; }))
+            .range([h, 0]);
+        }
+      });
+      // var margin = {top: 30, right: 10, bottom: 10, left: 10},
+      //     width = 960 - margin.right - margin.left,
+      //     height = 500 - margin.top - margin.bottom;
 
       var svg = container.append("svg:svg")
           .attr("width", w + m[1] + m[3])
           .attr("height", h + m[0] + m[2])
         .append("svg:g")
           .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
-
-
-      var y = {}, dimensionType={
-        age_range: "ordinal",
-        location: "ordinal",
-        gender: "ordinal",
-        team_id: "ordinal",
-        user_id: "ordinal"
-      };
-
 
       cars = cars.filter(function(d){
         keys = d3.keys(cars[0]);
@@ -61,27 +108,11 @@
       })
 
 
-    dimensions = d3.keys(cars[0]).filter(function(d) {
-      if(dimensionType[d]=="ordinal"){
-        
-        // console.log(cars[d]);
-        // scale data to work with ordinal
-        cols = cars.map(function(row){return row[d]}).sort().reverse();
-        console.log(cols);
-        return d != "name" && (y[d] = d3.scale.ordinal()
-          .domain(cols)
-          .rangePoints([height, 0]),1);
-      }
-      else {
-        
-        return d != "name" && (y[d] = d3.scale.linear()
-          .domain(d3.extent(cars, function(p) { return +p[d]; }))
-          .range([height, 0]));
-      }
-    });
+
+
 
     // console.log(dimensionType);
-    x.domain(dimensions);
+    x.domain(dimensions.getActive());
       
       // Add grey background lines for context.
       background = svg.append("svg:g")
@@ -101,7 +132,7 @@
 
       // Add a group element for each dimension.
       var g = svg.selectAll(".dimension")
-          .data(dimensions)
+          .data(dimensions.getActive())
         .enter().append("svg:g")
           .attr("class", "dimension")
           .attr("transform", function(d) { return "translate(" + x(d) + ")"; })
@@ -155,12 +186,12 @@
       
       // Returns the path for a given data point.
       function path(d) {
-        return line(dimensions.map(function(p) { return [position(p), y[p](d[p])]; }));
+        return line(dimensions.getActive().map(function(p) { return [position(p), y[p](d[p])]; }));
       }
       
       // Handles a brush event, toggling the display of foreground lines.
       function brush() {
-        var actives = dimensions.filter(function(p) {
+        var actives = dimensions.getActive().filter(function(p) {
           return !y[p].brush.empty();
          })
          
