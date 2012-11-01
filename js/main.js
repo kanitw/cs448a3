@@ -1,6 +1,6 @@
 //CONSTANT
 var ORDINAL_TYPE = "ORDINAL_TYPE";
-
+var ID_TYPE = "ID_TYPE";
 
 var margin = {top: 30, right: 10, bottom: 10, left: 10},
     width = 960 - margin.right - margin.left,
@@ -15,8 +15,8 @@ var dimensionType={
   age_range: ORDINAL_TYPE,
   location: ORDINAL_TYPE,
   gender: ORDINAL_TYPE,
-  team_id: ORDINAL_TYPE,
-  user_id: ORDINAL_TYPE
+  team_id: ID_TYPE,
+  user_id: ID_TYPE
 };
 
 var line = d3.svg.line(),
@@ -44,7 +44,7 @@ d3.csv("test02.csv", function(data) {
 
     //setup dimension
     this.dimensions = d3.keys(data[0]).filter(function(d) {
-      if(dimensionType[d]==ORDINAL_TYPE){
+      if(dimensionType[d]==ORDINAL_TYPE || dimensionType[d]==ID_TYPE ){
         
         // console.log(data[d]);
         // scale data to work with ordinal
@@ -158,7 +158,7 @@ function brush() {
   foreground.style("display", function(d) {
     return actives.every(function(p, i) {
       // console.log(p + "," + d[p]);
-      if(dimensionType[p] == ORDINAL_TYPE){
+      if(dimensionType[p] == ORDINAL_TYPE || dimensionType[p] == ID_TYPE){
         var _y  = y[p](d[p]);
         return extents[i][0] <=  _y && _y <= extents[i][1];
       }else {
