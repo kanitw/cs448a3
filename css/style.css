@@ -352,21 +352,25 @@ body.inverted {
   position:absolute;
   top:0;
   width:120px;
-  min-height:30px;
   margin-left: -60px;
+  text-align: center;
+  border-radius: 5px;
+  /*z-index: 100;*/
 }
 
 .axis-overlay {
-  height:30px;
+  height:45px;
   border: 1px #ddd solid;
-  border-radius: 5px;
   
+  font-size:11px;
+
 }
 
 .bottom-overlay{
-  text-align: center;
+  
   font-size:10px;
   color: navy;
+  background-color: #eee;
 }
 
 .navbar-inverse .brand{

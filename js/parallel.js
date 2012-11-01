@@ -74,7 +74,7 @@
     
     self.render = function() {
       bounds = [ $(container[0]).width(), $(container[0]).height() ];
-      m = [30, 10, 10, 10];
+      m = [60, 10, 10, 10];
       w = bounds[0] - m[1] - m[3];
       h = bounds[1] - m[0] - m[2];
 
@@ -150,7 +150,12 @@
     overlays.exit().remove();
     overlays.enter().append("div")
       .attr("class","axis-overlay")
-      .style("left",position_div);
+      .style("left",position_div)
+      
+      // .call(d3.behavior.drag()
+      //     .on("dragstart", dragstart)
+      //     .on("drag", drag)
+      //     .on("dragend",dragend));
 
     var bottom_overlays = d3.select("#bottom-overlays").selectAll(".bottom-overlay")
       .data(dimensions.getActive());
@@ -186,8 +191,9 @@
           })
         .append("svg:text")
           .attr("text-anchor", "middle")
-          .attr("y", -9)
+          .attr("y", -47)
           .text(String);
+
 
       // Add and store a brush for each axis.
       g.append("svg:g")
@@ -198,6 +204,7 @@
           .attr("width", 24);
 
       function dragstart(d){
+        console.log("dragstart"+d);
         dragging[d] = this.__origin__ = x(d);
         background.attr("visibility", "hidden");
       }
