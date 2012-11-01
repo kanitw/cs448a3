@@ -89,11 +89,11 @@
     dimensions.set({data: reviewdata });
     
     var dimensionType={
-        age_range: ORDINAL_TYPE,
-        location: ORDINAL_TYPE,
-        gender: ORDINAL_TYPE,
-        team_id: ID_TYPE,
-        user_id: ID_TYPE
+        "reviewer$age_range": ORDINAL_TYPE,
+        "reviewer$location": ORDINAL_TYPE,
+        "reviewer$gender": ORDINAL_TYPE,
+        "reviewee$team_id": ID_TYPE,
+        "reviewer$user_id": ID_TYPE
       };
 
     var columns = _(reviewdata[0]).keys();

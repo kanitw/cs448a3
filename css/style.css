@@ -159,7 +159,9 @@ p {
   height: 260px;
 }
 .slick-header-column {
-  font-weight:bold;
+  
+  font-family:  "Arial Narrow";
+  font-size: 12px;
   cursor: move;
   border-right: 1px solid #bbb !important;
 }
