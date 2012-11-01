@@ -1,0 +1,144 @@
+
+var margin = {top: 30, right: 10, bottom: 10, left: 10},
+    width = 960 - margin.right - margin.left,
+    height = 500 - margin.top - margin.bottom;
+
+var x = d3.scale.ordinal()
+    .rangePoints([0, width], 1);
+
+var y = {}, dimensionType={
+  age_range: "ordinal",
+  location: "ordinal",
+  gender: "ordinal",
+  team_id: "ordinal",
+  user_id: "ordinal"
+};
+
+var line = d3.svg.line(),
+    axis = d3.svg.axis().orient("left"),
+    background,
+    foreground;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("test02.csv", function(cars) {
+  console.log(cars);
+  // Extract the list of dimensions and create a scale for each.
+  // cars.forEach(function(d,i){
+  //   console.log(d);
+  //   d["char"] = d["name"].substr(0,1);
+  // });
+
+
+  cars = cars.filter(function(d){
+    keys = d3.keys(cars[0]);
+    return keys.every(function(key){
+      // console.log(d[key]);
+      return d[key]!="NULL";
+    });
+
+  })
+
+  dimensions = d3.keys(cars[0]).filter(function(d) {
+    if(dimensionType[d]=="ordinal"){
+      
+      // console.log(cars[d]);
+      // scale data to work with ordinal
+      cols = cars.map(function(row){return row[d]}).sort().reverse();
+      console.log(cols);
+      return d != "name" && (y[d] = d3.scale.ordinal()
+        .domain(cols)
+        .rangePoints([height, 0]),1);
+    }
+    else {
+      
+      return d != "name" && (y[d] = d3.scale.linear()
+        .domain(d3.extent(cars, function(p) { return +p[d]; }))
+        .range([height, 0]));
+    }
+  });
+
+  // console.log(dimensionType);
+  x.domain(dimensions);
+  checkbox = {};
+  d3.select("#control").selectAll("input")
+    .data(dimensions)
+    .enter().append("div").each(function(d){
+
+      var div =    d3.select(this);
+      div.append("input").attr("type","checkbox").each(function(d){
+        checkbox[d] = this;
+      }).on("click", function(d,i){
+        alert(d+":"+checkbox[d]["checked"]);
+      });
+      div.append("span").html(d);
+    })
+    
+
+  // Add grey background lines for context.
+  background = svg.append("g")
+      .attr("class", "background")
+    .selectAll("path")
+      .data(cars)
+    .enter().append("path")
+      .attr("d", path);
+
+  // Add blue foreground lines for focus.
+  foreground = svg.append("g")
+      .attr("class", "foreground")
+    .selectAll("path")
+      .data(cars)
+    .enter().append("path")
+      .attr("d", path);
+
+  // Add a group element for each dimension.
+  var g = svg.selectAll(".dimension")
+      .data(dimensions)
+    .enter().append("g")
+      .attr("class", "dimension")
+      .attr("transform", function(d) { return "translate(" + x(d) + ")"; });
+
+  // Add an axis and title.
+  g.append("g")
+      .attr("class", "axis")
+      .each(function(d) { d3.select(this).call(axis.scale(y[d])); })
+    .append("text")
+      .attr("text-anchor", "middle")
+      .attr("y", -9)
+      .text(String);
+
+  // Add and store a brush for each axis.
+  g.append("g")
+      .attr("class", "brush")
+      .each(function(d) { d3.select(this).call(y[d].brush = d3.svg.brush().y(y[d]).on("brush", brush)); })
+    .selectAll("rect")
+      .attr("x", -8)
+      .attr("width", 16);
+});
+
+// Returns the path for a given data point.
+function path(d) {
+  return line(dimensions.map(function(p) { return [x(p), y[p](d[p])]; }));
+}
+
+// Handles a brush event, toggling the display of foreground lines.
+function brush() {
+  var actives = dimensions.filter(function(p) { return !y[p].brush.empty(); }),
+      extents = actives.map(function(p) { return y[p].brush.extent(); });
+  console.log("brush activated");
+  foreground.style("display", function(d) {
+    return actives.every(function(p, i) {
+      // console.log(p + "," + d[p]);
+      if(dimensionType[p] == "ordinal"){
+        var _y  = y[p](d[p]);
+        return extents[i][0] <=  _y && _y <= extents[i][1];
+      }else {
+        return extents[i][0] <= d[p] && d[p] <= extents[i][1];
+      }
+    }) ? null : "none";
+  });
+}
