@@ -24,137 +24,135 @@ var line = d3.svg.line(),
     background,
     foreground;
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.right + margin.left)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+var svg = null;
 
 d3.csv("test02.csv", function(data) {
+  this.data = data;
+  this.dimensions =null;
+  this.checkbox = {};
+  
+  this.init = function(){
+    //Filter Data
+    data = data.filter(function(d){
+      keys = d3.keys(data[0]);
+      return keys.every(function(key){
+        // console.log(d[key]);
+        return d[key]!="NULL";
+      });
 
-  // console.log(data);
-  // Extract the list of dimensions and create a scale for each.
-  // data.forEach(function(d,i){
-  //   console.log(d);
-  //   d["char"] = d["name"].substr(0,1);
-  // });
+    })
 
-  //Filter Data
-  data = data.filter(function(d){
-    keys = d3.keys(data[0]);
-    return keys.every(function(key){
-      // console.log(d[key]);
-      return d[key]!="NULL";
+    //setup dimension
+    this.dimensions = d3.keys(data[0]).filter(function(d) {
+      if(dimensionType[d]==ORDINAL_TYPE){
+        
+        // console.log(data[d]);
+        // scale data to work with ordinal
+        cols = data.map(function(row){return row[d]}).sort().reverse();
+        // console.log(cols);
+        return d != "name" && (y[d] = d3.scale.ordinal()
+          .domain(cols)
+          .rangePoints([height, 0]),1);
+      }
+      else {
+        
+        return d != "name" && (y[d] = d3.scale.linear()
+          .domain(d3.extent(data, function(p) { return +p[d]; }))
+          .range([height, 0]));
+      }
     });
 
-  })
-
-
-  //Create Data Dimension with Dimension Types
-  dimensions = createDimensions(data);
-
-
-  d3.select("#control").append("button").html("haha").on("click",function(d,i){ 
-    
-  });
-
-  // console.log(dimensionType);
-  x.domain(dimensions);
-  checkbox = {};
-
-  // add input box for each data
-  d3.select("#control").selectAll("input")
-    .data(dimensions)
-    .enter().append("div").each(function(d){
-
-      var div = d3.select(this); 
-      div.append("input").attr("type","checkbox")
-        .attr("checked",true)
-        .each(function(d){
-        checkbox[d] = this;
-      }).on("click", function(d,i){
-        console.log(dimensions.getActive());
-      });
-      div.append("span").html(d);
-    })
-    
-
-  dimensions.getActive = function(){
+    x.domain(dimensions);
+    dimensions.getActive = function(){
     return this.filter(function(d){
       return checkbox[d]["checked"];
     });
   }
-
-  // Add grey background lines for context.
-  background = svg.append("g")
-      .attr("class", "background")
-    .selectAll("path")
-      .data(data)
-    .enter().append("path")
-      .attr("d", path);
-
-  // Add blue foreground lines for focus.
-  foreground = svg.append("g")
-      .attr("class", "foreground")
-    .selectAll("path")
-      .data(data)
-    .enter().append("path")
-      .attr("d", path);
-
-  // Add a group element for each dimension.
-  var g = svg.selectAll(".dimension")
+    
+    // add input box for each data
+    d3.select("#control").selectAll("input")
       .data(dimensions)
-    .enter().append("g")
-      .attr("class", "dimension")
-      .attr("transform", function(d) { return "translate(" + x(d) + ")"; });
+      .enter().append("div").each(function(d){
 
-  // Add an axis and title.
-  g.append("g")
-      .attr("class", "axis")
-      .each(function(d) { d3.select(this).call(axis.scale(y[d])); })
-    .append("text")
-      .attr("text-anchor", "middle")
-      .attr("y", -9)
-      .text(String);
+        var div = d3.select(this); 
+        div.append("input").attr("type","checkbox")
+          .attr("checked",true)
+          .each(function(d){
+          checkbox[d] = this;
+        }).on("click", function(d,i){
+          // console.log(dimensions.getActive());
+          render();
+        });
+        div.append("span").html(d);
+      });
+  }
 
-  // Add and store a brush for each axis.
-  g.append("g")
-      .attr("class", "brush")
-      .each(function(d) { d3.select(this).call(y[d].brush = d3.svg.brush().y(y[d]).on("brush", brush)); })
-    .selectAll("rect")
-      .attr("x", -8)
-      .attr("width", 16);
+  this.render = function (){
+
+    d3.select("#view svg").remove();
+    svg = d3.select("#view").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+
+    // Add grey background lines for context.
+    background = svg.append("g")
+        .attr("class", "background")
+      .selectAll("path")
+        .data(data)
+      .enter().append("path")
+        .attr("d", path);
+
+    // Add blue foreground lines for focus.
+    foreground = svg.append("g")
+        .attr("class", "foreground")
+      .selectAll("path")
+        .data(data)
+      .enter().append("path")
+        .attr("d", path);
+
+    // Add a group element for each dimension.
+    var g = svg.selectAll(".dimension")
+        .data(dimensions.getActive())
+      .enter().append("g")
+        .attr("class", "dimension")
+        .attr("transform", function(d) { return "translate(" + x(d) + ")"; });
+
+    // Add an axis and title.
+    g.append("g")
+        .attr("class", "axis")
+        .each(function(d) { d3.select(this).call(axis.scale(y[d])); })
+      .append("text")
+        .attr("text-anchor", "middle")
+        .attr("y", -9)
+        .text(String);
+
+    // Add and store a brush for each axis.
+    g.append("g")
+        .attr("class", "brush")
+        .each(function(d) { d3.select(this).call(y[d].brush = d3.svg.brush().y(y[d]).on("brush", brush)); })
+      .selectAll("rect")
+        .attr("x", -8)
+        .attr("width", 16);
+
+  }
+  //Create Data Dimension with Dimension Types
+  init();
+  render();
+
+  
 });
 
-function createDimensions(data){
-  return d3.keys(data[0]).filter(function(d) {
-    if(dimensionType[d]==ORDINAL_TYPE){
-      
-      // console.log(data[d]);
-      // scale data to work with ordinal
-      cols = data.map(function(row){return row[d]}).sort().reverse();
-      // console.log(cols);
-      return d != "name" && (y[d] = d3.scale.ordinal()
-        .domain(cols)
-        .rangePoints([height, 0]),1);
-    }
-    else {
-      
-      return d != "name" && (y[d] = d3.scale.linear()
-        .domain(d3.extent(data, function(p) { return +p[d]; }))
-        .range([height, 0]));
-    }
-  });
-}
 
 // Returns the path for a given data point.
 function path(d) {
-  return line(dimensions.map(function(p) { return [x(p), y[p](d[p])]; }));
+  return line(dimensions.getActive().map(function(p) { return [x(p), y[p](d[p])]; }));
 }
 
 // Handles a brush event, toggling the display of foreground lines.
 function brush() {
-  var actives = dimensions.filter(function(p) { return !y[p].brush.empty(); }),
+  var actives = dimensions.getActive().filter(function(p) { return !y[p].brush.empty(); }),
       extents = actives.map(function(p) { return y[p].brush.extent(); });
   console.log("brush activated");
   foreground.style("display", function(d) {
