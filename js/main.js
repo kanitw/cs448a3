@@ -1,3 +1,6 @@
+//CONSTANT
+var ORDINAL_TYPE = "ORDINAL_TYPE";
+
 
 var margin = {top: 30, right: 10, bottom: 10, left: 10},
     width = 960 - margin.right - margin.left,
@@ -7,11 +10,11 @@ var x = d3.scale.ordinal()
     .rangePoints([0, width], 1);
 
 var y = {}, dimensionType={
-  age_range: "ordinal",
-  location: "ordinal",
-  gender: "ordinal",
-  team_id: "ordinal",
-  user_id: "ordinal"
+  age_range: ORDINAL_TYPE,
+  location: ORDINAL_TYPE,
+  gender: ORDINAL_TYPE,
+  team_id: ORDINAL_TYPE,
+  user_id: ORDINAL_TYPE
 };
 
 var line = d3.svg.line(),
@@ -26,14 +29,15 @@ var svg = d3.select("body").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.csv("test02.csv", function(data) {
-  console.log(data);
+
+  // console.log(data);
   // Extract the list of dimensions and create a scale for each.
   // data.forEach(function(d,i){
   //   console.log(d);
   //   d["char"] = d["name"].substr(0,1);
   // });
 
-
+  //Filter Data
   data = data.filter(function(d){
     keys = d3.keys(data[0]);
     return keys.every(function(key){
@@ -44,7 +48,7 @@ d3.csv("test02.csv", function(data) {
   })
 
   dimensions = d3.keys(data[0]).filter(function(d) {
-    if(dimensionType[d]=="ordinal"){
+    if(dimensionType[d]==ORDINAL_TYPE){
       
       // console.log(data[d]);
       // scale data to work with ordinal
@@ -148,7 +152,7 @@ function brush() {
   foreground.style("display", function(d) {
     return actives.every(function(p, i) {
       // console.log(p + "," + d[p]);
-      if(dimensionType[p] == "ordinal"){
+      if(dimensionType[p] == ORDINAL_TYPE){
         var _y  = y[p](d[p]);
         return extents[i][0] <=  _y && _y <= extents[i][1];
       }else {
