@@ -9,7 +9,9 @@ var margin = {top: 30, right: 10, bottom: 10, left: 10},
 var x = d3.scale.ordinal()
     .rangePoints([0, width], 1);
 
-var y = {}, dimensionType={
+var y = {};
+
+var dimensionType={
   age_range: ORDINAL_TYPE,
   location: ORDINAL_TYPE,
   gender: ORDINAL_TYPE,
@@ -47,24 +49,9 @@ d3.csv("test02.csv", function(data) {
 
   })
 
-  dimensions = d3.keys(data[0]).filter(function(d) {
-    if(dimensionType[d]==ORDINAL_TYPE){
-      
-      // console.log(data[d]);
-      // scale data to work with ordinal
-      cols = data.map(function(row){return row[d]}).sort().reverse();
-      console.log(cols);
-      return d != "name" && (y[d] = d3.scale.ordinal()
-        .domain(cols)
-        .rangePoints([height, 0]),1);
-    }
-    else {
-      
-      return d != "name" && (y[d] = d3.scale.linear()
-        .domain(d3.extent(data, function(p) { return +p[d]; }))
-        .range([height, 0]));
-    }
-  });
+
+  //Create Data Dimension with Dimension Types
+  dimensions = createDimensions(data);
 
 
   d3.select("#control").append("button").html("haha").on("click",function(d,i){ 
@@ -138,6 +125,27 @@ d3.csv("test02.csv", function(data) {
       .attr("x", -8)
       .attr("width", 16);
 });
+
+function createDimensions(data){
+  return d3.keys(data[0]).filter(function(d) {
+    if(dimensionType[d]==ORDINAL_TYPE){
+      
+      // console.log(data[d]);
+      // scale data to work with ordinal
+      cols = data.map(function(row){return row[d]}).sort().reverse();
+      // console.log(cols);
+      return d != "name" && (y[d] = d3.scale.ordinal()
+        .domain(cols)
+        .rangePoints([height, 0]),1);
+    }
+    else {
+      
+      return d != "name" && (y[d] = d3.scale.linear()
+        .domain(d3.extent(data, function(p) { return +p[d]; }))
+        .range([height, 0]));
+    }
+  });
+}
 
 // Returns the path for a given data point.
 function path(d) {
