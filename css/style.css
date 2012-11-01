@@ -174,7 +174,7 @@ p {
   line-height: 24px;
 }
 .slick-row:hover {
-  background: #ddd;
+  background: #fdb073;
 }
 .slick-resizable-handle {
   background: rgba(0,0,0,0.03);
@@ -229,62 +229,6 @@ p {
   color: #888;
   font-size:13px;
 }
-/* SVG Paralllel Coordinates */
-#parallel {
-  width: 100%;  /* vs jquery resizable */
-  height: 220px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-#parallel svg {
-  font: 10px sans-serif;
-}
-
-.background path {
-  display: none;
-  fill: none;
-  stroke: #d4d4d4;
-  stroke-opacity: 1;
-  shape-rendering: crispEdges;
-}
-
-.foreground path,
-.highlight path {
-  fill: none;
-  stroke: darkolivegreen;
-  stroke-width: 1.5;
-  stroke-opacity: .2;
-}
-
-.highlight path {
-  stroke-opacity: 1;
-}
-
-.brush .extent {
-  fill-opacity: .2;
-  stroke: #fff;
-  shape-rendering: crispEdges;
-}
-
-.axis line, .axis path {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.axis text {
-  text-shadow:
-   -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-   -1px 1px 0 #fff,
-    1px 1px 0 #fff;
-  cursor: move;
-}
-
-.dimension {
-  background: blue;
-}
-
 /* jquery resizable */
 .ui-resizable {
   padding-bottom: 10px;
@@ -377,4 +321,8 @@ body.inverted {
 /* no background lines */
 .shadows .background path {
   display: inherit;
+}
+
+.dim-filter{
+  margin: 0 5px;
 }

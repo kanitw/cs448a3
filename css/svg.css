@@ -1,25 +1,43 @@
-
-svg {
+/* SVG Paralllel Coordinates */
+#parallel {
+  width: 100%;  /* vs jquery resizable */
+  height: 220px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#parallel svg {
   font: 10px sans-serif;
 }
 
 .background path {
+  display: none;
   fill: none;
-  stroke: #ccc;
-  stroke-opacity: .4;
+  stroke: #d4d4d4;
+  stroke-opacity: 1;
   shape-rendering: crispEdges;
 }
 
-.foreground path {
+.foreground path,
+.highlight path {
   fill: none;
-  stroke: steelblue;
-  stroke-opacity: .7;
+  
+  stroke-width: 1.5;
+  stroke-opacity: .2;
+}
+
+.foreground path{
+  stroke: #354d84;
+}
+
+
+.highlight path {
+  stroke: #ff9900;
+  stroke-opacity: 1;
 }
 
 .brush .extent {
-  fill-opacity: .3;
-  stroke: #fff
-  ;
+  fill-opacity: .2;
+  stroke: #fff;
   shape-rendering: crispEdges;
 }
 
@@ -30,5 +48,14 @@ svg {
 }
 
 .axis text {
-  text-shadow: 0 1px 0 #fff;
+  text-shadow:
+   -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+   -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  cursor: move;
+}
+
+.dimension {
+  background: blue;
 }
