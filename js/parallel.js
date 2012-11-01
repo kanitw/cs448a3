@@ -138,12 +138,29 @@
       .enter().append("svg:path")
         .attr("d", path);
 
+    var overlays = d3.select("#overlays").selectAll(".axis-overlay")
+      .data(dimensions.getActive());
+    overlays.exit().remove();
+    overlays.enter().append("div")
+      .attr("class","axis-overlay")
+      .style("left",function(d){
+        return position(d)+m[3];
+      });
 
+    var bottom_overlays = d3.select("#bottom-overlays").selectAll(".bottom-overlay")
+      .data(dimensions.getActive());
+
+    bottom_overlays.exit().remove();
+    bottom_overlays.enter().append("div")
+        .attr("class","bottom-overlay")
+        .style("left",function(d){
+          return position(d)+m[3];
+        }).html("gender=Female");
 
     // Add a group element for each dimension.
     var g = svg.selectAll(".dimension")
-        .data(dimensions.getActive())
-      .enter().append("svg:g")
+        .data(dimensions.getActive());
+      g.enter().append("svg:g")
         .attr("class", "dimension")
         .attr("transform", function(d) { return "translate(" + x(d) + ")"; })
         .call(d3.behavior.drag()
@@ -177,11 +194,11 @@
           .attr("class", "axis")
           .each(function(d) {
             if(dimensionType[d] == ID_TYPE){
-              d3.select(this).call(axis.scale(y[d]).tickFormat("")); 
-
-            }else {
-              d3.select(this).call(axis.scale(y[d])); 
+              // d3.select(this).tickFormat("");
+              d3.select(this).attr("class","axis axis-id");
             }
+             d3.select(this).call(axis.scale(y[d])); 
+            
           })
         .append("svg:text")
           .attr("text-anchor", "middle")

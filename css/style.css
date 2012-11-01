@@ -345,5 +345,26 @@ body.inverted {
   top: 5px;
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.6);
+}
 
+#bottom-overlays{
+  position:relative;
+  height:50px;
+
+}
+.bottom-overlay,
+.axis-overlay {
+  position:absolute;
+  top:0;
+  width:120px;
+  height:30px;
+  margin-left: -60px;
+  border: 1px #ddd solid;
+  border-radius: 5px;
+}
+
+.bottom-overlay{
+  text-align: center;
+  font-size:10px;
+  
 }
