@@ -2,10 +2,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<title>Nutrient Contents - Parallel Coordinates</title>
+<title>Venture Lab</title>
 
 <script type="text/javascript" src="js/d3.v2.js"></script>
-<script type="text/javascript" src="js/parallel-coordinates-veggie.js"></script>
+<script type="text/javascript" src="js/parallel.js"></script>
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/underscore.js"></script>
@@ -82,11 +82,11 @@
     dimensions.set({data: reviewdata });
     
     var dimensionType={
-        age_range: "ordinal",
-        location: "ordinal",
-        gender: "ordinal",
-        team_id: "ordinal",
-        user_id: "ordinal"
+        age_range: ORDINAL_TYPE,
+        location: ORDINAL_TYPE,
+        gender: ORDINAL_TYPE,
+        team_id: ID_TYPE,
+        user_id: ID_TYPE
       };
 
     var columns = _(reviewdata[0]).keys();

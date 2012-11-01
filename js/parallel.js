@@ -1,5 +1,8 @@
 (function(d3) {
 
+  window.ORDINAL_TYPE = "ordinal";
+  window.ID_TYPE = "id";
+
   window.parallel = function(model,dimensionType) {
     var self = {},
         dimensions,
@@ -84,7 +87,7 @@
 
 
       _(dimensions).each(function(d) {
-        if(dimensionType[d]=="ordinal"){
+        if(dimensionType[d]==ORDINAL_TYPE || dimensionType[d]==ID_TYPE){
           // scale data to work with ordinal
           cols = mydata.map(function(row){return row[d]}).sort().reverse();
           // console.log(cols);
@@ -118,59 +121,68 @@
 
     // console.log(dimensionType);
     x.domain(dimensions.getActive());
-      
-      // Add grey background lines for context.
-      background = svg.append("svg:g")
-          .attr("class", "background")
-        .selectAll("path")
-          .data(mydata)
-        .enter().append("svg:path")
-          .attr("d", path);
+    
+    // Add grey background lines for context.
+    background = svg.append("svg:g")
+        .attr("class", "background")
+      .selectAll("path")
+        .data(mydata)
+      .enter().append("svg:path")
+        .attr("d", path);
 
-      // Add blue foreground lines for focus.
-      foreground = svg.append("svg:g")
-          .attr("class", "foreground")
-        .selectAll("path")
-          .data(mydata)
-        .enter().append("svg:path")
-          .attr("d", path);
+    // Add blue foreground lines for focus.
+    foreground = svg.append("svg:g")
+        .attr("class", "foreground")
+      .selectAll("path")
+        .data(mydata)
+      .enter().append("svg:path")
+        .attr("d", path);
 
-      // Add a group element for each dimension.
-      var g = svg.selectAll(".dimension")
-          .data(dimensions.getActive())
-        .enter().append("svg:g")
-          .attr("class", "dimension")
-          .attr("transform", function(d) { return "translate(" + x(d) + ")"; })
-          .call(d3.behavior.drag()
-            .on("dragstart", function(d) {
-              dragging[d] = this.__origin__ = x(d);
-              background.attr("visibility", "hidden");
-            })
-            .on("drag", function(d) {
-              dragging[d] = Math.min(w, Math.max(0, this.__origin__ += d3.event.dx));
-              foreground.attr("d", path);
-              dimensions.sort(function(a, b) { return position(a) - position(b); });
-              x.domain(dimensions);
-              g.attr("transform", function(d) { return "translate(" + position(d) + ")"; })
-            })
-            .on("dragend", function(d) {
-              delete this.__origin__;
-              delete dragging[d];
-              transition(d3.select(this)).attr("transform", "translate(" + x(d) + ")");
-              transition(foreground)
-                  .attr("d", path);
-              background
-                  .attr("d", path)
-                  .transition()
-                  .delay(500)
-                  .duration(0)
-                  .attr("visibility", null);
-            }));
+
+
+    // Add a group element for each dimension.
+    var g = svg.selectAll(".dimension")
+        .data(dimensions.getActive())
+      .enter().append("svg:g")
+        .attr("class", "dimension")
+        .attr("transform", function(d) { return "translate(" + x(d) + ")"; })
+        .call(d3.behavior.drag()
+          .on("dragstart", function(d) {
+            dragging[d] = this.__origin__ = x(d);
+            background.attr("visibility", "hidden");
+          })
+          .on("drag", function(d) {
+            dragging[d] = Math.min(w, Math.max(0, this.__origin__ += d3.event.dx));
+            foreground.attr("d", path);
+            dimensions.sort(function(a, b) { return position(a) - position(b); });
+            x.domain(dimensions);
+            g.attr("transform", function(d) { return "translate(" + position(d) + ")"; })
+          })
+          .on("dragend", function(d) {
+            delete this.__origin__;
+            delete dragging[d];
+            transition(d3.select(this)).attr("transform", "translate(" + x(d) + ")");
+            transition(foreground)
+                .attr("d", path);
+            background
+                .attr("d", path)
+                .transition()
+                .delay(500)
+                .duration(0)
+                .attr("visibility", null);
+          }));
 
       // Add an axis and title.
       g.append("svg:g")
           .attr("class", "axis")
-          .each(function(d) { d3.select(this).call(axis.scale(y[d])); })
+          .each(function(d) {
+            if(dimensionType[d] == ID_TYPE){
+              d3.select(this).call(axis.scale(y[d]).tickFormat("")); 
+
+            }else {
+              d3.select(this).call(axis.scale(y[d])); 
+            }
+          })
         .append("svg:text")
           .attr("text-anchor", "middle")
           .attr("y", -9)
@@ -217,7 +229,7 @@
         foreground.style("display", function(d) {
           return actives.every(function(p, i) {
               var data;
-              if(dimensionType[p] == "ordinal")
+              if(dimensionType[p] == ORDINAL_TYPE || dimensionType[p]==ID_TYPE)
                 data = y[p](d[p])
               else
                 data = d[p];
