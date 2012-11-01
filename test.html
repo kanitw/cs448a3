@@ -45,23 +45,51 @@
       </div>
       <ul class="nav pull-right">
         
-        <!-- <li>
-          <a href="#"  data-toggle="collapse" data-target="#control-wrapper">
-            Show/Hide Column Filter
-            
+        <li>
+          <a href="#col-tab"  data-toggle="tab">
+            Columns
           </a>
-        </li> -->
-        <li><a href="#about">About</a></li>
+        </li>
+        
+        <li>
+          <a href="#sub-tab"  data-toggle="tab">
+            Global Filter
+          </a>
+        </li>
+        <li>
+          <a href="#color-tab"  data-toggle="tab">
+            Color Coding
+          </a>
+        </li>
+        
+        <li>
+          <a href="#about-tab"  data-toggle="tab">
+            About
+          </a>
+        </li>
       </ul> 
     </div>
   </div>
-  <div class="well">
-    <div id="control" class="collapse in"></div>
+
+  <div id="control-wrapper">
+
+    <div class="tab-content">
+      <div id="col-tab" class="tab-pane active"></div>
+
+      <div id="sub-tab" class="tab-pane">
+        <a href="#" id="keep_selected" class="button green filter_control"> Keep </a>
+        <a href="#" id="reset_selected" class="button green filter_control"> Reset </a>
+      </div>
+      <div id="color-tab" class="tab-pane">
+        Color!!!
+      </div>
+      <div id="about-tab" class="tab-pane">
+        Designed by Chih-Chiang Wei and Kanit Wongsuphasawat.  For Assignment 3 of CS448 class at Stanford. 
+      </div>
+    </div>  
   </div>
   <div id="parallel-wrapper">
-    <div id="control-wrapper">
-      
-    </div>
+    
     <div id="overlays">
 
     </div>
@@ -72,8 +100,6 @@
 
     </div>
   </div>
-  <a href="#" id="keep_selected" class="button green filter_control"> Keep </a>
-  <a href="#" id="reset_selected" class="button green filter_control"> Reset </a>
   <input class="typeahead" type="text" onkeydown="search()" data-provide="typeahead">
   <div id="myGrid"> </div>
 </body>

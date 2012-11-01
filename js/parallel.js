@@ -47,7 +47,7 @@
         });
       }; 
 
-      d3.select("#control").selectAll("input")
+      d3.select("#col-tab").selectAll("input")
         .data(dimensions)
         .enter().append("span").attr("class","dim-filter").each(function(d){
 
