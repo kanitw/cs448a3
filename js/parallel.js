@@ -155,7 +155,9 @@
         .attr("class","bottom-overlay")
         .style("left",function(d){
           return position(d)+m[3];
-        }).html("gender=Female");
+        }).html(function(d){
+          return "Constraints for "+d;
+        });
 
     // Add a group element for each dimension.
     var g = svg.selectAll(".dimension")
@@ -204,13 +206,17 @@
         dimensions.sort(function(a, b) { return position(a) - position(b); });
         x.domain(dimensions);
         g.attr("transform", function(d) { return "translate(" + position(d) + ")"; })
-        
+        bottom_overlays.style("left",position_div);
+        overlays.style("left",position_div);
       }
 
       function dragend(d) {
         delete this.__origin__;
         delete dragging[d];
         transition(d3.select(this)).attr("transform", "translate(" + x(d) + ")");
+
+        transition(bottom_overlays).style("left",position_div);
+        transition(overlays).style("left",position_div);
         transition(foreground)
             .attr("d", path);
         background
@@ -224,6 +230,10 @@
       function position(d) {
         var v = dragging[d];
         return v == null ? x(d) : v;
+      }
+
+      function position_div(d){
+        return position(d) + m[3];
       }
       
       // Returns the path for a given data point.
