@@ -12,19 +12,19 @@
         background,
         foreground;
   
-    var cars = model.get('data');
+    var mydata = model.get('data');
     var dimensionType = dimensionType;
     var checkbox = {};
     var x=null, y=null, svg=null;
     var bounds,m,w,h;
     
     self.update = function(data) {
-      cars = data;
+      mydata = data;
     };
 
     var init = function(){
 
-      dimensions = d3.keys(cars[0]).filter(function(d) {
+      dimensions = d3.keys(mydata[0]).filter(function(d) {
         return d != "name";
         
       });
@@ -86,7 +86,7 @@
       _(dimensions).each(function(d) {
         if(dimensionType[d]=="ordinal"){
           // scale data to work with ordinal
-          cols = cars.map(function(row){return row[d]}).sort().reverse();
+          cols = mydata.map(function(row){return row[d]}).sort().reverse();
           // console.log(cols);
           y[d] = d3.scale.ordinal()
             .domain(cols)
@@ -94,7 +94,7 @@
         } else {
           
           y[d] = d3.scale.linear()
-            .domain(d3.extent(cars, function(p) { return +p[d]; }))
+            .domain(d3.extent(mydata, function(p) { return +p[d]; }))
             .range([h, 0]);
         }
       });
@@ -103,8 +103,8 @@
       //     height = 500 - margin.top - margin.bottom;
 
 
-      cars = cars.filter(function(d){
-        keys = d3.keys(cars[0]);
+      mydata = mydata.filter(function(d){
+        keys = d3.keys(mydata[0]);
         return keys.every(function(key){
           // console.log(d[key]);
           return d[key]!="NULL";
@@ -123,7 +123,7 @@
       background = svg.append("svg:g")
           .attr("class", "background")
         .selectAll("path")
-          .data(cars)
+          .data(mydata)
         .enter().append("svg:path")
           .attr("d", path);
 
@@ -131,7 +131,7 @@
       foreground = svg.append("svg:g")
           .attr("class", "foreground")
         .selectAll("path")
-          .data(cars)
+          .data(mydata)
         .enter().append("svg:path")
           .attr("d", path);
 
