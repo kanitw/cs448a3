@@ -149,8 +149,9 @@
     });
 
     parallel_height = 500;
+    // console.log("height"+$(window).height);
     $('#parallel').css({
-        height: parallel_height + 'px',
+        height: Math.round($(window).height()*0.6-100) + 'px',
         width: $(window).width() + 'px'
     });
     
