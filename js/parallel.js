@@ -144,26 +144,36 @@
       .enter().append("svg:path")
         .attr("d", path);
 
+    var activeDim = dimensions.getActive();
+    var axis_distance = activeDim.length > 1 ? (position_div(activeDim[1])-position_div(activeDim[0])) : w;
+    var overlay_width = Math.min(150,axis_distance*0.9);
+    
+
     var overlays = d3.select("#overlays").selectAll(".axis-overlay")
-      .data(dimensions.getActive());
+      .data(activeDim);
     overlays.style("left",position_div);
     overlays.exit().remove();
     overlays.enter().append("div")
       .attr("class","axis-overlay")
       .style("left",position_div)
+      .style("width",overlay_width)
+      .style("margin-left",-overlay_width/2);
       
       // .call(d3.behavior.drag()
       //     .on("dragstart", dragstart)
       //     .on("drag", drag)
-      //     .on("dragend",dragend));
+      //     .on("dragend",dragend))
 
     var bottom_overlays = d3.select("#bottom-overlays").selectAll(".bottom-overlay")
-      .data(dimensions.getActive());
+      .data(activeDim);
     bottom_overlays.style("left",position_div);
     bottom_overlays.exit().remove();
     bottom_overlays.enter().append("div")
         .attr("class","bottom-overlay")
-        .style("left",position_div).html(function(d){
+        .style("left",position_div)
+        .style("width",overlay_width)
+        .style("margin-left",-overlay_width/2)
+        .html(function(d){
           return "";
         });
 
