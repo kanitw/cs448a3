@@ -88,8 +88,15 @@
 
     check: function(d) {
       var filter = this.get('filter')
+      var dimensionType = this.get('dimensionType');
+      var y = this.get('y');
       for (key in this.get('filter')) {
-        if ((d[key] < filter[key].min) || (d[key] > filter[key].max))
+        var data;
+        if(dimensionType[key] == "ordinal")
+          data = y[key](d[key])
+        else
+          data = d[key];
+        if ((data < filter[key].min) || (data > filter[key].max))
           return false;
       }
       return true;

@@ -57,7 +57,6 @@
           // console.log(d[key]);
           return d[key]!="NULL";
         });
-
       })
 
 
@@ -165,24 +164,27 @@
         });
         
         /** To be factored **/
+        
         var filter = {};
         _(actives).each(function(key, i) {
+          console.log(key);
           filter[key] = {
             min: extents[i][0],
             max: extents[i][1]
           }
         });
-        model.set({filter: filter});
+        model.set({filter: filter, y: y, dimensionType: dimensionType});
+        console.log("after model set", filter);
         /***/
         foreground.style("display", function(d) {
           return actives.every(function(p, i) {
+              var data;
+              if(dimensionType[p] == "ordinal")
+                data = y[p](d[p])
+              else
+                data = d[p];
 
-              if(dimensionType[p] == "ordinal"){
-                var _y  = y[p](d[p]);
-                return extents[i][0] <=  _y && _y <= extents[i][1];
-              }else {
-                return extents[i][0] <= d[p] && d[p] <= extents[i][1];
-              }
+              return extents[i][0] <= data && data <= extents[i][1];
           }) ? null : "none";
         });
       }
