@@ -226,7 +226,13 @@
           }) ? null : "none";
         });
       }
-      
+      function search(str) {
+        foreground.style("display", function(d) {
+          return actives.every(function(p, i) {
+              return d[p] == str;
+          }) ? null : "none";
+        });
+      }      
       function transition(g) {
         return g.transition().duration(500);
       }
