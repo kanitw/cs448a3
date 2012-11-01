@@ -1,0 +1,1207 @@
+"age_range","location","gender",signInCount,user_id,"score",team_id
+NULL,NULL,NULL,21,37212,"5.6",5250
+NULL,NULL,NULL,21,37212,"4",5836
+NULL,NULL,NULL,21,37212,"6",5693
+NULL,NULL,NULL,21,37212,"5",5215
+NULL,NULL,NULL,21,37212,"7.6",5906
+NULL,NULL,NULL,21,37212,"4",5069
+NULL,NULL,NULL,21,37212,"7.4",5470
+"26-30","Netherlands","Male",124,2230,"6.8",5693
+"26-30","Netherlands","Male",124,2230,"2.2",5836
+NULL,"United States",NULL,391,34624,"5.4",5906
+"21-25","Saudi Arabia","Female",46,12292,"3.4",5069
+"36-40","Greece","Male",125,27386,"3.6",5250
+"36-40","Italy","Male",588,3417,"4",5215
+"31-35","Spain","Male",80,2848,"4.4",5069
+"26-30","Netherlands","Male",124,2230,"6.6",5906
+"21-25","Spain","Female",75,2826,"5",5215
+"21-25","Spain","Female",75,2826,"6.4",5470
+"over 50","United States","Male",110,19502,"3.6",5215
+"over 50","United States","Male",110,19502,"7",5693
+"31-35","Spain","Male",133,3339,"7",5906
+"18-20","Nigeria","Male",75,22958,"2.8",5215
+"36-40","Greece","Male",125,27386,"1",5470
+"41-45","United States","Male",35,23915,"4",5906
+"over 50","United States","Male",110,19502,"6.6",5836
+"21-25","Saudi Arabia","Female",46,12292,"9",5693
+"26-30","India","Male",230,8550,"4.8",5836
+"18-20","Canada","Male",28,26219,"7.2",5250
+"21-25","Brazil","Male",43,29913,"7",5693
+"21-25","Saudi Arabia","Female",46,12292,"10",5906
+"26-30","United States","Male",33,19544,"3.4",5069
+NULL,"Greece",NULL,5,33702,"5",5069
+"41-45","United States","Male",35,23915,"6",5836
+"36-40","Spain","Male",120,22862,"2.2",5069
+NULL,"United States",NULL,391,34624,"7.8",5215
+"21-25","Saudi Arabia","Female",46,12292,"5.4",5420
+"41-45","United States","Male",35,23915,"6",5693
+"18-20","Canada","Male",28,26219,"3.4",5069
+"41-45","Italy","Male",74,15131,"8",5906
+"18-20","Canada","Male",28,26219,"3.4",5836
+NULL,"United States",NULL,391,34624,"7.8",5250
+"26-30","United States","Male",213,9811,"8",5693
+"41-45","United States","Male",35,23915,"7.6",5144
+"Do not want to disclose","United States","Male",57,14192,"5.6",5693
+"21-25","Trinidad and Tobago","Male",77,11494,"2.8",5069
+"26-30","Japan","Male",30,1342,"7",5836
+"46-50","Norway","Male",62,22029,"2.2",5069
+"41-45","Malaysia","Male",502,4812,"3.8",5250
+NULL,"United States",NULL,391,34624,"7.2",5424
+"26-30","Chile","Male",53,9138,"6.2",5250
+"18-20","New Zealand","Male",94,9061,"7.2",5906
+"over 50","United States","Male",61,5849,"1",5215
+NULL,"United States",NULL,391,34624,"5.2",5420
+"31-35","United States","Male",364,9491,"3.6",5906
+"36-40","Italy","Male",588,3417,"5.2",5250
+"41-45","Bolivia","Male",272,30993,"5.4",5250
+"over 50","Australia","Male",55,9014,"2.2",5215
+"over 50","Australia","Male",55,9014,"4",5836
+NULL,"United States",NULL,28,36188,"5.8",5069
+"26-30","Brazil","Male",152,12759,"6.8",5215
+"over 50","Australia","Male",55,9014,"8.8",5470
+NULL,"United States",NULL,391,34624,"6.6",5144
+NULL,"United States",NULL,28,36188,"6",5693
+"26-30","Brazil","Male",152,12759,"8.8",5906
+"26-30","Brazil","Male",152,12759,"3.8",5250
+NULL,"United States",NULL,28,36188,"4.2",5215
+NULL,"United States",NULL,28,36188,"5.8",5627
+"26-30","Brazil","Male",152,12759,"6.8",5190
+NULL,"United States",NULL,28,36188,"6.6",5144
+"26-30","Brazil","Male",152,12759,"6.6",5627
+"26-30","Brazil","Male",152,12759,"4.6",5424
+"26-30","Brazil","Male",152,12759,"1.8",5004
+NULL,"United States",NULL,28,36188,"4.8",5288
+"26-30","Brazil","Male",152,12759,"1.8",5993
+"26-30","Brazil","Male",152,12759,"5",5420
+NULL,"United States",NULL,28,36188,"5.6",5213
+"26-30","Brazil","Male",152,12759,"7",5536
+"over 50","United States","Male",21,31244,"5.6",5836
+"18-20","Philippines","Male",112,19750,"5.4",5215
+"18-20","Philippines","Male",112,19750,"6.8",5470
+"31-35","India","Male",58,8018,"1",5906
+"21-25","Russian Federation","Male",62,15851,"2.6",5069
+"21-25","China","Male",19,22172,"6.4",5906
+"21-25","Russian Federation","Male",62,15851,"5.2",5836
+"31-35","Lithuania","Male",24,10476,"6.4",5693
+"36-40","Russian Federation","Male",25,7607,"6.4",5906
+"21-25","Ukraine","Male",29,2659,"6.4",5693
+"41-45","United Kingdom","Female",463,11835,"8.2",5250
+"31-35","India","Male",107,16777,"4",5069
+"36-40","United Arab Emirates","Male",27,31981,"6",5906
+"31-35","Lithuania","Male",24,10476,"7.6",5250
+"36-40","United Arab Emirates","Male",27,31981,"5",5836
+"36-40","Russian Federation","Male",25,7607,"6.4",5470
+"46-50","Iran, Islamic Republic of","Male",174,2481,"4.6",5906
+"26-30","Spain","Male",176,5634,"3",5069
+"46-50","Iran, Islamic Republic of","Male",174,2481,"6",5836
+"41-45","United Kingdom","Male",438,17928,"3",5470
+"46-50","India","Female",101,24314,"5.4",5069
+"over 50","Australia","Male",238,1006,"5",5250
+"46-50","Iran, Islamic Republic of","Male",174,2481,"5.2",5250
+"46-50","Iran, Islamic Republic of","Male",174,2481,"5.2",5144
+"46-50","Iran, Islamic Republic of","Male",174,2481,"4.8",5190
+"41-45","United Kingdom","Male",438,17928,"8.2",5250
+"over 50","Australia","Male",238,1006,"3.2",5215
+"31-35","Spain","Male",133,3339,"1.8",5215
+"31-35","France","Male",81,501,"5",5470
+"41-45","Italy","Male",74,15131,"3.2",5836
+"31-35","Spain","Male",42,19404,"4",5215
+"31-35","Slovakia","Male",141,11269,"3",5069
+"31-35","Slovakia","Male",141,11269,"8",5906
+"36-40","Spain","Male",62,3521,"5.2",5250
+"36-40","Italy","Male",82,21546,"3.8",5836
+"31-35","Lithuania","Male",24,10476,"2.4",5215
+"26-30","Spain","Male",53,3963,"5.2",5906
+"31-35","India","Male",107,16777,"4.4",5836
+"26-30","Spain","Male",53,3963,"2.8",5693
+"26-30","Spain","Male",53,3963,"3.4",5250
+"26-30","Spain","Male",53,3963,"2.4",5114
+"26-30","United States","Male",193,20079,"5.4",5836
+NULL,NULL,NULL,17,37234,"5.4",5250
+"31-35","Lithuania","Male",24,10476,"3.4",5114
+"31-35","India","Male",107,16777,"1",5470
+"Do not want to disclose","United States","Male",57,14192,"3.4",5069
+"31-35","Lithuania","Male",24,10476,"9",5144
+NULL,NULL,NULL,17,37234,"4.8",5906
+"36-40","Italy","Male",588,3417,"4.2",5693
+NULL,NULL,NULL,17,37234,"4.8",5069
+"26-30","United States","Male",193,20079,"5.6",5906
+NULL,NULL,NULL,17,37234,"4.6",5479
+NULL,NULL,NULL,17,37234,"4.6",5190
+NULL,NULL,NULL,17,37234,"4.2",5114
+"26-30","Latvia","Male",435,4599,"6.4",5906
+"31-35","Greece","Male",69,6020,"7.6",5470
+NULL,NULL,NULL,17,37234,"5.4",5144
+NULL,NULL,NULL,17,37234,"4.8",5764
+"26-30","United States","Male",193,20079,"5",5215
+"31-35","Lithuania","Male",24,10476,"4.4",5627
+"31-35","Greece","Male",69,6020,"4.2",5069
+NULL,NULL,NULL,17,37234,"8.8",5475
+"26-30","United Kingdom","Female",27,19203,"6.6",5836
+"26-30","United Kingdom","Male",24,16677,"4.8",5250
+"31-35","France","Male",87,21748,"6.8",5906
+"31-35","Greece","Male",69,6020,"7.6",5693
+"36-40","United Kingdom","Male",115,13070,"3.2",5215
+"21-25","Trinidad and Tobago","Male",77,11494,"6.6",5470
+"26-30","Turkey","Male",180,12093,"5.4",5836
+"26-30","Latvia","Male",435,4599,"3",5470
+"26-30","Russian Federation","Female",48,11977,"5.6",5069
+"26-30","Turkey","Male",180,12093,"3.4",5069
+"31-35","Lithuania","Male",24,10476,"4.4",5475
+"31-35","France","Male",87,21748,"6.8",5470
+"26-30","Turkey","Male",180,12093,"6",5693
+"26-30","Turkey","Male",180,12093,"4.4",5479
+"over 50","United States","Male",21,31244,"4.8",5470
+"31-35","Lithuania","Male",24,10476,"1",5374
+"18-20","India","Male",112,7522,"6.4",5069
+"46-50","Iran, Islamic Republic of","Female",420,19447,"4.8",5215
+"26-30","Turkey","Male",180,12093,"5.8",5190
+"31-35","Lithuania","Male",24,10476,"7.4",5539
+"26-30","United Kingdom","Male",24,16677,"2.6",5906
+"36-40","Spain","Female",40,21921,"10",5906
+"31-35","Lithuania","Male",24,10476,"5.6",5150
+"31-35","Lithuania","Male",24,10476,"8",5170
+"41-45","United Kingdom","Male",438,17928,"3.6",5069
+"31-35","India","Male",58,8018,"1",5250
+"31-35","Lithuania","Male",24,10476,"4",5601
+"26-30","Turkey","Male",180,12093,"3",5114
+"41-45","United Kingdom","Male",438,17928,"6.6",5479
+"41-45","United Kingdom","Male",438,17928,"2.2",5374
+"41-45","Spain","Male",14,18839,"8.4",5906
+"21-25","Germany","Male",83,14340,"5.4",5906
+"26-30","Germany","Male",54,13839,"5.2",5250
+"31-35","Lithuania","Male",24,10476,"1.6",7054
+"21-25","Ukraine","Male",47,30182,"5.4",5836
+"31-35","Lithuania","Male",24,10476,"8.2",5190
+"31-35","Lithuania","Male",24,10476,"7.4",5204
+"31-35","Lithuania","Male",24,10476,"9",5536
+"31-35","Lithuania","Male",24,10476,"4",5752
+"31-35","Lithuania","Male",24,10476,"1.4",5118
+"31-35","Lithuania","Male",24,10476,"6",5562
+"41-45","Italy","Male",74,15131,"2.4",5069
+"31-35","France","Male",81,501,"4.6",5836
+"Do not want to disclose","United States","Male",57,14192,"8",5470
+"31-35","France","Male",81,501,"6",5906
+"31-35","France","Male",81,501,"4.2",5479
+"31-35","France","Male",81,501,"1",5374
+"31-35","France","Male",81,501,"4.8",5539
+"36-40","Italy","Male",588,3417,"4.8",5226
+"46-50","Spain","Male",131,14869,"5.8",5836
+"21-25","Mexico","Male",15,1452,"5.8",5906
+"31-35","Romania","Male",89,8144,"5.4",5470
+"46-50","United States","Female",27,15096,"3.2",5836
+"over 50","Italy","Male",95,30064,"5.6",5215
+NULL,"United States",NULL,28,36188,"8.6",5226
+"36-40","Greece","Male",125,27386,"6.2",5693
+NULL,"United States",NULL,28,36188,"4.2",5536
+NULL,"United States",NULL,28,36188,"7.6",5479
+"over 50","Italy","Male",95,30064,"6.2",5250
+NULL,"United States",NULL,28,36188,"1.8",5374
+NULL,"United States",NULL,28,36188,"6.4",5539
+"36-40","Greece","Male",125,27386,"6.4",5226
+"26-30","Belarus","Female",58,8684,"6",5836
+"26-30","Germany","Female",99,20323,"7.6",5693
+"18-20","Brazil","Male",72,8716,"4.8",5836
+"36-40","Italy","Male",588,3417,"4.6",5170
+"31-35","Spain","Male",133,3339,"5",5836
+"41-45","Italy","Male",74,15131,"8.2",5536
+"31-35","Spain","Male",133,3339,"3.8",5190
+"31-35","Spain","Male",133,3339,"7.6",5150
+"41-45","United States","Male",35,23915,"4.8",5562
+"31-35","Spain","Male",133,3339,"5.2",5226
+"41-45","United States","Male",35,23915,"7.4",5479
+"26-30","United States","Male",213,9811,"8.4",5906
+"31-35","Spain","Male",133,3339,"8",5536
+"41-45","United States","Male",35,23915,"7.8",5150
+"31-35","Spain","Male",133,3339,"6.8",5424
+"41-45","United States","Male",35,23915,"3.4",5475
+"41-45","United States","Male",35,23915,"6.2",5226
+"41-45","United States","Male",37,19506,"6.2",5470
+"41-45","United States","Male",37,19506,"5",5069
+"31-35","United States","Female",118,8491,"4.6",5906
+"31-35","United States","Female",118,8491,"4.4",5250
+"31-35","United States","Female",118,8491,"3.2",5836
+"36-40","Spain","Male",120,22862,"3.2",5693
+"36-40","Spain","Male",120,22862,"4.6",5470
+"31-35","United States","Female",118,8491,"2.6",5562
+"31-35","Canada","Female",53,13145,"2.2",5069
+"31-35","United States","Female",118,8491,"3.6",5424
+"31-35","United States","Female",118,8491,"5",5627
+"over 50","Bolivia","Male",131,27480,"4.4",5069
+"41-45","Denmark","Male",204,12328,"3.2",5215
+"31-35","United States","Female",118,8491,"2.2",5363
+"31-35","United States","Female",118,8491,"3.8",5663
+"31-35","United States","Female",118,8491,"3.8",5601
+"over 50","India","Male",143,17491,"3",5069
+"31-35","United States","Female",118,8491,"1.2",7054
+"41-45","Malaysia","Male",502,4812,"3",5470
+"26-30","India","Male",230,8550,"1.4",5069
+"21-25","India","Female",160,19307,"5.4",5069
+"36-40","United States","Female",89,14680,"4.8",5215
+"21-25","India","Female",160,19307,"7.2",5906
+"36-40","United States","Female",89,14680,"4.2",5693
+"36-40","United States","Female",89,14680,"5.4",5069
+"36-40","United States","Female",89,14680,"5.6",5144
+"26-30","United States","Male",33,19544,"5.2",5470
+"31-35","Spain","Male",94,2765,"4.2",5069
+"26-30","United States","Male",33,19544,"6.4",5906
+"26-30","India","Male",230,8550,"4.2",5470
+"31-35","Spain","Male",94,2765,"2",5470
+"36-40","Italy","Male",82,21546,"6",5470
+"41-45","United States","Male",87,14242,"1",5470
+"26-30","United States","Male",33,19544,"6.4",5213
+"31-35","Spain","Male",94,2765,"6.2",5215
+"26-30","India","Male",230,8550,"4.2",5213
+NULL,"France",NULL,18,35897,"5.6",5693
+"41-45","United Kingdom","Male",438,17928,"8",7024
+"26-30","India","Male",230,8550,"4.6",5424
+"36-40","Russian Federation","Male",29,10665,"1.6",5069
+"41-45","United Kingdom","Male",438,17928,"7.2",5213
+"26-30","Russian Federation","Male",305,18289,"3.6",5215
+"over 50","India","Male",143,17491,"6",5215
+"31-35","France","Male",81,501,"5",7024
+"31-35","France","Male",81,501,"3.8",5307
+"31-35","France","Male",81,501,"5",5817
+"36-40","Russian Federation","Male",29,10665,"9",5906
+"31-35","Slovakia","Male",141,11269,"2.2",5470
+"over 50","India","Male",143,17491,"5.4",5693
+"31-35","Slovakia","Male",141,11269,"3.2",5817
+"over 50","India","Male",143,17491,"5",5151
+"41-45","Italy","Male",74,15131,"1",7024
+"26-30","Australia","Male",46,1675,"8.2",5906
+"36-40","Russian Federation","Male",29,10665,"7.6",5693
+"46-50","Italy","Female",213,16306,"7",5836
+"over 50","Italy","Male",95,30064,"5",5069
+"26-30","Albania","Male",86,8787,"4.8",5250
+"31-35","Slovakia","Male",141,11269,"7",5539
+"46-50","Italy","Female",213,16306,"3.8",5906
+"26-30","Albania","Male",86,8787,"4.4",5906
+"26-30","Albania","Male",86,8787,"3.2",5470
+"21-25","Norway","Male",23,16741,"4.6",5215
+"26-30","Australia","Male",64,1771,"6.6",5215
+NULL,"France",NULL,18,35897,"5.2",5215
+"41-45","United Kingdom","Male",438,17928,"7.2",5151
+"21-25","Spain","Female",75,2826,"7.8",5836
+"41-45","United States","Male",35,23915,"4",5360
+"41-45","United States","Male",35,23915,"4.8",5151
+"26-30","Italy","Male",32,3108,"5.4",5693
+"26-30","Australia","Male",64,1771,"6.4",5250
+"26-30","Italy","Male",32,3108,"4.6",5215
+"26-30","Latvia","Male",435,4599,"8",5250
+"36-40","United Arab Emirates","Male",27,31981,"5.6",5693
+"over 50","United States","Male",21,31244,"7.2",5906
+"41-45","Malaysia","Male",502,4812,"2.4",5693
+"31-35","Russian Federation","Female",141,30184,"6",5069
+"31-35","Lithuania","Male",24,10476,"7.6",6633
+"31-35","Slovakia","Male",141,11269,"8",5204
+"31-35","Lithuania","Male",24,10476,"2.4",5106
+"26-30","Netherlands","Male",124,2230,"1.8",5360
+"26-30","United States","Male",213,9811,"8",5836
+"31-35","Lithuania","Male",24,10476,"4.4",5226
+"26-30","Spain","Male",54,3585,"6.2",5470
+"36-40","Spain","Male",120,22862,"4.2",5288
+"31-35","Lithuania","Male",24,10476,"4.6",5363
+"41-45","Spain","Male",14,18839,"4.8",5215
+"41-45","India","Female",109,19302,"1",5906
+"41-45","Spain","Male",14,18839,"4.8",5693
+"31-35","Lithuania","Male",24,10476,"5.4",5151
+NULL,"France",NULL,18,35897,"6",5470
+"31-35","Spain","Male",96,8444,"7.2",5906
+NULL,"France",NULL,18,35897,"6.6",5363
+"41-45","Spain","Male",14,18839,"3.4",5424
+"41-45","United States","Male",104,17120,"5",5069
+"31-35","Spain","Male",96,8444,"4.6",5069
+"31-35","Spain","Male",96,8444,"4",5215
+"41-45","United States","Male",35,23915,"7",5536
+"31-35","Spain","Male",96,8444,"4.4",5106
+NULL,"France",NULL,18,35897,"5",5360
+"41-45","Malaysia","Male",502,4812,"3.4",5817
+"31-35","Romania","Male",89,8144,"5",5693
+"36-40","Italy","Male",588,3417,"4.4",5363
+"41-45","Italy","Male",74,15131,"2",5226
+"26-30","United States","Male",71,16519,"4.8",5250
+"26-30","Spain","Female",79,24834,"3.2",5069
+"26-30","Spain","Female",79,24834,"4.2",5693
+"26-30","Spain","Female",79,24834,"3",5215
+"26-30","Spain","Female",79,24834,"1.6",5150
+NULL,"United States",NULL,391,34624,"4.2",5993
+"36-40","Greece","Male",125,27386,"4.4",5993
+"36-40","Greece","Male",125,27386,"7.6",5204
+NULL,"United States",NULL,391,34624,"4",5170
+"31-35","United States","Male",364,9491,"4",5215
+"31-35","United States","Female",85,4274,"2",5470
+"26-30","Russian Federation","Male",145,1820,"5.2",5250
+"36-40","Greece","Male",125,27386,"8",5627
+"41-45","Italy","Male",74,15131,"5.4",5369
+NULL,"United States",NULL,391,34624,"7.4",5150
+"41-45","United States","Male",37,19506,"5.6",5906
+"36-40","Greece","Male",125,27386,"5.8",5213
+"31-35","United States","Male",364,9491,"7.2",5693
+"21-25","Spain","Female",48,9079,"5.2",5250
+"41-45","United States","Male",37,19506,"4.4",5170
+"31-35","United States","Male",364,9491,"3.2",5993
+"36-40","Greece","Male",125,27386,"8.4",5369
+"31-35","United States","Male",364,9491,"3.6",5288
+"41-45","United States","Male",37,19506,"7.2",5369
+"36-40","Spain","Female",26,15171,"7.8",5470
+"36-40","Germany","Male",354,21907,"5.6",5250
+"36-40","Spain","Female",26,15171,"7.6",5906
+"36-40","Spain","Female",26,15171,"9.2",5250
+"41-45","United States","Male",37,19506,"4.6",5562
+"36-40","Spain","Female",26,15171,"7.2",5627
+"21-25","Spain","Female",48,9079,"7.6",5906
+"36-40","Spain","Female",26,15171,"6.2",5764
+"36-40","Spain","Female",26,15171,"6.4",5663
+"26-30","Belarus","Female",58,8684,"4.4",5215
+"41-45","United States","Male",37,19506,"5.6",5235
+"41-45","United Kingdom","Female",463,11835,"2.4",5215
+"21-25","Spain","Female",48,9079,"4.4",5215
+"41-45","United States","Male",37,19506,"1.4",5374
+"26-30","Belarus","Female",58,8684,"4.2",5069
+"41-45","United Kingdom","Female",463,11835,"5.8",5470
+"21-25","Germany","Male",83,14340,"4.4",5693
+"21-25","Norway","Male",23,16741,"6.6",5836
+"41-45","United States","Male",37,19506,"7.8",5150
+"41-45","United Kingdom","Female",463,11835,"5.4",6083
+"21-25","Trinidad and Tobago","Male",66,15143,"6.2",5250
+"over 50","Canada","Male",164,7841,"1",5470
+"over 50","Canada","Male",164,7841,"5.4",5906
+"31-35","United States","Female",118,8491,"4",5106
+"21-25","United States","Female",22,23155,"6.2",5906
+NULL,"United States",NULL,391,34624,"4.2",5562
+"36-40","Australia","Male",116,32678,"5.8",5470
+"36-40","Australia","Male",116,32678,"6.4",5906
+"31-35","France","Male",81,501,"3.4",5106
+"36-40","Italy","Male",588,3417,"6.6",5875
+"31-35","Sweden","Male",27,7371,"5.2",5906
+"over 50","Canada","Male",164,7841,"4.8",5069
+"31-35","United States","Male",52,11471,"7.8",5250
+"41-45","United Kingdom","Male",438,17928,"2.4",5980
+"31-35","United States","Male",52,11471,"2.6",5215
+"41-45","United Kingdom","Male",438,17928,"4",5170
+"31-35","United States","Male",52,11471,"3",5069
+"31-35","United States","Male",52,11471,"5.8",5539
+"31-35","France","Male",81,501,"3",5635
+"31-35","United States","Male",52,11471,"4.8",5118
+"31-35","France","Male",81,501,"3.2",5283
+"31-35","United States","Male",52,11471,"7",7024
+"31-35","France","Male",81,501,"4.4",5190
+"36-40","Australia","Male",116,32678,"5.2",5215
+"31-35","France","Male",81,501,"2.8",5980
+"31-35","United States","Male",52,11471,"7.2",6633
+"31-35","United States","Male",52,11471,"5.8",5369
+"31-35","Russian Federation","Female",141,30184,"7",5250
+"26-30","India","Male",27,14389,"4.4",5836
+"31-35","Slovakia","Male",141,11269,"1",5635
+"31-35","Slovakia","Male",141,11269,"4.2",5479
+"31-35","France","Male",81,501,"4.2",5151
+"36-40","Spain","Male",120,22862,"4.2",5635
+"36-40","Spain","Male",120,22862,"3.2",5144
+"31-35","France","Male",81,501,"3",5363
+"36-40","Spain","Male",120,22862,"3.8",5226
+"36-40","India","Male",325,17528,"3.8",5693
+"46-50","Italy","Female",213,16306,"9.8",5250
+"26-30","Netherlands","Male",124,2230,"5",5635
+"31-35","Greece","Male",64,11645,"5.4",5836
+"31-35","United States","Male",25,17940,"5",5470
+"31-35","United States","Male",25,17940,"5.4",5215
+"31-35","United States","Male",25,17940,"7.4",5250
+"31-35","Greece","Male",64,11645,"3.6",5693
+"31-35","Greece","Male",64,11645,"4.8",5069
+"31-35","United Kingdom","Male",49,26036,"4.8",5836
+"26-30","Iran, Islamic Republic of","Male",96,17796,"4",5836
+"41-45","Malaysia","Male",502,4812,"2.4",5635
+"41-45","India","Female",109,19302,"4.4",5215
+"31-35","Romania","Male",89,8144,"1",5836
+"31-35","Greece","Male",64,11645,"5.4",5151
+"41-45","India","Female",109,19302,"5",5250
+"31-35","Romania","Male",89,8144,"4.2",7024
+"31-35","Greece","Male",64,11645,"3.4",5363
+"31-35","Romania","Male",89,8144,"3.4",5635
+"31-35","Romania","Male",89,8144,"3.6",5288
+"31-35","Romania","Male",89,8144,"4.8",5536
+"26-30","United Kingdom","Male",42,4574,"6.6",5250
+"31-35","Romania","Male",89,8144,"6.2",5627
+"36-40","Spain","Male",120,22862,"2.2",7024
+"36-40","Italy","Male",588,3417,"6.4",5213
+NULL,"United States",NULL,391,34624,"4.2",5363
+"46-50","India","Female",101,24314,"4.8",5470
+"26-30","United Kingdom","Male",42,4574,"6.8",5470
+"46-50","Italy","Female",213,16306,"9.2",5875
+"26-30","India","Male",27,14389,"5.8",5693
+"26-30","India","Male",27,14389,"5.6",5250
+"26-30","India","Male",27,14389,"3",5360
+"36-40","Spain","Male",120,22862,"3",5360
+"21-25","Spain","Male",42,4905,"9",5906
+"36-40","Spain","Male",120,22862,"2.6",5993
+"36-40","Spain","Male",120,22862,"1",5578
+"36-40","Spain","Male",120,22862,"6.6",5875
+"21-25","Spain","Male",42,4905,"2.4",5215
+"36-40","Spain","Male",120,22862,"2.2",5539
+"21-25","Spain","Male",42,4905,"6.2",5250
+"36-40","Spain","Male",120,22862,"3",5106
+NULL,"United States",NULL,38,33263,"4.2",5470
+"36-40","Spain","Male",120,22862,"4.2",5114
+"36-40","Spain","Male",120,22862,"2.6",5424
+"41-45","United Kingdom","Male",438,17928,"2.4",5578
+"21-25","Mexico","Male",15,1452,"7.2",5693
+"41-45","United Kingdom","Male",438,17928,"5.6",5663
+"21-25","Mexico","Male",15,1452,"6.6",5470
+"31-35","Russian Federation","Female",141,30184,"7.2",5693
+"18-20","Brazil","Male",72,8716,"3.8",5693
+"31-35","Spain","Male",94,2765,"3.4",5663
+"36-40","Spain","Male",120,22862,"1.6",5663
+"36-40","Spain","Male",120,22862,"5.2",5204
+"36-40","Spain","Male",120,22862,"6",6109
+"36-40","Spain","Male",120,22862,"3",5170
+"36-40","Spain","Male",120,22862,"4.8",5235
+"41-45","United Kingdom","Male",438,17928,"4.6",5288
+"41-45","Malaysia","Male",502,4812,"1.4",5578
+"41-45","Malaysia","Male",502,4812,"2.6",7024
+"21-25","Germany","Male",83,14340,"4.4",5470
+NULL,"United States",NULL,391,34624,"7.8",5752
+"21-25","New Zealand","Male",475,4115,"5",5215
+NULL,"United States",NULL,38,33263,"3.8",5069
+NULL,"United States",NULL,38,33263,"3.2",5836
+NULL,"United States",NULL,38,33263,"1",5277
+NULL,"United States",NULL,38,33263,"5",5095
+"21-25","New Zealand","Male",475,4115,"7.4",5250
+NULL,"United States",NULL,38,33263,"7.2",5103
+"over 50","Pakistan","Male",154,22224,"3.4",5215
+"21-25","New Zealand","Male",475,4115,"2.8",5069
+"18-20","New Zealand","Male",94,9061,"3.2",5069
+"18-20","New Zealand","Male",94,9061,"6",5693
+"41-45","Malaysia","Male",502,4812,"2.8",5103
+"36-40","Greece","Male",125,27386,"6",5103
+"Do not want to disclose","India","Do not want to disclose",70,27165,"3.4",5069
+"31-35","Lithuania","Male",24,10476,"6.6",5103
+"36-40","Spain","Male",120,22862,"3.8",5842
+"31-35","Lithuania","Male",24,10476,"3.8",5511
+"31-35","Lithuania","Male",24,10476,"5",5307
+"41-45","Italy","Male",74,15131,"8.8",5752
+"36-40","Spain","Male",120,22862,"4",5150
+"36-40","Spain","Male",120,22862,"3",6271
+"41-45","Malaysia","Male",502,4812,"3.8",6083
+"26-30","India","Male",27,14389,"1",6850
+"26-30","India","Male",27,14389,"3",5536
+"31-35","Slovakia","Male",141,11269,"8.2",5473
+"26-30","India","Male",27,14389,"1",5685
+"26-30","India","Male",27,14389,"6.4",6382
+"41-45","Malaysia","Male",502,4812,"2.6",6134
+"41-45","Malaysia","Male",502,4812,"1.8",5151
+"46-50","India","Female",101,24314,"5.6",5906
+"46-50","India","Female",101,24314,"4.4",5223
+"31-35","United States","Male",127,19363,"6.4",5250
+"41-45","Malaysia","Male",502,4812,"3",5758
+NULL,"Canada",NULL,34,36194,"3",5069
+NULL,"Canada",NULL,34,36194,"5.4",5906
+"36-40","Germany","Male",354,21907,"4.4",5906
+"36-40","Italy","Male",588,3417,"6.8",5758
+"26-30","India","Male",27,14389,"7.2",5758
+"36-40","United States","Male",56,14656,"2.2",5069
+"31-35","United Kingdom","Male",41,17060,"2.2",5069
+"46-50","India","Female",101,24314,"1",6485
+"36-40","United States","Male",56,14656,"4.6",5836
+"26-30","Iran, Islamic Republic of","Male",96,17796,"3.8",5069
+"21-25","Trinidad and Tobago","Male",77,11494,"7.4",5693
+"41-45","Denmark","Male",204,12328,"7.8",5906
+"41-45","Denmark","Male",204,12328,"4",5250
+"36-40","United States","Male",56,14656,"4.2",5215
+"41-45","Denmark","Male",204,12328,"3.6",5787
+"21-25","Trinidad and Tobago","Male",77,11494,"4.2",5223
+"41-45","Denmark","Male",204,12328,"3.8",5601
+"26-30","Iran, Islamic Republic of","Male",96,17796,"6.6",5693
+"41-45","Italy","Male",74,15131,"3.8",5223
+"21-25","Germany","Male",98,16101,"3.6",5069
+"26-30","Colombia","Female",62,13777,"1",5693
+"26-30","Colombia","Female",62,13777,"9",5470
+NULL,"United States",NULL,391,34624,"5.2",5283
+"over 50","Canada","Male",159,22632,"4",5215
+"over 50","Canada","Male",159,22632,"5",5470
+"21-25","Pakistan","Male",22,7844,"1.2",5836
+"over 50","Canada","Male",159,22632,"5.8",5069
+"41-45","United States","Male",104,17120,"4.8",5250
+"21-25","Trinidad and Tobago","Male",77,11494,"6",5787
+"21-25","Trinidad and Tobago","Male",77,11494,"5.2",5283
+"26-30","Belarus","Female",58,8684,"4",5601
+NULL,"United States",NULL,38,33263,"3.6",5223
+"41-45","Malaysia","Male",502,4812,"2.2",5601
+NULL,"United States",NULL,38,33263,"5.8",5213
+"41-45","Malaysia","Male",502,4812,"2.6",5369
+"over 50","India","Male",143,17491,"7.2",5106
+"26-30","India","Male",27,14389,"1",6792
+"26-30","India","Male",27,14389,"3.2",5562
+"26-30","India","Male",27,14389,"3.8",5429
+"36-40","Italy","Male",588,3417,"5",5015
+"41-45","Italy","Male",74,15131,"3.6",5899
+"over 50","India","Male",143,17491,"4.2",5475
+"over 50","Bolivia","Male",131,27480,"3.8",5250
+"41-45","Malaysia","Male",502,4812,"2.4",5026
+"26-30","India","Male",27,14389,"5.6",5817
+"41-45","Malaysia","Male",502,4812,"2.6",5752
+"36-40","United Kingdom","Male",380,26989,"3.4",5470
+NULL,"Canada",NULL,34,36194,"4.4",5693
+NULL,"Canada",NULL,34,36194,"1.2",5939
+"26-30","India","Male",74,13947,"7.8",5250
+"26-30","Colombia","Female",62,13777,"8.8",5906
+"26-30","Colombia","Female",62,13777,"7",5921
+"26-30","Colombia","Female",62,13777,"3.8",5516
+"41-45","Italy","Male",74,15131,"8",5307
+"26-30","Iran, Islamic Republic of","Male",96,17796,"6.4",5813
+"41-45","Italy","Male",74,15131,"7.4",5004
+"31-35","Romania","Male",89,8144,"5.4",5150
+"31-35","United States","Female",118,8491,"3.4",5539
+"46-50","Italy","Female",213,16306,"5.2",5764
+"21-25","Spain","Female",75,2826,"4",5787
+"31-35","Romania","Male",89,8144,"4.8",6083
+"41-45","United Kingdom","Male",438,17928,"7",5504
+"31-35","United States","Male",127,19363,"7.2",5470
+"31-35","United States","Male",127,19363,"6.4",5836
+"over 50","United States","Male",61,5849,"1",5250
+"31-35","United States","Male",127,19363,"3.4",5353
+"over 50","India","Male",143,17491,"5.6",5758
+"31-35","United States","Male",127,19363,"4.6",5624
+"over 50","United States","Male",61,5849,"3.6",5069
+"31-35","Germany","Male",80,20142,"5",5069
+"26-30","Czech Republic","Male",137,14203,"4",5836
+"over 50","United States","Male",61,5849,"1",6831
+"over 50","United States","Male",61,5849,"5.4",5365
+"31-35","United States","Male",127,19363,"4.2",5103
+"26-30","Czech Republic","Male",137,14203,"3.4",5470
+"31-35","United States","Male",127,19363,"3.4",5631
+"over 50","Argentina","Male",63,13197,"4.4",5470
+"over 50","United States","Male",61,5849,"4.8",5556
+"31-35","United States","Male",127,19363,"3.6",5223
+"41-45","Denmark","Male",204,12328,"5.6",5635
+"over 50","Argentina","Male",63,13197,"5.4",5693
+"41-45","Italy","Male",74,15131,"7.6",6633
+NULL,"Romania",NULL,56,36409,"4",5836
+"31-35","United States","Male",127,19363,"3",5958
+NULL,"Romania",NULL,56,36409,"4.8",5250
+"41-45","United Kingdom","Male",438,17928,"1.4",6387
+"31-35","United States","Male",127,19363,"3.6",7054
+"over 50","Argentina","Male",63,13197,"6.8",5215
+"41-45","United Kingdom","Male",438,17928,"7.2",5921
+"41-45","Denmark","Male",204,12328,"8.6",5663
+"over 50","Argentina","Male",63,13197,"4.4",7074
+"41-45","Italy","Male",74,15131,"8.4",5921
+"26-30","Czech Republic","Male",137,14203,"3.2",5693
+"41-45","Colombia","Female",37,14451,"5.2",5069
+"26-30","Czech Republic","Male",137,14203,"6",5921
+"26-30","Czech Republic","Male",137,14203,"3",5223
+"26-30","Czech Republic","Male",137,14203,"3.6",5464
+"26-30","Czech Republic","Male",137,14203,"3.6",5980
+"21-25","Brazil","Male",43,29913,"4.4",5250
+"26-30","Czech Republic","Male",137,14203,"5.2",5420
+"21-25","Brazil","Male",43,29913,"6.4",5215
+"26-30","Czech Republic","Male",137,14203,"5.6",5817
+"over 50","United States","Male",88,35,"2",5215
+"21-25","Brazil","Male",43,29913,"1",6442
+"21-25","Brazil","Male",43,29913,"2.4",7047
+"over 50","United States","Male",88,35,"5.8",5693
+"26-30","Czech Republic","Male",137,14203,"4.2",5017
+"21-25","Brazil","Male",43,29913,"1.2",5374
+"over 50","United States","Male",88,35,"8.2",5906
+"26-30","Czech Republic","Male",137,14203,"4.4",5118
+"over 50","United States","Male",88,35,"6.4",5988
+"26-30","Czech Republic","Male",137,14203,"4.8",5283
+"26-30","Czech Republic","Male",137,14203,"3",5360
+"21-25","India","Male",72,12665,"4",5069
+"over 50","United States","Male",88,35,"6.4",5921
+"41-45","Malaysia","Male",502,4812,"4",5608
+"over 50","United States","Male",88,35,"1",5578
+"over 50","United States","Male",88,35,"4.4",5190
+"46-50","United States","Female",63,17600,"3.6",5069
+"46-50","United States","Female",63,17600,"3.8",5470
+"36-40","Japan","Male",233,19656,"1.6",5693
+"26-30","Australia","Male",22,2290,"6.8",5250
+"41-45","United States","Male",87,14242,"1",5069
+"26-30","Czech Republic","Male",137,14203,"3",5667
+"41-45","United Kingdom","Male",438,17928,"3.2",6382
+"36-40","Italy","Male",588,3417,"3.4",5309
+"26-30","Czech Republic","Male",137,14203,"3.4",5363
+"21-25","Italy","Male",37,3113,"5.6",5215
+"26-30","Czech Republic","Male",137,14203,"4.2",5479
+"21-25","India","Male",72,12665,"7.6",5906
+NULL,"Romania",NULL,56,36409,"4.8",5069
+NULL,"Romania",NULL,56,36409,"8",5627
+"21-25","India","Male",72,12665,"4.2",5215
+NULL,"Romania",NULL,56,36409,"4.2",5144
+NULL,"Romania",NULL,56,36409,"6.2",5213
+"41-45","United Kingdom","Female",463,11835,"4.6",5663
+"36-40","Australia","Male",116,32678,"5.8",5875
+"26-30","Czech Republic","Male",137,14203,"4",5663
+"26-30","Czech Republic","Male",137,14203,"4.4",5226
+"26-30","Czech Republic","Male",137,14203,"3",5106
+"41-45","United Kingdom","Female",463,11835,"4.4",5980
+"41-45","United Kingdom","Female",463,11835,"2.8",5993
+"41-45","United Kingdom","Female",463,11835,"3",5601
+"46-50","United States","Female",63,17600,"6",5250
+"26-30","Czech Republic","Male",137,14203,"4.8",5875
+"46-50","Italy","Female",213,16306,"8.8",5539
+"18-20","United Kingdom","Male",54,23187,"2.4",5250
+"26-30","United States","Female",86,237,"6.2",5836
+"26-30","Argentina","Male",67,31078,"3.8",5470
+"41-45","United Kingdom","Female",463,11835,"2.6",5452
+"31-35","United States","Female",118,8491,"2",5360
+"31-35","United States","Female",118,8491,"4",5170
+"31-35","United States","Female",118,8491,"5.2",5204
+"26-30","Russian Federation","Male",305,18289,"7",5906
+"26-30","Colombia","Female",62,13777,"7",5114
+"41-45","Denmark","Male",204,12328,"4.2",5288
+"36-40","India","Male",325,17528,"5.6",5069
+"46-50","United States","Female",63,17600,"1.4",5223
+"46-50","United States","Female",63,17600,"3.2",5536
+"36-40","Italy","Male",588,3417,"3.8",6204
+"31-35","Spain","Male",133,3339,"6",5151
+"31-35","Spain","Male",133,3339,"6.6",7024
+"31-35","Spain","Male",133,3339,"1",5511
+"31-35","Spain","Male",133,3339,"6.8",5504
+"36-40","Germany","Male",354,21907,"3.2",5215
+"31-35","Colombia","Male",86,15622,"6.4",5836
+NULL,"United States",NULL,391,34624,"1",5685
+NULL,"United States",NULL,391,34624,"4.4",5026
+"36-40","Germany","Male",354,21907,"3.4",5562
+"36-40","Germany","Male",354,21907,"4.4",5424
+"over 50","Argentina","Male",63,13197,"5.2",5150
+"31-35","Argentina","Male",104,13853,"2.4",5836
+"41-45","United States","Male",87,14242,"1",5906
+"over 50","Pakistan","Male",154,22224,"6",5906
+"31-35","United States","Male",364,9491,"6.4",5817
+"over 50","Pakistan","Male",154,22224,"3.6",5693
+"41-45","United States","Male",87,14242,"3",5369
+"46-50","United States","Female",27,15096,"5.8",5693
+"46-50","United States","Female",27,15096,"5.4",5069
+"36-40","United States","Male",171,5489,"4.8",5906
+"31-35","Australia","Male",36,997,"3.6",5836
+"over 50","Australia","Male",238,1006,"5",5470
+"over 50","Australia","Male",238,1006,"4.4",5939
+"over 50","Australia","Male",238,1006,"4.8",6382
+"over 50","Australia","Male",238,1006,"3",5429
+"41-45","United States","Male",104,17120,"3.6",5906
+"46-50","India","Female",101,24314,"6.6",6083
+"26-30","United States","Male",33,19544,"2.4",5758
+"26-30","Spain","Male",16,11937,"4.8",5069
+"46-50","India","Female",101,24314,"4.6",5475
+"26-30","Spain","Male",16,11937,"4.6",5693
+"26-30","Spain","Male",16,11937,"5.4",5470
+"26-30","Finland","Male",16,32973,"4",5069
+"26-30","Russian Federation","Male",305,18289,"4.6",5693
+"26-30","Finland","Male",16,32973,"8",5906
+"31-35","India","Male",107,16777,"7.4",5154
+"31-35","Lithuania","Male",24,10476,"2.4",5651
+"31-35","Lithuania","Male",24,10476,"5.4",5154
+"26-30","Finland","Male",16,32973,"6.6",5693
+"31-35","Lithuania","Male",24,10476,"5.2",5516
+"26-30","Finland","Male",16,32973,"6.8",5213
+"36-40","United States","Male",101,19752,"6.6",5693
+"26-30","Finland","Male",16,32973,"5.8",7074
+"36-40","United States","Male",101,19752,"5.4",5215
+"36-40","United States","Male",101,19752,"5.6",5470
+"41-45","United Kingdom","Female",463,11835,"5.2",5154
+"36-40","United States","Male",101,19752,"4.4",5154
+"36-40","United States","Male",101,19752,"4.8",5516
+"36-40","United States","Male",101,19752,"6.2",6109
+"36-40","United States","Male",101,19752,"1",5277
+"26-30","Finland","Male",16,32973,"1",6442
+"41-45","United Kingdom","Female",463,11835,"3.8",7074
+"41-45","United Kingdom","Female",463,11835,"2.4",5599
+"26-30","Spain","Male",176,5634,"3.8",5836
+"26-30","Spain","Male",176,5634,"8.8",5250
+"26-30","Spain","Male",176,5634,"5",7074
+"26-30","Spain","Male",176,5634,"8.2",5154
+"26-30","Spain","Male",176,5634,"9",5875
+"36-40","United States","Male",101,19752,"6.6",5667
+"36-40","United States","Male",101,19752,"6.8",5608
+"36-40","United States","Male",101,19752,"6",6277
+"31-35","United States","Male",61,12978,"3.2",5069
+"31-35","United States","Male",61,12978,"3.8",5693
+"31-35","Ireland","Female",52,9066,"5",5069
+"31-35","Ireland","Female",52,9066,"3.6",5250
+"46-50","India","Female",101,24314,"4.8",7074
+"36-40","Spain","Male",31,4655,"5.8",5693
+"36-40","Spain","Male",31,4655,"7.2",5906
+"36-40","Spain","Female",26,15171,"5",7074
+"41-45","United Kingdom","Female",463,11835,"7.4",5667
+"36-40","Spain","Female",26,15171,"6",5667
+"36-40","Spain","Male",31,4655,"6.8",5250
+"41-45","United Kingdom","Female",463,11835,"1",5475
+"26-30","Russian Federation","Male",305,18289,"2.8",7074
+"41-45","United States","Male",87,14242,"5.8",5154
+"26-30","United States","Male",71,16519,"1.6",5069
+"41-45","United States","Male",87,14242,"1",5758
+"26-30","United States","Male",71,16519,"6.6",5470
+"Do not want to disclose","United States","Do not want to disclose",105,18415,"4",5906
+"41-45","Italy","Male",74,15131,"3.8",5235
+"31-35","Argentina","Male",104,13853,"2.2",5250
+"31-35","Argentina","Male",104,13853,"5.2",5215
+"26-30","Russian Federation","Male",305,18289,"5",5235
+"21-25","India","Male",100,10849,"3",5069
+"31-35","Argentina","Male",104,13853,"1",7074
+"21-25","India","Male",100,10849,"4.8",5693
+"31-35","Argentina","Male",104,13853,"3.2",6382
+NULL,"Canada",NULL,34,36194,"6.6",5921
+"31-35","United Kingdom","Male",49,26036,"3.6",5693
+"41-45","Denmark","Male",204,12328,"4.4",5921
+"31-35","United States","Male",364,9491,"3.2",6148
+"36-40","United States","Male",101,19752,"7.4",5921
+"36-40","United States","Male",101,19752,"6.6",5369
+"36-40","United States","Male",101,19752,"6.2",5204
+"36-40","United States","Male",101,19752,"5.8",5635
+"36-40","United States","Male",101,19752,"6.4",5103
+"36-40","United States","Male",101,19752,"6.8",5026
+"36-40","United States","Male",101,19752,"5.8",5283
+"36-40","United States","Male",101,19752,"4.8",5309
+"36-40","United States","Male",101,19752,"6.4",5235
+"36-40","United States","Male",101,19752,"6",5787
+"36-40","United States","Male",101,19752,"6.4",6271
+"21-25","United States","Male",42,17471,"4.6",5069
+"26-30","Spain","Male",176,5634,"8",5473
+"41-45","Malaysia","Male",502,4812,"6",5667
+"41-45","United Kingdom","Female",463,11835,"7.2",5307
+"26-30","Iran, Islamic Republic of","Male",96,17796,"5.4",5667
+"26-30","Iran, Islamic Republic of","Male",96,17796,"5",5353
+"26-30","Ireland","Female",26,11836,"9",5693
+"41-45","United Kingdom","Female",463,11835,"8.8",5752
+"26-30","Iran, Islamic Republic of","Male",96,17796,"4",5939
+"26-30","Iran, Islamic Republic of","Male",96,17796,"6",5556
+"31-35","United States","Male",364,9491,"4",5283
+"26-30","Russian Federation","Male",305,18289,"2.2",5223
+"31-35","Colombia","Male",14,29648,"5.2",5470
+"26-30","Iran, Islamic Republic of","Male",96,17796,"4",5050
+NULL,"Germany",NULL,37,37541,"5.8",5250
+"26-30","Iran, Islamic Republic of","Male",96,17796,"5.6",5899
+"26-30","Iran, Islamic Republic of","Male",96,17796,"1",6792
+"26-30","Iran, Islamic Republic of","Male",96,17796,"6.4",5752
+"26-30","Iran, Islamic Republic of","Male",96,17796,"6.6",5842
+"31-35","India","Male",107,16777,"3.4",5283
+"36-40","Germany","Male",354,21907,"4.4",5095
+"26-30","United States","Male",15,7763,"5.6",5693
+"36-40","Germany","Male",354,21907,"4.6",5283
+"26-30","United States","Male",15,7763,"2.2",5906
+"26-30","United States","Male",15,7763,"3",5069
+"26-30","United States","Male",15,7763,"2",5599
+"36-40","Germany","Male",354,21907,"5",6083
+"36-40","United States","Male",171,5489,"5.8",5693
+"36-40","United States","Male",171,5489,"5.2",5215
+"36-40","United States","Male",171,5489,"4.8",6134
+"36-40","United States","Male",171,5489,"1",6485
+"31-35","United States","Male",51,21959,"5.2",5906
+"26-30","United States","Male",15,7763,"1",5015
+"31-35","United States","Male",51,21959,"6",5836
+"26-30","United States","Male",15,7763,"1",6387
+"31-35","United States","Male",51,21959,"6.2",5250
+"31-35","United States","Male",51,21959,"1",6850
+"31-35","United States","Male",51,21959,"5.8",5764
+"21-25","India","Male",100,10849,"5.4",5470
+"over 50","Bolivia","Male",131,27480,"3.6",5906
+"over 50","Bolivia","Male",131,27480,"3.8",5095
+"41-45","Faroe Islands","Male",26,4638,"7",5906
+"over 50","Bolivia","Male",131,27480,"3",5118
+"31-35","Germany","Male",80,20142,"7.8",5693
+"31-35","Germany","Male",80,20142,"7.4",5250
+"21-25","Trinidad and Tobago","Male",66,15143,"5.8",5906
+"31-35","Germany","Male",80,20142,"6.6",5307
+"31-35","Germany","Male",80,20142,"2.6",5374
+"21-25","United States","Male",42,17471,"5.6",5906
+"21-25","Trinidad and Tobago","Male",66,15143,"4.8",5215
+"21-25","United States","Male",42,17471,"5.2",5836
+"21-25","Canada","Male",84,17408,"4.8",5215
+"21-25","Canada","Male",84,17408,"5",5470
+"21-25","Canada","Male",84,17408,"6.6",5906
+"21-25","United States","Male",42,17471,"6.4",5307
+"Do not want to disclose","United States","Do not want to disclose",105,18415,"2.6",5215
+"Do not want to disclose","United States","Do not want to disclose",105,18415,"4.4",5069
+"46-50","Iran, Islamic Republic of","Female",420,19447,"3.2",5069
+"Do not want to disclose","United States","Do not want to disclose",105,18415,"7.4",5421
+"Do not want to disclose","United States","Do not want to disclose",105,18415,"6",7054
+"Do not want to disclose","United States","Do not want to disclose",105,18415,"5.6",5473
+"26-30","Spain","Female",190,11472,"7.2",5906
+"26-30","Spain","Female",190,11472,"2.2",5215
+"46-50","Italy","Female",213,16306,"4.4",5635
+"41-45","Faroe Islands","Male",26,4638,"3.2",5693
+"46-50","Italy","Female",213,16306,"2.8",5578
+"46-50","Italy","Female",213,16306,"2.8",5050
+"36-40","Japan","Male",233,19656,"3.8",5836
+"41-45","United Kingdom","Female",463,11835,"7.4",5473
+"26-30","Russian Federation","Male",305,18289,"2.2",5360
+NULL,"Germany",NULL,37,37541,"7",5693
+"31-35","Germany","Male",80,20142,"4",6148
+"31-35","Germany","Male",80,20142,"7.2",5154
+"31-35","Spain","Male",29,4508,"5.2",5215
+"41-45","Malaysia","Male",502,4812,"2.2",5958
+"41-45","Malaysia","Male",502,4812,"1.6",5631
+"46-50","Iran, Islamic Republic of","Female",420,19447,"5",5836
+"41-45","United Kingdom","Female",463,11835,"7",6633
+"31-35","Germany","Male",80,20142,"5.4",5365
+"36-40","United States","Male",83,19690,"4.2",5836
+"46-50","Italy","Female",213,16306,"5",5464
+"21-25","Indonesia","Male",109,16805,"4.2",5069
+"36-40","United States","Male",83,19690,"3.8",5069
+"26-30","United States","Male",213,9811,"7",5651
+"26-30","Saudi Arabia","Male",16,20245,"7.6",5906
+"Do not want to disclose","United States","Do not want to disclose",105,18415,"3",5141
+"over 50","India","Male",143,17491,"5.8",5420
+"36-40","United States","Male",82,23485,"5.8",5906
+"over 50","United States","Female",183,24235,"5.6",5470
+"36-40","United States","Male",82,23485,"1",5215
+"36-40","United States","Male",82,23485,"5",5470
+"26-30","Russian Federation","Male",305,18289,"5.8",5475
+"36-40","United States","Male",82,23485,"6.8",5421
+"36-40","United States","Male",82,23485,"6.6",5017
+"36-40","United Kingdom","Male",380,26989,"5.6",5693
+"36-40","United States","Male",82,23485,"1.8",5004
+"46-50","Spain","Male",131,14869,"2.2",5069
+"46-50","Spain","Male",131,14869,"2.4",5215
+"46-50","Spain","Male",131,14869,"2.2",5190
+"36-40","United Kingdom","Male",380,26989,"4.4",5836
+"41-45","Denmark","Male",204,12328,"3.8",6271
+"36-40","United Kingdom","Male",380,26989,"2.8",6271
+"36-40","United Kingdom","Male",380,26989,"5.2",5026
+"41-45","Denmark","Male",204,12328,"4.2",5015
+"36-40","United Kingdom","Male",380,26989,"2.8",5651
+"46-50","United States","Female",63,17600,"3.6",6271
+"46-50","United States","Female",63,17600,"2.2",7047
+"36-40","United Kingdom","Male",380,26989,"2.8",6204
+"46-50","United States","Female",63,17600,"3",5980
+"26-30","United States","Female",88,30098,"4",5836
+"over 50","Canada","Male",164,7841,"3.2",6204
+"over 50","Canada","Male",164,7841,"9.4",5402
+"26-30","Russian Federation","Female",48,11977,"4.6",5470
+"36-40","Peru","Female",49,30368,"2.6",5693
+"46-50","India","Female",101,24314,"4",6204
+"31-35","India","Male",107,16777,"8",5402
+"31-35","India","Male",107,16777,"3.8",6204
+"over 50","Italy","Male",95,30064,"4.6",6204
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"3.6",5069
+"46-50","Iran, Islamic Republic of","Female",420,19447,"5.6",5402
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"3.2",5215
+"36-40","United Kingdom","Male",380,26989,"1",6831
+"36-40","United Kingdom","Male",380,26989,"6.2",5473
+"41-45","United States","Male",101,22698,"3",5215
+"41-45","United States","Male",101,22698,"4.8",5906
+"41-45","United States","Male",101,22698,"1",5250
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"8",5906
+"41-45","United States","Male",101,22698,"6.8",5369
+"26-30","Russian Federation","Male",305,18289,"5.6",5986
+"over 50","Italy","Male",95,30064,"4.6",5986
+"21-25","Pakistan","Male",46,8295,"4.6",5069
+"21-25","Pakistan","Male",46,8295,"5.4",5693
+"21-25","Pakistan","Male",46,8295,"5.6",5906
+"21-25","Pakistan","Male",46,8295,"4.2",5986
+"21-25","Pakistan","Male",46,8295,"3.4",5758
+"26-30","Chile","Male",10,23957,"6",5693
+"26-30","Chile","Male",10,23957,"3.4",5906
+"36-40","United States","Male",82,23485,"5.6",5309
+"31-35","United States","Female",85,4274,"8.8",5215
+NULL,"United States",NULL,391,34624,"4.6",5309
+"31-35","United States","Female",85,4274,"5.4",5836
+"31-35","United States","Female",85,4274,"10",5309
+"31-35","United States","Female",85,4274,"4.4",5939
+"26-30","Russian Federation","Male",305,18289,"2",5651
+"31-35","United States","Female",85,4274,"5",5986
+"21-25","India","Male",72,12665,"8.2",5986
+"31-35","United States","Female",85,4274,"3.2",5479
+"31-35","United States","Female",85,4274,"2.4",5363
+"26-30","Chile","Male",10,23957,"5.4",5215
+"41-45","United States","Male",87,14242,"6",5144
+"26-30","United States","Male",213,9811,"6.6",6382
+"26-30","United States","Male",213,9811,"6",7074
+"26-30","United States","Male",213,9811,"7.8",5106
+"41-45","United States","Male",87,14242,"4.6",5939
+"over 50","Pakistan","Male",154,22224,"7.4",5939
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"4.4",5226
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"1.8",5635
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"6.6",5875
+"21-25","India","Male",108,16816,"3.2",5250
+"21-25","India","Male",100,10849,"3.6",5283
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"8",5663
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"5",5026
+"21-25","India","Male",100,10849,"4.2",5223
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"2.8",5562
+"21-25","India","Male",100,10849,"5.2",5150
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"5",5939
+"31-35","United States","Male",68,4156,"4",5693
+"21-25","Germany","Male",83,14340,"6",5026
+"26-30","Germany","Male",54,13839,"5.4",5906
+"26-30","Germany","Male",54,13839,"5.2",5470
+"21-25","Germany","Male",83,14340,"5.4",5539
+"41-45","Malaysia","Male",502,4812,"2.6",6382
+"41-45","Malaysia","Male",502,4812,"2",5921
+"26-30","United States","Male",213,9811,"9",5752
+"41-45","Sweden","Female",260,8394,"6",5906
+"46-50","Italy","Female",213,16306,"8.8",5752
+"31-35","France","Male",7,23306,"4.6",5470
+"26-30","United States","Male",213,9811,"8.4",5473
+"46-50","India","Female",101,24314,"5.2",5667
+"26-30","United States","Male",213,9811,"6.4",5993
+"21-25","India","Male",100,10849,"3.4",5939
+"21-25","India","Male",100,10849,"2.6",5114
+"21-25","India","Male",100,10849,"2.8",5601
+"21-25","India","Male",100,10849,"4.4",5536
+"26-30","United States","Male",213,9811,"7.8",5026
+"41-45","United States","Male",87,14242,"1",5288
+"46-50","Australia","Male",65,15773,"3.4",5693
+"46-50","Australia","Male",65,15773,"7.4",5470
+"46-50","Australia","Male",65,15773,"2.8",5069
+"31-35","United States","Male",364,9491,"4.2",5608
+"41-45","Malaysia","Male",502,4812,"2.6",5170
+"46-50","Australia","Male",65,15773,"4.4",5026
+"18-20","Philippines","Male",112,19750,"6.2",5693
+"46-50","Australia","Male",65,15773,"4.8",5560
+"46-50","Australia","Male",65,15773,"6.2",5764
+"26-30","United States","Male",213,9811,"7.2",5608
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"5.6",5608
+"41-45","Malaysia","Male",502,4812,"2.2",5560
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"5.6",5307
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"4.4",5360
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"3.8",5369
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"4",5151
+"21-25","Germany","Male",98,16101,"5.8",5215
+"21-25","Germany","Male",98,16101,"3.6",5836
+"21-25","India","Male",100,10849,"3.2",5608
+"21-25","Germany","Male",98,16101,"4.8",5608
+"21-25","Germany","Male",98,16101,"9.4",5752
+"26-30","Ukraine","Male",85,5742,"6.2",5250
+"41-45","Faroe Islands","Male",26,4638,"4.6",5836
+"41-45","Faroe Islands","Male",26,4638,"6.2",7024
+"31-35","United States","Male",364,9491,"3.6",5473
+"21-25","Trinidad and Tobago","Male",66,15143,"7.8",5204
+"over 50","Pakistan","Male",154,22224,"8",5154
+"36-40","United States","Male",48,9259,"5.4",5069
+"36-40","United States","Male",48,9259,"5.8",5250
+"36-40","United States","Male",48,9259,"3.4",5906
+"36-40","United States","Male",48,9259,"4.6",5599
+"over 50","Canada","Male",164,7841,"4.2",5631
+"over 50","Canada","Male",164,7841,"2.6",5442
+"over 50","Canada","Male",164,7841,"2.4",5421
+"36-40","Peru","Female",49,30368,"5",5836
+"36-40","United Arab Emirates","Male",27,31981,"3.2",5631
+"36-40","Peru","Female",49,30368,"2.8",5250
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"4.2",5442
+"36-40","Peru","Female",49,30368,"2.4",5631
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"4.4",5516
+"36-40","Peru","Female",49,30368,"4",5473
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"1.8",5464
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"4.2",5235
+"31-35","Spain","Male",94,2765,"4.6",5095
+"46-50","Iran, Islamic Republic of","Female",420,19447,"4.8",5213
+"36-40","United Kingdom","Male",115,13070,"5.8",5250
+"36-40","United Kingdom","Male",115,13070,"6.2",5906
+"36-40","United Kingdom","Male",115,13070,"3.4",6109
+"41-45","Malaysia","Male",502,4812,"3.2",5473
+"26-30","United States","Male",213,9811,"6.2",5365
+"46-50","Iran, Islamic Republic of","Female",420,19447,"1.8",5374
+"46-50","Iran, Islamic Republic of","Female",420,19447,"1",6850
+"46-50","Iran, Islamic Republic of","Female",420,19447,"3.2",5958
+"46-50","Italy","Female",213,16306,"8.2",6633
+"26-30","Egypt","Male",98,2295,"6.8",5693
+"36-40","United States","Male",83,19690,"4.4",5470
+"46-50","India","Female",101,24314,"1",6831
+"46-50","India","Female",101,24314,"5",5442
+"26-30","Argentina","Male",27,13179,"6.2",5470
+"21-25","Trinidad and Tobago","Male",66,15143,"6.6",5758
+"18-20","United Kingdom","Male",54,23187,"3",5069
+"41-45","United States","Male",25,14482,"2.4",5215
+"21-25","India","Male",100,10849,"1.2",7047
+"21-25","India","Male",100,10849,"2.2",5631
+"26-30","Belarus","Female",58,8684,"4",5026
+"26-30","United States","Male",213,9811,"6.2",5601
+"18-20","United Kingdom","Male",54,23187,"3.8",5470
+"over 50","Canada","Male",164,7841,"6",5511
+"26-30","Russian Federation","Female",48,11977,"5.8",5693
+"31-35","Spain","Male",59,14823,"7.2",5836
+"36-40","Italy","Male",588,3417,"7",6277
+"31-35","United States","Male",68,4156,"4.8",5470
+"31-35","United States","Male",68,4156,"3",5069
+"31-35","United States","Male",68,4156,"2.6",5651
+"31-35","United States","Male",68,4156,"1",6442
+"31-35","United States","Male",68,4156,"2",5429
+"31-35","United States","Male",68,4156,"3.2",5475
+"31-35","United States","Male",68,4156,"2",6204
+"26-30","United States","Male",213,9811,"9",5402
+"over 50","Pakistan","Male",154,22224,"7.4",5402
+"36-40","Germany","Male",354,21907,"5.6",5402
+"26-30","United States","Male",213,9811,"6.2",5452
+"over 50","Bolivia","Male",131,27480,"2.8",5402
+"36-40","Germany","Male",354,21907,"3.8",5986
+"36-40","Germany","Male",354,21907,"3.2",5651
+"36-40","Germany","Male",354,21907,"1",6792
+"36-40","Germany","Male",354,21907,"4.2",5787
+"36-40","Germany","Male",354,21907,"1",6485
+"36-40","Germany","Male",354,21907,"1",6387
+"36-40","Germany","Male",354,21907,"1.6",7054
+"36-40","Germany","Male",354,21907,"2.2",5764
+"46-50","United States","Female",87,23314,"1",5250
+"21-25","Trinidad and Tobago","Male",77,11494,"4.8",5118
+"41-45","Malaysia","Male",502,4812,"2.6",5556
+"31-35","Lithuania","Male",24,10476,"1",5277
+"31-35","Lithuania","Male",24,10476,"5.4",6271
+"over 50","India","Male",143,17491,"5",5899
+"41-45","Malaysia","Male",502,4812,"2",5015
+"36-40","Germany","Male",354,21907,"5.4",5817
+"21-25","India","Male",144,9963,"5.6",5250
+"21-25","India","Male",100,10849,"3.4",5004
+"21-25","India","Male",144,9963,"4",5836
+"46-50","United States","Female",87,23314,"1",5906
+"46-50","United States","Female",87,23314,"1",5470
+"41-45","Malaysia","Male",502,4812,"2.8",5402
+"Do not want to disclose","United States","Male",39,5107,"5.4",5836
+"Do not want to disclose","United States","Male",39,5107,"3.8",5693
+"Do not want to disclose","United States","Male",39,5107,"2.6",5069
+"21-25","India","Male",144,9963,"2.8",5906
+"18-20","India","Male",27,15387,"5.6",5470
+"26-30","United States","Male",25,33030,"3.4",5250
+"26-30","United States","Male",25,33030,"5",5693
+"36-40","Japan","Male",233,19656,"4",5470
+"26-30","Belarus","Female",58,8684,"2",5190
+"26-30","Chile","Male",53,9138,"4.4",5693
+"26-30","India","Male",74,13947,"2.2",5215
+"26-30","India","Male",74,13947,"3.2",5069
+"21-25","Lithuania","Male",40,8301,"4.6",5470
+"41-45","Bolivia","Male",272,30993,"7.8",5906
+"36-40","Peru","Female",49,30368,"2",6232
+"31-35","Spain","Male",42,19404,"5",5069
+"31-35","Spain","Male",42,19404,"4",5250
+"26-30","Australia","Male",64,1771,"6.4",5693
+"26-30","Spain","Female",190,11472,"3.2",5069
+"26-30","Australia","Male",64,1771,"4",5353
+"26-30","Australia","Male",64,1771,"2.2",5802
+"31-35","Australia","Male",36,997,"4.6",5250
+"41-45","Malaysia","Male",502,4812,"5.8",6633
+"31-35","Australia","Male",36,997,"4.2",5069
+"36-40","United Kingdom","Male",115,13070,"8.6",6633
+"36-40","United Kingdom","Male",115,13070,"2.2",5802
+"36-40","United Kingdom","Male",115,13070,"1.2",6232
+"36-40","United Kingdom","Male",115,13070,"3.6",5353
+"36-40","United Kingdom","Male",115,13070,"4.2",5050
+"36-40","Spain","Male",43,17297,"1",5836
+"36-40","Germany","Male",354,21907,"5.4",6633
+"41-45","United States","Male",25,14482,"4",5069
+"26-30","United States","Male",213,9811,"4.6",5420
+"26-30","United States","Male",213,9811,"9.2",5813
+"36-40","Peru","Female",49,30368,"4.6",5980
+"36-40","Peru","Female",49,30368,"1",5685
+"36-40","Peru","Female",49,30368,"4",6083
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"1.8",5578
+"41-45","Malaysia","Male",502,4812,"1.2",5141
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"2.6",5899
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"3.8",6134
+NULL,"Iran, Islamic Republic of",NULL,59,34883,"3.2",6204
+"31-35","Spain","Male",42,19404,"4.8",5560
+"31-35","Spain","Male",42,19404,"5.6",5624
+"41-45","Malaysia","Male",502,4812,"2.6",5353
+"26-30","Ireland","Female",26,11836,"7.6",5836
+"26-30","Ireland","Female",26,11836,"8",5906
+"31-35","United Kingdom","Male",41,17060,"2.8",5215
+"41-45","United States","Male",87,14242,"3.4",5556
+"41-45","United States","Male",87,14242,"2",5353
+"41-45","United States","Male",87,14242,"2",6232
+"36-40","Peru","Female",49,30368,"6.2",5103
+"41-45","United States","Male",87,14242,"1.8",5802
+"36-40","Peru","Female",49,30368,"3.2",5353
+"36-40","Australia","Male",116,32678,"4.8",5556
+"36-40","Australia","Male",116,32678,"5.4",5402
+"26-30","United States","Male",213,9811,"8",5980
+"26-30","Belarus","Female",58,8684,"5.2",5758
+"31-35","Spain","Male",42,19404,"3.4",5223
+"31-35","Spain","Male",42,19404,"4",5601
+"26-30","United States","Female",126,7663,"3.6",5906
+"26-30","United States","Female",126,7663,"3.4",5693
+"41-45","United States","Male",25,14482,"4",5470
+"36-40","United States","Male",77,17461,"4.2",5906
+"36-40","United States","Male",77,17461,"4.8",5470
+"36-40","United States","Male",77,17461,"4.6",5069
+"31-35","Lithuania","Male",24,10476,"7.8",6277
+"26-30","United States","Male",45,23889,"3",5069
+"26-30","United States","Male",45,23889,"3.6",5470
+"41-45","Faroe Islands","Male",26,4638,"8.6",6277
+"26-30","United States","Male",213,9811,"2",5370
+"21-25","United States","Male",149,19580,"7.8",5250
+"46-50","United States","Female",27,15096,"1.6",5370
+"21-25","United States","Male",149,19580,"5.2",5906
+"21-25","United States","Male",149,19580,"3.4",5069
+"36-40","Australia","Male",116,32678,"5.2",5813
+"36-40","Australia","Male",116,32678,"2.4",6148
+"36-40","Australia","Male",116,32678,"2.2",5370
+"36-40","Australia","Male",116,32678,"2.4",6271
+"36-40","Australia","Male",116,32678,"3.6",5170
+"36-40","Australia","Male",116,32678,"3.8",5353
+"36-40","Australia","Male",116,32678,"4.2",5288
+"26-30","United States","Male",213,9811,"5.2",6148
+"26-30","United States","Male",213,9811,"8",5817
+"26-30","United States","Female",126,7663,"5.6",5250
+"26-30","United States","Female",126,7663,"6.2",5813
+"21-25","Ukraine","Male",47,30182,"1",5069
+"21-25","United States","Male",149,19580,"4.2",6082
+"21-25","United States","Male",149,19580,"1.4",5256
+"46-50","United Kingdom","Female",34,14381,"4.8",5215
+"46-50","United Kingdom","Female",34,14381,"6.4",5250
+"46-50","United Kingdom","Female",34,14381,"5.2",5693
+"21-25","United States","Male",149,19580,"6.8",5980
+"26-30","United States","Male",213,9811,"7.2",6082
+"26-30","United States","Female",126,7663,"1",5256
+"26-30","United States","Female",126,7663,"4.6",5631
+"41-45","United Kingdom","Male",438,17928,"3.6",6082
+"26-30","Belarus","Female",58,8684,"5.4",5813
+"31-35","Lithuania","Male",24,10476,"4.6",6082
+"26-30","United States","Male",213,9811,"7.6",7070
+"26-30","United States","Male",213,9811,"5.4",5114
+"26-30","United States","Male",213,9811,"9",5369
+"36-40","United Kingdom","Male",12,7040,"6.8",5470
+"36-40","United Kingdom","Male",12,7040,"3.6",5215
+"26-30","India","Male",230,8550,"4.2",6109
+"31-35","Spain","Male",29,4508,"5.6",5470
+"over 50","United States","Male",137,25607,"6",5693
+"26-30","United States","Male",213,9811,"8",5504
+"41-45","Bolivia","Male",272,30993,"4.2",5693
+"41-45","Bolivia","Male",272,30993,"4.8",5178
+"41-45","Bolivia","Male",272,30993,"1.6",6082
+"41-45","Bolivia","Male",272,30993,"4.8",7024
+"41-45","Bolivia","Male",272,30993,"6.2",5752
+"41-45","Bolivia","Male",272,30993,"3.6",5667
+"41-45","Bolivia","Male",272,30993,"3.4",5993
+"41-45","Bolivia","Male",272,30993,"6",6633
+"41-45","Bolivia","Male",272,30993,"3.8",5154
+"41-45","Bolivia","Male",272,30993,"5",5204
+"41-45","Bolivia","Male",272,30993,"4.6",5151
+"41-45","Bolivia","Male",272,30993,"3.8",6083
+"41-45","Bolivia","Male",272,30993,"4",5624
+"26-30","Egypt","Male",98,2295,"4",5069
+"26-30","Egypt","Male",98,2295,"5.6",5906
+"26-30","Egypt","Male",98,2295,"7",5307
+"26-30","Egypt","Male",98,2295,"8.4",7070
+"26-30","Egypt","Male",98,2295,"7.8",6204
+"41-45","Bolivia","Male",272,30993,"5.2",5631
+"41-45","Bolivia","Male",272,30993,"4.4",5015
+"41-45","Bolivia","Male",272,30993,"5.2",5421
+"41-45","Bolivia","Male",272,30993,"3",5004
+"41-45","Bolivia","Male",272,30993,"1",6109
+"41-45","Bolivia","Male",272,30993,"5.8",5504
+"41-45","Bolivia","Male",272,30993,"2",5256
+"41-45","Bolivia","Male",272,30993,"3.4",6134
+"41-45","Bolivia","Male",272,30993,"2",5802
+"41-45","Bolivia","Male",272,30993,"1",6792
+"41-45","Bolivia","Male",272,30993,"2",6387
+"41-45","Bolivia","Male",272,30993,"5.2",5452
+"41-45","Bolivia","Male",272,30993,"5",5516
+"41-45","Bolivia","Male",272,30993,"4.8",5429
+"41-45","Bolivia","Male",272,30993,"1",6442
+"41-45","Bolivia","Male",272,30993,"3",5095
+"41-45","Bolivia","Male",272,30993,"5.2",5511
+"41-45","Bolivia","Male",272,30993,"2.2",5141
+"41-45","Bolivia","Male",272,30993,"3.8",5899
+"26-30","United States","Male",213,9811,"6.6",5178
+"31-35","Iran, Islamic Republic of","Female",69,795,"1",5906
+"41-45","Bolivia","Male",272,30993,"2.6",7068
+"41-45","Bolivia","Male",272,30993,"5.2",5114
+"41-45","Bolivia","Male",272,30993,"5",5608
+"41-45","Bolivia","Male",272,30993,"1.2",6831
+"41-45","Bolivia","Male",272,30993,"1",5556
+"41-45","Bolivia","Male",272,30993,"4.2",6148
+"41-45","Bolivia","Male",272,30993,"4.4",5103
+"over 50","United States","Male",21,31244,"5.6",5178
+"over 50","United States","Male",21,31244,"6",5081
+"over 50","United States","Male",21,31244,"1",6617
+"over 50","United States","Male",21,31244,"5.4",7068
+"26-30","United States","Male",213,9811,"1",6617
