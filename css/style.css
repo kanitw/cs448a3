@@ -3,15 +3,6 @@ body {
   padding: 0;
   background: #fff;
 }
-a {
-  text-decoration: none;
-}
-a:visited {
-  color: #777;
-}
-a:hover {
-  text-decoration: underline;
-}
 #main {
   width: 100%;
   min-width: 760px;

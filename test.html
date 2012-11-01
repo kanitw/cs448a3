@@ -45,7 +45,7 @@
       </div>
       <ul class="nav pull-right">
         
-        <li>
+        <li class="active">
           <a href="#col-tab"  data-toggle="tab">
             Columns
           </a>
@@ -58,7 +58,7 @@
         </li>
         <li>
           <a href="#color-tab"  data-toggle="tab">
-            Color Coding
+            Color Coding?? (Just idea)
           </a>
         </li>
         
@@ -77,8 +77,12 @@
       <div id="col-tab" class="tab-pane active"></div>
 
       <div id="sub-tab" class="tab-pane">
-        <a href="#" id="keep_selected" class="button green filter_control"> Keep </a>
-        <a href="#" id="reset_selected" class="button green filter_control"> Reset </a>
+        <a href="#" id="keep_selected" class="btn btn-primary filter_control" rel="tooltip" title="first tooltip"> Filter</a>
+        <a href="#" id="reset_selected" class="btn  filter_control"> Reset </a>
+        <script type="text/javascript">
+          $('#keep_selected').tooltip({placement:"left"});
+
+        </script>
       </div>
       <div id="color-tab" class="tab-pane">
         Color!!!
