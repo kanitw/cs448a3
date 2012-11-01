@@ -62,7 +62,7 @@ d3.csv("test02.csv", function(data) {
       }
     });
 
-    x.domain(dimensions);
+    
     dimensions.getActive = function(){
     return this.filter(function(d){
       return checkbox[d]["checked"];
@@ -88,7 +88,7 @@ d3.csv("test02.csv", function(data) {
   }
 
   this.render = function (){
-
+    x.domain(dimensions.getActive());
     d3.select("#view svg").remove();
     svg = d3.select("#view").append("svg")
     .attr("width", width + margin.right + margin.left)
