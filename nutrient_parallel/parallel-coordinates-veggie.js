@@ -63,17 +63,13 @@
 
     dimensions = d3.keys(cars[0]).filter(function(d) {
       if(dimensionType[d]=="ordinal"){
-        
-        // console.log(cars[d]);
         // scale data to work with ordinal
         cols = cars.map(function(row){return row[d]}).sort().reverse();
-        console.log(cols);
         return d != "name" && (y[d] = d3.scale.ordinal()
           .domain(cols)
           .rangePoints([height, 0]),1);
       }
       else {
-        
         return d != "name" && (y[d] = d3.scale.linear()
           .domain(d3.extent(cars, function(p) { return +p[d]; }))
           .range([height, 0]));
