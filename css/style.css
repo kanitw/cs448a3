@@ -330,3 +330,20 @@ body.inverted {
 .dim-filter input{
   margin-right: 3px;
 }
+
+#parallel-wrapper{
+  position:relative;
+}
+
+.well{
+  padding:5px;
+  margin: 0px 5px 10px;
+}
+
+#control-wrapper {
+  position:absolute;
+  top: 5px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.6);
+
+}

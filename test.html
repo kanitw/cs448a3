@@ -45,7 +45,7 @@
       <ul class="nav pull-right">
         
         <!-- <li>
-          <a href="#"  data-toggle="collapse" data-target="#control">
+          <a href="#"  data-toggle="collapse" data-target="#control-wrapper">
             Show/Hide Column Filter
             
           </a>
@@ -54,8 +54,17 @@
       </ul> 
     </div>
   </div>
-  <div id="control" class="collapse in "></div>
-  <div id="parallel" class="ui-resizable"></div>
+  <div class="well">
+    <div id="control" class="collapse in"></div>
+  </div>
+  <div id="parallel-wrapper">
+    <div id="control-wrapper">
+      
+    </div>
+
+  
+    <div id="parallel" class="ui-resizable"></div>
+  </div>
   <a href="#" id="keep_selected" class="button green filter_control"> Keep </a>
   <a href="#" id="reset_selected" class="button green filter_control"> Reset </a>
   <input class="typeahead" type="text" onkeydown="search()" data-provide="typeahead">
@@ -122,9 +131,9 @@
       dimensions.trigger('change:filtered');
       return false;
     });
-    var user_ids = _(reviewdata).map(function(d) {
+    var user_ids = _.uniq(_(reviewdata).map(function(d) {
          return "" + d["user_id"]; 
-      });
+      }));
     console.log(user_ids);
     $('.typeahead').typeahead({source : user_ids});
 
