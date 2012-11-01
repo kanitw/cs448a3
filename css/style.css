@@ -326,3 +326,7 @@ body.inverted {
 .dim-filter{
   margin: 0 5px;
 }
+
+.dim-filter input{
+  margin-right: 3px;
+}

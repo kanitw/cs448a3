@@ -40,10 +40,10 @@
 
       d3.select("#control").selectAll("input")
         .data(dimensions)
-        .enter().append("div").each(function(d){
+        .enter().append("span").attr("class","dim-filter").each(function(d){
 
-          var div = d3.select(this); 
-          div.append("input").attr("type","checkbox")
+          var block = d3.select(this); 
+          block.append("input").attr("type","checkbox")
             .attr("checked",true)
             .each(function(d){
             checkbox[d] = this;
@@ -51,7 +51,7 @@
             console.log(dimensions.getActive());
             self.render();
           });
-          div.append("span").html(d);
+          block.append("span").html(d);
         });
 
       // END OF FILTER DIMENSION SECTION
@@ -69,12 +69,14 @@
       w = bounds[0] - m[1] - m[3];
       h = bounds[1] - m[0] - m[2];
 
+      container.select("svg").remove();
+
       svg = container.append("svg:svg")
           .attr("width", w + m[1] + m[3])
           .attr("height", h + m[0] + m[2])
         .append("svg:g")
           .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
-      // container.select("svg").remove();
+      
       
 
       x = d3.scale.ordinal().rangePoints([0, w], 1);
@@ -247,7 +249,7 @@
                          .selectAll("path")
                            .data([model.get('filtered')[i]])
                          .enter().append("svg:path")
-                           .attr("d", path);
+                           .attr("d", path)
         }
       };
     }

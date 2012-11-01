@@ -30,6 +30,8 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
 <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
+
+<link rel="stylesheet" href="css/svg.css" type="text/css" charset="utf-8">
 </head>
 
 <body>
@@ -40,11 +42,19 @@
       <div class="brand">
         &nbsp; Exploring Peer Evaluation on Venture-Lab
       </div>
-
-      
+      <ul class="nav pull-right">
+        
+        <!-- <li>
+          <a href="#"  data-toggle="collapse" data-target="#control">
+            Show/Hide Column Filter
+            
+          </a>
+        </li> -->
+        <li><a href="#about">About</a></li>
+      </ul> 
     </div>
   </div>
-  <div id="control"></div>
+  <div id="control" class="collapse in "></div>
   <div id="parallel" class="ui-resizable"></div>
   <a href="#" id="keep_selected" class="button green filter_control"> Keep </a>
   <a href="#" id="reset_selected" class="button green filter_control"> Reset </a>
