@@ -47,13 +47,13 @@
         
         <li class="active">
           <a href="#col-tab"  data-toggle="tab">
-            Columns
+            1. Select Axes
           </a>
         </li>
         
         <li>
           <a href="#sub-tab"  data-toggle="tab">
-            Global Filter
+            2. Filter
           </a>
         </li>
         <li>
@@ -77,10 +77,22 @@
       <div id="col-tab" class="tab-pane active"></div>
 
       <div id="sub-tab" class="tab-pane">
-        <a href="#" id="keep_selected" class="btn btn-primary filter_control" rel="tooltip" title="first tooltip"> Filter</a>
-        <a href="#" id="reset_selected" class="btn  filter_control"> Reset </a>
+        <div class="row-fluid">
+          <div class="span6">
+            You can drag
+          </div>
+          <div class="span6">
+            <h5>
+              Subsetting Data
+            </h5>
+            <a href="#" id="keep_selected" class="btn btn-mini btn-primary filter_control" rel="tooltip" title="Keep only currently filtered data.">Keep</a>
+
+            <a href="#" id="reset_selected" class="btn btn-mini filter_control"> Reset </a>
+          </div>
+        </div>
+        
         <script type="text/javascript">
-          $('#keep_selected').tooltip({placement:"left"});
+          $('#keep_selected').tooltip({placement:"bottom"});
 
         </script>
       </div>

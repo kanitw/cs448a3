@@ -334,7 +334,7 @@ body.inverted {
 }
 
 #control-wrapper {
-  height:50px;
+  height:60px;
   overflow-y:scroll;
   padding:5px;
   background-color: #f1f1f1;
@@ -367,4 +367,12 @@ body.inverted {
   text-align: center;
   font-size:10px;
   color: navy;
+}
+
+.navbar-inverse .brand{
+  color:#999 !important;
+}
+
+h5{
+  margin: 0 0 3px;
 }
