@@ -164,30 +164,9 @@
         .attr("class", "dimension")
         .attr("transform", function(d) { return "translate(" + x(d) + ")"; })
         .call(d3.behavior.drag()
-          .on("dragstart", function(d) {
-            dragging[d] = this.__origin__ = x(d);
-            background.attr("visibility", "hidden");
-          })
-          .on("drag", function(d) {
-            dragging[d] = Math.min(w, Math.max(0, this.__origin__ += d3.event.dx));
-            foreground.attr("d", path);
-            dimensions.sort(function(a, b) { return position(a) - position(b); });
-            x.domain(dimensions);
-            g.attr("transform", function(d) { return "translate(" + position(d) + ")"; })
-          })
-          .on("dragend", function(d) {
-            delete this.__origin__;
-            delete dragging[d];
-            transition(d3.select(this)).attr("transform", "translate(" + x(d) + ")");
-            transition(foreground)
-                .attr("d", path);
-            background
-                .attr("d", path)
-                .transition()
-                .delay(500)
-                .duration(0)
-                .attr("visibility", null);
-          }));
+          .on("dragstart", dragstart)
+          .on("drag", drag)
+          .on("dragend",dragend));
 
       // Add an axis and title.
       g.append("svg:g")
@@ -212,6 +191,35 @@
         .selectAll("rect")
           .attr("x", -12)
           .attr("width", 24);
+
+      function dragstart(d){
+        dragging[d] = this.__origin__ = x(d);
+        background.attr("visibility", "hidden");
+      }
+
+      function drag(d){
+
+        dragging[d] = Math.min(w, Math.max(0, this.__origin__ += d3.event.dx));
+        foreground.attr("d", path);
+        dimensions.sort(function(a, b) { return position(a) - position(b); });
+        x.domain(dimensions);
+        g.attr("transform", function(d) { return "translate(" + position(d) + ")"; })
+        
+      }
+
+      function dragend(d) {
+        delete this.__origin__;
+        delete dragging[d];
+        transition(d3.select(this)).attr("transform", "translate(" + x(d) + ")");
+        transition(foreground)
+            .attr("d", path);
+        background
+            .attr("d", path)
+            .transition()
+            .delay(500)
+            .duration(0)
+            .attr("visibility", null);
+      }
       
       function position(d) {
         var v = dragging[d];
