@@ -93,7 +93,7 @@
       var y = this.get('y');
       for (key in this.get('filter')) {
         var data;
-        if(dimensionType[key] == "ordinal")
+        if(dimensionType[key] == ORDINAL_TYPE || dimensionType[key]== ID_TYPE)
           data = y[key](d[key])
         else
           data = d[key];
