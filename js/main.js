@@ -25,17 +25,17 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("test02.csv", function(cars) {
-  console.log(cars);
+d3.csv("test02.csv", function(data) {
+  console.log(data);
   // Extract the list of dimensions and create a scale for each.
-  // cars.forEach(function(d,i){
+  // data.forEach(function(d,i){
   //   console.log(d);
   //   d["char"] = d["name"].substr(0,1);
   // });
 
 
-  cars = cars.filter(function(d){
-    keys = d3.keys(cars[0]);
+  data = data.filter(function(d){
+    keys = d3.keys(data[0]);
     return keys.every(function(key){
       // console.log(d[key]);
       return d[key]!="NULL";
@@ -43,12 +43,12 @@ d3.csv("test02.csv", function(cars) {
 
   })
 
-  dimensions = d3.keys(cars[0]).filter(function(d) {
+  dimensions = d3.keys(data[0]).filter(function(d) {
     if(dimensionType[d]=="ordinal"){
       
-      // console.log(cars[d]);
+      // console.log(data[d]);
       // scale data to work with ordinal
-      cols = cars.map(function(row){return row[d]}).sort().reverse();
+      cols = data.map(function(row){return row[d]}).sort().reverse();
       console.log(cols);
       return d != "name" && (y[d] = d3.scale.ordinal()
         .domain(cols)
@@ -57,33 +57,48 @@ d3.csv("test02.csv", function(cars) {
     else {
       
       return d != "name" && (y[d] = d3.scale.linear()
-        .domain(d3.extent(cars, function(p) { return +p[d]; }))
+        .domain(d3.extent(data, function(p) { return +p[d]; }))
         .range([height, 0]));
     }
+  });
+
+
+  d3.select("#control").append("button").html("haha").on("click",function(d,i){ 
+    
   });
 
   // console.log(dimensionType);
   x.domain(dimensions);
   checkbox = {};
+
+  // add input box for each data
   d3.select("#control").selectAll("input")
     .data(dimensions)
     .enter().append("div").each(function(d){
 
-      var div =    d3.select(this);
-      div.append("input").attr("type","checkbox").each(function(d){
+      var div = d3.select(this); 
+      div.append("input").attr("type","checkbox")
+        .attr("checked",true)
+        .each(function(d){
         checkbox[d] = this;
       }).on("click", function(d,i){
-        alert(d+":"+checkbox[d]["checked"]);
+        console.log(dimensions.getActive());
       });
       div.append("span").html(d);
     })
     
 
+  dimensions.getActive = function(){
+    return this.filter(function(d){
+      return checkbox[d]["checked"];
+    });
+  }
+
   // Add grey background lines for context.
   background = svg.append("g")
       .attr("class", "background")
     .selectAll("path")
-      .data(cars)
+      .data(data)
     .enter().append("path")
       .attr("d", path);
 
@@ -91,7 +106,7 @@ d3.csv("test02.csv", function(cars) {
   foreground = svg.append("g")
       .attr("class", "foreground")
     .selectAll("path")
-      .data(cars)
+      .data(data)
     .enter().append("path")
       .attr("d", path);
 
