@@ -23,7 +23,6 @@
 <script src="js/slick.dataview.js"></script>
 <script src="js/slick.pager.js"></script>
 <script src="js/grid.js"></script>
-<script src="js/pie.js"></script>
 <script src="js/options.js"></script>
 <script src="js/data-table.js"></script>
 <!-- bootstrap -->
@@ -47,6 +46,8 @@
   </div>
   <div id="control"></div>
   <div id="parallel" class="ui-resizable"></div>
+  <a href="#" id="keep_selected" class="button green filter_control"> Keep </a>
+  <a href="#" id="reset_selected" class="button green filter_control"> Reset </a>
   <div id="myGrid"> </div>
 </body>
 
@@ -66,7 +67,6 @@
         user_id: "ordinal"
       };
 
-
     var columns = _(reviewdata[0]).keys();
     var axes = _(columns).without('name', 'group');
     var pc = parallel(dimensions,dimensionType);
@@ -77,12 +77,6 @@
       columns: columns
     });
 
-
-
-    // vertical full screen
-    //var parallel_height = $(window).height() - 64 - 12 - 120 - 320;
-    //if (parallel_height < 120) parallel_height = 120;  // min height
-    //if (parallel_height > 340) parallel_height = 340;  // max height
     parallel_height = 500;
     $('#parallel').css({
         height: parallel_height + 'px',
@@ -93,8 +87,26 @@
     pc.render();
 
     highlighter.bind('change:selected', function() {
+      console.log("selected");
       var highlighted = this.get('selected');
       pc.highlight(highlighted);
+    });
+
+    $('#keep_selected').click(function() {
+      dimensions.inliers();
+      pc.update(dimensions.get('data'));
+      pc.render();
+      dimensions.trigger('change:filtered');
+      return false;
+    });
+
+    $('#reset_selected').click(function() {
+      dimensions.set({data: reviewdata});
+      dimensions.clearFilter();
+      pc.update(dimensions.get('data'));
+      pc.render();
+      dimensions.trigger('change:filtered');
+      return false;
     });
   });
 </script>
