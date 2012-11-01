@@ -15,7 +15,8 @@
     var cars = model.get('data');
     var dimensionType = dimensionType;
     var checkbox = {};
-    var x=null, y=null;
+    var x=null, y=null, svg=null;
+    var bounds,m,w,h;
     
     self.update = function(data) {
       cars = data;
@@ -54,6 +55,8 @@
         });
 
       // END OF FILTER DIMENSION SECTION
+
+      
     };
 
     init();
@@ -61,13 +64,18 @@
 
     
     self.render = function() {
-    
-      container.select("svg").remove();
+      bounds = [ $(container[0]).width(), $(container[0]).height() ];
+      m = [30, 10, 10, 10];
+      w = bounds[0] - m[1] - m[3];
+      h = bounds[1] - m[0] - m[2];
+
+      svg = container.append("svg:svg")
+          .attr("width", w + m[1] + m[3])
+          .attr("height", h + m[0] + m[2])
+        .append("svg:g")
+          .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+      // container.select("svg").remove();
       
-      var bounds = [ $(container[0]).width(), $(container[0]).height() ],
-          m = [30, 10, 10, 10],
-          w = bounds[0] - m[1] - m[3],
-          h = bounds[1] - m[0] - m[2];
 
       x = d3.scale.ordinal().rangePoints([0, w], 1);
       y = {};
@@ -92,11 +100,6 @@
       //     width = 960 - margin.right - margin.left,
       //     height = 500 - margin.top - margin.bottom;
 
-      var svg = container.append("svg:svg")
-          .attr("width", w + m[1] + m[3])
-          .attr("height", h + m[0] + m[2])
-        .append("svg:g")
-          .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
       cars = cars.filter(function(d){
         keys = d3.keys(cars[0]);
