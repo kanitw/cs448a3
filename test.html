@@ -48,11 +48,14 @@
   <div id="parallel" class="ui-resizable"></div>
   <a href="#" id="keep_selected" class="button green filter_control"> Keep </a>
   <a href="#" id="reset_selected" class="button green filter_control"> Reset </a>
+  <input class="typeahead" type="text" onkeydown="search()" data-provide="typeahead">
   <div id="myGrid"> </div>
 </body>
 
 <script type="text/javascript">
-
+  function search() {
+      console.log("search");
+  }
   $(function() {
     var dimensions = new Filter();
     var highlighter = new Selector();
@@ -89,6 +92,7 @@
     highlighter.bind('change:selected', function() {
       console.log("selected");
       var highlighted = this.get('selected');
+      console.log(highlighted);
       pc.highlight(highlighted);
     });
 
@@ -108,6 +112,12 @@
       dimensions.trigger('change:filtered');
       return false;
     });
+    var user_ids = _(reviewdata).map(function(d) {
+         return "" + d["user_id"]; 
+      });
+    console.log(user_ids);
+    $('.typeahead').typeahead({source : user_ids});
+
   });
 </script>
 </body></html>
