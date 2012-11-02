@@ -21,8 +21,8 @@
       data: null,
       y: {},
       dimensionType: {},
-      ids: undefined,
-      id_type: undefined
+      ids: null,
+      id_type: null
     },
 
     initialize: function() {
@@ -114,7 +114,6 @@
       }
       
       var match = false;
-      console.log("ids= ", ids);
       if(ids) {
         _(ids).each(function(id) {
             if((d[id_type] + "").indexOf(id) != -1)
