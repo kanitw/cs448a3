@@ -23,6 +23,8 @@
   
     var mydata = model.get('data');
     var dimensionType = dimensionType;
+    var dim_group={};
+    var dim_group_key=[];
     var checkbox = {};
     var x=null, y=null, svg=null;
     var bounds,m,w,h;
@@ -35,11 +37,7 @@
 
       dimensions = d3.keys(mydata[0]).filter(function(d) {
         return d != "name";
-        
       });
-
-      // FILTER DIMENSION SECTION
-
 
       dimensions.getActive = function(){
         return this.filter(function(d){
@@ -47,21 +45,63 @@
         });
       }; 
 
-      d3.select("#col-tab").selectAll("input")
-        .data(dimensions)
-        .enter().append("span").attr("class","dim-filter").each(function(d){
+      // FILTER DIMENSION SECTION
 
-          var block = d3.select(this); 
-          block.append("input").attr("type","checkbox")
-            .attr("checked",true)
+      _(dimensions).each(function(d){
+        var grp = d.substr(0,d.indexOf(COL_SPLIT));
+        if(!dim_group[grp]){
+          dim_group[grp] = [d];
+          dim_group_key.push(grp);
+        }else {
+          dim_group[grp].push(d);
+        }
+      });
+      
+      d3.select("#col-tab").selectAll("div")
+        .data(dim_group_key)
+        .enter().append("div")
+        .attr("class","col-row")
+        .each(function(grp){
+          var grp_div = d3.select(this);
+          grp_div.append("span").attr("class","grp-header").html(grp);
+          var grp_sel = grp_div.append("span").attr("class","grp-sel");
+          
+          grp_sel.selectAll("span")
+            .data(dim_group[grp]).enter()
+            .append("span").attr("class","dim-filter")
             .each(function(d){
-            checkbox[d] = this;
-          }).on("click", function(d,i){
-            console.log(dimensions.getActive());
-            self.render();
-          });
-          block.append("span").html(d);
+
+              var block = d3.select(this); 
+              block.append("input").attr("type","checkbox")
+                .attr("checked",true)
+                .each(function(d){
+                checkbox[d] = this;
+              }).on("click", function(d,i){
+                console.log(dimensions.getActive());
+                self.render();
+              });
+              block.append("span").html(dim_col_name(d));
+            });
         });
+
+
+       
+
+      // d3.select("#col-tab").selectAll("input")
+      //   .data(dimensions)
+      //   .enter().append("span").attr("class","dim-filter").each(function(d){
+
+      //     var block = d3.select(this); 
+      //     block.append("input").attr("type","checkbox")
+      //       .attr("checked",true)
+      //       .each(function(d){
+      //       checkbox[d] = this;
+      //     }).on("click", function(d,i){
+      //       console.log(dimensions.getActive());
+      //       self.render();
+      //     });
+      //     block.append("span").html(d);
+      //   });
 
       // END OF FILTER DIMENSION SECTION
 
