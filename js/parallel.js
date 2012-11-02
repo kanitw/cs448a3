@@ -27,6 +27,8 @@
     var dimensionType = dimensionType;
     var dim_group={};
 
+    var dist_of_key ={},bar_map={};
+
     var dim_group_key=[];
     var checkbox = {};
     var x=null, y=null, svg=null;
@@ -257,12 +259,22 @@
       g.append("svg:g")
         .attr("class", "axis")
         .each(function(d) {
+
           if(dimensionType[d] == ID_TYPE){
             // d3.select(this).tickFormat("");
             d3.select(this).attr("class","axis axis-id");
           }
-           d3.select(this).call(axis.scale(y[d])); 
-          
+          d3.select(this).call(axis.scale(y[d]));
+          if( dimensionType[d] == ORDINAL_TYPE){
+
+            d3.select(this).selectAll("g").selectAll("text")
+            .on("mouseover",function(text){
+              chart_tooltip(d,text,true);
+            })
+            .on("mouseout",function(text){
+              chart_tooltip(d,text,false);
+            });
+          }
         })
         .append("svg:text")
           .attr("class","axis-head")
@@ -270,8 +282,11 @@
           .attr("y", -47)
           .text(String);
 
-      chart = g.append("svg:g")
-        .attr("class", "chart");
+      // chart = g.append("svg:g")
+      //   .attr("class", "chart");
+      chart = d3.select("#charts").selectAll(".chart").data(dimensions.getActive());
+      chart.exit().remove();
+      chart.enter().append("div").attr("class","chart");
 
       drawChart();
       updateCount();
@@ -414,6 +429,7 @@
                 dist[row[d]]++;
               }
             });
+          dist_of_key[d] = dist;
 
           // console.log(_(dist).values());
           var orig_dist_keys = _.uniq(mydata.map(function(row){
@@ -432,7 +448,7 @@
             if(y[d].brush && !y[d].brush.empty()){
               var ex = y[d].brush.extent();
               hspan = ex[1]-ex[0];
-              console.log(d+":"+ex);
+              // console.log(d+":"+ex);
             }
             height = Math.max(Math.min(hspan/_.uniq(orig_dist_keys).length-1,10),0);
           }
@@ -440,19 +456,43 @@
           var bars = d3.select(this).selectAll(".bar")
             .data(dist_pairs);
           bars.exit().remove();
-          bars.enter().append("rect").on("mouseover",function(p){
-            console.log(d+":"+p[0]+","+p[1]);
+          bars.enter().append("a").on("mouseover",function(p){
+            // chart_tooltip(d,p[0]);
           })
 
+          // bars.attr("class","bar")
+          //     .attr("left",function(p){ return 0; })
+          //     .attr("width",function(p){return cx(p[1]); /*cx(p[1]);*/})
+          //     .attr("top",function(p){ return y[d](p[0])-height/2; })
+          //     .attr("height",height);
+
+
           bars.attr("class","bar")
-              .attr("x",function(p){ return 0; })
-              .attr("width",function(p){return cx(p[1]); /*cx(p[1]);*/})
-              .attr("y",function(p){ return y[d](p[0])-height/2; })
-              .attr("height",height);
-
-
-
+              .attr("style",function(p){ 
+                return "left:" + (x(d)+m[3]) +"px;" +
+                "width:"+cx(p[1])+"px;"+
+                "top:"+ ( y[d](p[0])-height/2  +m[0]) +"px;"+
+                "height:"+height+"px;";
+              })
+              .attr("rel","tooltip")
+              .attr("data-original-title",function(p){
+                return p[0]+ " ("+p[1]+")";
+              })
+              .each(function(p){
+                if(!bar_map[d]){
+                  bar_map[d] = {};
+                }
+                bar_map[d][p[0]] = this;
+              });
+          // rel="tooltip" title="test"
+          $(".bar").tooltip();
         });
+      }
+
+      function chart_tooltip(d,key,show){
+        console.log(d+":"+key+","+ dist_of_key[d][key]);
+        console.log(bar_map[d][key]);
+        $(bar_map[d][key]).tooltip(show?'show':'hide');
       }
 
       function search(str) {

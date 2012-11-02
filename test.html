@@ -84,14 +84,17 @@
 
       <div id="sub-tab" class="tab-pane">
         <div class="row-fluid">
-          <div class="span6">
-            You can drag on each axis to filter a range of data, drag each axis' head to swap their locations.  
+          <div class="span8">
+            <div class="desc">
+              <p>Drag on each axis to use brush to filter a range of data. Drag each axis' head to swap their locations.  Use text filter to filter by value. </p>
+              <p>If you want to work on subset of data, filter the data you like and press "select" on the right.</p>
+            </div>
           </div>
-          <div class="span6">
+          <div class="span4">
             <h5>
               Subsetting Data
             </h5>
-            <a href="#" id="keep_selected" class="btn btn-mini btn-primary filter_control" rel="tooltip" title="Keep only currently filtered data.">Keep</a>
+            <a href="#" id="keep_selected" class="btn btn-mini btn-primary filter_control" rel="tooltip" title="Keep only currently filtered data.">Select</a>
 
             <a href="#" id="reset_selected" class="btn btn-mini filter_control"> Reset </a>
           </div>
@@ -115,6 +118,9 @@
     <div id="overlays">
 
     </div>
+    <div id="charts">
+      
+    </div>
 
   
     <div id="parallel" class="ui-resizable"></div>
@@ -122,6 +128,8 @@
 
     </div>
   </div>
+  <!-- <a id="tooltip-test" href="#" rel="tooltip" title="test">dd</a> -->
+  
   <div id="myGrid"> </div>
 </body>
 
@@ -138,6 +146,8 @@
   }
   var pc;
   $(function() {
+    // $("#tooltip-test").tooltip({placement:"right"});
+    // $("#tooltip-test").tooltip('show');
     d3.csv("query_result.csv",function(reviewdata){
       var dimensions = new Filter();
       var highlighter = new Selector();
@@ -225,5 +235,6 @@
 
 
   });
+
 </script>
 </body></html>
