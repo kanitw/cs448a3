@@ -385,7 +385,7 @@
       }
 
       function drawChart(){
-        console.log("drawChart");
+        // console.log("drawChart");
         chart.each(function(d){
           var dist = {};
 
@@ -398,7 +398,9 @@
             });
 
           // console.log(_(dist).values());
-          var dist_keys = _(dist).keys();
+          var orig_dist_keys = _.uniq(mydata.map(function(row){
+            return row[d];
+          }));
           var dist_values = _(dist).values();
           var dist_pairs = _(dist).pairs();
           var cx = d3.scale.linear().range([0,overlay_width*0.25]).domain(d3.extent(dist_values));
@@ -406,8 +408,15 @@
 
           
           var height = 2;
+          
           if(dimensionType[d] == ID_TYPE || dimensionType[d] == ORDINAL_TYPE){
-            height = Math.min(h/_.uniq(dist_keys).length-1,10);
+            var hspan = h;
+            if(y[d].brush && !y[d].brush.empty()){
+              var ex = y[d].brush.extent();
+              hspan = ex[1]-ex[0];
+              console.log(d+":"+ex);
+            }
+            height = Math.min(hspan/_.uniq(orig_dist_keys).length-1,10);
           }
 
           var bars = d3.select(this).selectAll(".bar")
