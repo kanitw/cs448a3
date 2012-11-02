@@ -412,7 +412,9 @@
           var bars = d3.select(this).selectAll(".bar")
             .data(dist_pairs);
           bars.exit().remove();
-          bars.enter().append("rect")
+          bars.enter().append("rect").on("mouseover",function(p){
+            console.log(d+":"+p[0]+","+p[1]);
+          })
 
           bars.attr("class","bar")
               .attr("x",function(p){ return 0; })
