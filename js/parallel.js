@@ -154,8 +154,8 @@
     overlays.style("left",position_div);
     overlays.exit().remove();
     overlays.enter().append("div")
-      .attr("class","axis-overlay")
-      .style("left",position_div)
+      .attr("class","axis-overlay");
+    overlays.style("left",position_div)
       .style("width",overlay_width)
       .style("margin-left",-overlay_width/2);
       

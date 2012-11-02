@@ -148,15 +148,22 @@
       columns: columns
     });
 
-    parallel_height = 500;
+    // parallel_height = 500;
     // console.log("height"+$(window).height);
-    $('#parallel').css({
-        height: Math.round($(window).height()*0.6-100) + 'px',
-        width: $(window).width() + 'px'
-    });
-    
+
+    (window.onResize = function(){
+      $('#parallel').css({
+          height: Math.round($(window).height()*0.6-100) + 'px',
+          width: $(window).width() + 'px'
+      });
+      pc.render();
+    })();
+
+    $(window).resize(window.onResize);
+
+
     slicky.update();
-    pc.render();
+    
 
     highlighter.bind('change:selected', function() {
       console.log("selected");
