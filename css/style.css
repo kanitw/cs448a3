@@ -388,6 +388,14 @@ body.inverted {
   line-height: 15px;
 }
 
+#total-count{
+  margin-left: 20px;
+}
+
+/*ul.nav > li> a#total-count {
+  color: #ffff93;
+}
+*/
 .navbar-inverse .brand{
   color:#999 !important;
 }

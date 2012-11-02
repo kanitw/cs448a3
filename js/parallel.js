@@ -256,7 +256,7 @@
         .attr("class", "chart");
 
       drawChart();
-        
+      updateCount();
 
       var brushgroup = {};
 
@@ -363,10 +363,6 @@
 
         });
         
-
-          
-
-
         model.set({filter: filter, y: y, dimensionType: dimensionType});
         console.log("filter = ", filter);
         /***/
@@ -382,8 +378,12 @@
           }) ? null : "none";
         });
         drawChart();
+        updateCount();
       }
+      function updateCount(){
+        d3.select("#total-count").html("Showing <span class='badge badge-success'>"+model.get('filtered').length + "</span> row(s).");
 
+      }
       function drawChart(){
         // console.log("drawChart");
         chart.each(function(d){
