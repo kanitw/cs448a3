@@ -9,7 +9,7 @@
     return full_name.substr(full_name.indexOf(COL_SPLIT)+1);
   }
 
-  window.parallel = function(model,dimensionType) {
+  window.parallel = function(model,dimensionType,preset) {
     var self = {},
         dimensions,
         dragging = {},
@@ -69,6 +69,7 @@
         }
       });
 
+
       d3.select("#col-tab").selectAll("div")
         .data(dim_group_key)
         .enter().append("div")
@@ -85,13 +86,14 @@
 
               var block = d3.select(this); 
               block.append("input").attr("type","checkbox")
-                .attr("checked",true)
+                // .attr("checked",function(d){ return })
                 .each(function(d){
-                checkbox[d] = this;
-              }).on("click", function(d,i){
-                console.log(dimensions.getActive());
-                self.render();
-              });
+                    checkbox[d] = this;
+                    this["checked"] = _(preset).contains(d) ;
+                  }).on("click", function(d,i){
+                    console.log(dimensions.getActive());
+                    self.render();
+                  });
               block.append("span").html(dim_col_name(d));
             });
         });
@@ -200,7 +202,7 @@
       .attr("class","axis-overlay")
       // .append("a").attr("class","btn btn-mini btn-super-mini btn-toggle")
       // .html("")
-      .append("div").attr("class","input-span")
+      .append("div").attr("class","input-container")
         .each(function(d){
           var span = d3.select(this);
           if(d == "reviewer$user_id"){

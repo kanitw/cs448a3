@@ -367,8 +367,8 @@ body.inverted {
   text-align: center;
 }
 
-.axis-overlay .input-span{
-  max-width: 100%;
+.axis-overlay .input-container{
+  width: 100%;
   margin:0;
   position:relative;
 }
@@ -378,11 +378,12 @@ body.inverted {
   top:1px;
   right:5px;
   z-index: 1;
+  opacity:0.6;
 }
 
-.axis-overlay .input-span input{
-  max-width: 100%;
-  width:auto;
+.axis-overlay .input-container input{
+  width: 100%;
+  
   font-size:10px;
 }
 

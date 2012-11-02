@@ -154,9 +154,11 @@
           "reviewee$team_id": ID_TYPE
         };
 
+      var preset = ["reviewer$gender","reviewer$user_id","review$avg_score","reviewee$team_id","reviewee$team_size"];
+
       var columns = _(reviewdata[0]).keys();
       var axes = _(columns).without('name', 'group');
-      pc = parallel(dimensions,dimensionType);
+      pc = parallel(dimensions,dimensionType,preset);
       var slicky = new grid({
         model: dimensions,
         selector: highlighter,
