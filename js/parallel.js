@@ -416,7 +416,7 @@
               hspan = ex[1]-ex[0];
               console.log(d+":"+ex);
             }
-            height = Math.min(hspan/_.uniq(orig_dist_keys).length-1,10);
+            height = Math.max(Math.min(hspan/_.uniq(orig_dist_keys).length-1,10),0);
           }
 
           var bars = d3.select(this).selectAll(".bar")
