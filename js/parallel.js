@@ -437,7 +437,8 @@
           }));
           var dist_values = _(dist).values();
           var dist_pairs = _(dist).pairs();
-          var cx = d3.scale.linear().range([0,overlay_width*0.25]).domain(d3.extent(dist_values));
+          console.log(dist_values);
+          var cx = d3.scale.linear().range([0,overlay_width*0.25]).domain([0,d3.max(dist_values)]);
           // console.log("_"+_(dist).pairs);
 
           
@@ -450,7 +451,7 @@
               hspan = ex[1]-ex[0];
               // console.log(d+":"+ex);
             }
-            height = Math.max(Math.min(hspan/_.uniq(orig_dist_keys).length-1,10),0);
+            height = Math.max(Math.min(hspan/_.uniq(orig_dist_keys).length-1,10),2);
           }
 
           var bars = d3.select(this).selectAll(".bar")
@@ -485,13 +486,13 @@
                 bar_map[d][p[0]] = this;
               });
           // rel="tooltip" title="test"
-          $(".bar").tooltip();
+          $(".bar").tooltip({placement:"right"});
         });
       }
 
       function chart_tooltip(d,key,show){
-        console.log(d+":"+key+","+ dist_of_key[d][key]);
-        console.log(bar_map[d][key]);
+        // console.log(d+":"+key+","+ dist_of_key[d][key]);
+        // console.log(bar_map[d][key]);
         $(bar_map[d][key]).tooltip(show?'show':'hide');
       }
 
