@@ -56,7 +56,7 @@
           dim_group[grp].push(d);
         }
       });
-      
+
       d3.select("#col-tab").selectAll("div")
         .data(dim_group_key)
         .enter().append("div")
@@ -244,11 +244,16 @@
           .attr("y", -47)
           .text(String);
 
+      var brushgroup = {};
+
 
       // Add and store a brush for each axis.
       g.append("svg:g")
           .attr("class", "brush")
-          .each(function(d) { d3.select(this).call(y[d].brush = d3.svg.brush().y(y[d]).on("brush", brush)); })
+          .each(function(d) { 
+            (brushgroup[d] = d3.select(this))
+              .call(y[d].brush = d3.svg.brush().y(y[d]).on("brush", brush)); 
+          })
         .selectAll("rect")
           .attr("x", -12)
           .attr("width", 24);
@@ -320,19 +325,33 @@
           }
         });
 
-        bottom_overlays.html(function(d){
+        bottom_overlays.each(function(d){
+          var b_overlay = d3.select(this);
+          b_overlay.selectAll("span").remove();
           if(!y[d].brush.empty()){
             var extent = y[d].brush.extent();
+            var detail = ""
             if(dimensionType[d] == ORDINAL_TYPE || dimensionType[d]==ID_TYPE){
-              return "*filtered*";
+              detail = "*filtered*";
+            }else{
+              detail = Math.floor(extent[0]).toString() + "&lt;" + dim_col_name(d) + "&lt;" + Math.ceil(extent[1]).toString();
             }
-
-            return Math.floor(extent[0]).toString() + "&lt;" + dim_col_name(d) + "&lt;" + Math.ceil(extent[1]).toString();
-          }else {
-            return "";
+            b_overlay.append("span").attr("class","detail").html(detail);
+            b_overlay.append("span").attr("class","cleaner")
+              .append("a").attr("class","close").attr("href","#")
+              .html("&times;").on("click",function(d){
+                y[d].brush.clear();
+                y[d].brush(brushgroup[d]);
+                brush();
+              });
           }
 
+
         });
+        
+
+          
+
 
         model.set({filter: filter, y: y, dimensionType: dimensionType});
         /***/

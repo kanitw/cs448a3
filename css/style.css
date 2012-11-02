@@ -379,6 +379,12 @@ body.inverted {
   background-color: #eee;
 }
 
+.bottom-overlay .close{
+  font-size: 15\8px;
+  padding-right:3px;
+  line-height: 15px;
+}
+
 .navbar-inverse .brand{
   color:#999 !important;
 }
