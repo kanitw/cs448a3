@@ -19,7 +19,9 @@
     var line = d3.svg.line().interpolate('cardinal').tension(0.85),
         axis = d3.svg.axis().orient("left"),
         background,
-        foreground;
+        foreground, 
+        axes,
+        overlay_width;
   
     var mydata = model.get('data');
     var dimensionType = dimensionType;
@@ -185,19 +187,24 @@
 
     var activeDim = dimensions.getActive();
     var axis_distance = activeDim.length > 1 ? (position_div(activeDim[1])-position_div(activeDim[0])) : w;
-    var overlay_width = Math.min(150,axis_distance*0.9);
+    overlay_width = Math.min(150,axis_distance*0.9);
     
+    //overlay
 
     var overlays = d3.select("#overlays").selectAll(".axis-overlay")
       .data(activeDim);
     overlays.style("left",position_div);
     overlays.exit().remove();
     overlays.enter().append("div")
-      .attr("class","axis-overlay");
+      .attr("class","axis-overlay")
+      .append("a").attr("class","btn btn-mini btn-super-mini btn-toggle").html("<i class='icon-signal'></i>").on("click",function(d){
+
+      });
     overlays.style("left",position_div)
       .style("width",overlay_width)
       .style("margin-left",-overlay_width/2);
       
+      // does not work yet.
       // .call(d3.behavior.drag()
       //     .on("dragstart", dragstart)
       //     .on("drag", drag)
@@ -228,7 +235,7 @@
           .on("dragend",dragend));
 
       // Add an axis and title.
-      g.append("svg:g")
+      axes = g.append("svg:g")
           .attr("class", "axis")
           .each(function(d) {
             if(dimensionType[d] == ID_TYPE){
@@ -239,9 +246,12 @@
             
           })
         .append("svg:text")
+          .attr("class","axis-head")
           .attr("text-anchor", "middle")
           .attr("y", -47)
           .text(String);
+
+      axes.append("svg:g")
 
       var brushgroup = {};
 
@@ -366,6 +376,11 @@
           }) ? null : "none";
         });
       }
+
+      function chart(){
+
+      }
+
       function search(str) {
         foreground.style("display", function(d) {
           return actives.every(function(p, i) {
@@ -379,14 +394,11 @@
       
       self.highlight = function(i) {
         if (typeof i == "undefined") {
-          d3.select("#parallel .foreground").style("opacity", function(d, j) {
-            return "1";
-          });
+          d3.select("#parallel .foreground").classed("faded",false);
           highlighted.remove();
         } else {
-          d3.select("#parallel .foreground").style("opacity", function(d, j) {
-            return "0.35";
-          });
+          d3.select("#parallel .foreground").classed("faded",true);
+          console.log("fg"+d3.select("#parallel .foreground").attr("class"));
           if (highlighted != null) {
             highlighted.remove();
           }
