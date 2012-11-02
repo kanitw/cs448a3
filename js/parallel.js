@@ -20,12 +20,13 @@
         axis = d3.svg.axis().orient("left"),
         background,
         foreground, 
-        axes,
+        charts,
         overlay_width;
   
     var mydata = model.get('data');
     var dimensionType = dimensionType;
     var dim_group={};
+
     var dim_group_key=[];
     var checkbox = {};
     var x=null, y=null, svg=null;
@@ -235,23 +236,27 @@
           .on("dragend",dragend));
 
       // Add an axis and title.
-      axes = g.append("svg:g")
-          .attr("class", "axis")
-          .each(function(d) {
-            if(dimensionType[d] == ID_TYPE){
-              // d3.select(this).tickFormat("");
-              d3.select(this).attr("class","axis axis-id");
-            }
-             d3.select(this).call(axis.scale(y[d])); 
-            
-          })
+      g.append("svg:g")
+        .attr("class", "axis")
+        .each(function(d) {
+          if(dimensionType[d] == ID_TYPE){
+            // d3.select(this).tickFormat("");
+            d3.select(this).attr("class","axis axis-id");
+          }
+           d3.select(this).call(axis.scale(y[d])); 
+          
+        })
         .append("svg:text")
           .attr("class","axis-head")
           .attr("text-anchor", "middle")
           .attr("y", -47)
           .text(String);
 
-      axes.append("svg:g")
+      chart = g.append("svg:g")
+        .attr("class", "chart");
+
+      drawChart();
+        
 
       var brushgroup = {};
 
@@ -375,10 +380,43 @@
               return extents[i][0] <= data && data <= extents[i][1];
           }) ? null : "none";
         });
+        drawChart();
       }
 
-      function chart(){
+      function drawChart(){
+        console.log("drawChart");
+        chart.each(function(d){
+          var dist = {};
 
+          model.get('filtered').forEach(function(row){
+              if(!dist[row[d]]){
+                dist[row[d]] =1;
+              }else {
+                dist[row[d]]++;
+              }
+            });
+
+          // console.log(_(dist).values());
+
+          var cx = d3.scale.linear().range([0,overlay_width*0.25]).domain(d3.extent(_(dist).values()));
+          // console.log("_"+_(dist).pairs);
+
+          var dist_pairs = _(dist).pairs();
+          
+          var bars = d3.select(this).selectAll(".bar")
+            .data(dist_pairs);
+          bars.exit().remove();
+          bars.enter().append("rect")
+
+          bars.attr("class","bar")
+              .attr("x",function(p){ return 0; })
+              .attr("width",function(p){return cx(p[1]); /*cx(p[1]);*/})
+              .attr("y",function(p){ return y[d](p[0]); })
+              .attr("height",2);
+
+
+
+        });
       }
 
       function search(str) {

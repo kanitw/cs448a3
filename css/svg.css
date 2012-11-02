@@ -38,7 +38,11 @@
 .highlight path {
   stroke: #E9670D;
   stroke-opacity: 1;
-  
+
+}
+
+.bar {
+  fill: red;
 }
 
 .brush .extent {
