@@ -198,9 +198,17 @@
     overlays.exit().remove();
     overlays.enter().append("div")
       .attr("class","axis-overlay")
-      .append("a").attr("class","btn btn-mini btn-super-mini btn-toggle").html("<i class='icon-signal'></i>").on("click",function(d){
+      .append("a").attr("class","btn btn-mini btn-super-mini btn-toggle")
+      .html(function(d){
+          if(d == "reviewer$user_id")
+            return "<input id='userid_search' class='id-search-box' type='text' onkeyup='userid_search();' data-provide='typeahead'>";
+          else if(d == "reviewee$team_id")
+            return "<input id='teamid_search' class='id-search-box' type='text' onkeyup='teamid_search();' data-provide='typeahead'>";
+          else 
+           return "";
+       });
+    
 
-      });
     overlays.style("left",position_div)
       .style("width",overlay_width)
       .style("margin-left",-overlay_width/2);
