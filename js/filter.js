@@ -105,8 +105,6 @@
       var id_type = this.get('id_type');
       var data;
       for (key in this.get('filter')) {
-
-        if(d[key] == NULL) return false;
         if(dimensionType[key] == ORDINAL_TYPE || dimensionType[key]== ID_TYPE)
           data = y[key](d[key])
         else
@@ -122,15 +120,10 @@
             if((d[id_type] + "").indexOf(id) != -1)
                   match = true;
         });
+        return match;
       } 
-      return match;
 
-      for (var key in d) {
-       if (d.hasOwnProperty(key)) {
-          if(d[key] == "NULL")
-            return false;
-        }
-      }
+      return true;
     }
 
   });
