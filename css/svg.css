@@ -36,9 +36,14 @@
 }
 
 .highlight path {
-  stroke: #E9670D;
+  stroke: yellow;
+  stroke-width: 2;
   stroke-opacity: 1;
-
+  /*stroke-shadow:
+   -1px -1px 0 #333,
+    1px -1px 0 #333,
+   -1px 1px 0 #333,
+    1px 1px 0 #333;*/
 }
 
 .bar {
