@@ -25,7 +25,7 @@
 <script src="js/slick.pager.js"></script>
 <script src="js/grid.js"></script>
 <script src="js/options.js"></script>
-<script src="js/data-table.js"></script>
+<!-- <script src="js/data-table.js"></script> -->
 <!-- bootstrap -->
 <script src="js/bootstrap.min.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -134,86 +134,89 @@
   }
   var pc;
   $(function() {
-    var dimensions = new Filter();
-    var highlighter = new Selector();
+    d3.csv("query_result.csv",function(reviewdata){
+      var dimensions = new Filter();
+      var highlighter = new Selector();
 
-    dimensions.set({data: reviewdata });
-    
-    var dimensionType={
-        "reviewer$age_range": ORDINAL_TYPE,
-        "reviewer$location": ORDINAL_TYPE,
-        "reviewer$gender": ORDINAL_TYPE,
-        "reviewee$team_id": ID_TYPE,
-        "reviewer$user_id": ID_TYPE
-      };
+      dimensions.set({data: reviewdata });
+      
+      var dimensionType={
+          "reviewer$gpa": ORDINAL_TYPE,
+          "reviewer$academic_major": ORDINAL_TYPE,
+          "reviewer$age_range": ORDINAL_TYPE,
+          "reviewer$location": ORDINAL_TYPE,
+          "reviewer$gender": ORDINAL_TYPE,
+          "reviewer$user_id": ID_TYPE,
+          "reviewee$team_id": ID_TYPE
+        };
 
-    var columns = _(reviewdata[0]).keys();
-    var axes = _(columns).without('name', 'group');
-    pc = parallel(dimensions,dimensionType);
-    var slicky = new grid({
-      model: dimensions,
-      selector: highlighter,
-      width: $('body').width(),
-      columns: columns
-    });
-
-    // parallel_height = 500;
-    // console.log("height"+$(window).height);
-    (window.onResize = function(){
-      $('#parallel').css({
-          height: Math.round($(window).height()*0.6-100) + 'px',
-          width: $(window).width() + 'px'
+      var columns = _(reviewdata[0]).keys();
+      var axes = _(columns).without('name', 'group');
+      pc = parallel(dimensions,dimensionType);
+      var slicky = new grid({
+        model: dimensions,
+        selector: highlighter,
+        width: $('body').width(),
+        columns: columns
       });
-      pc.render();
-    })();
 
-    $(window).resize(window.onResize);
+      // parallel_height = 500;
+      // console.log("height"+$(window).height);
+      (window.onResize = function(){
+        $('#parallel').css({
+            height: Math.round($(window).height()*0.6-100) + 'px',
+            width: $(window).width() + 'px'
+        });
+        pc.render();
+      })();
 
-    slicky.update();
+      $(window).resize(window.onResize);
 
-    highlighter.bind('change:selected', function() {
-      console.log("selected");
-      var highlighted = this.get('selected');
-      console.log(highlighted);
-      pc.highlight(highlighted);
+      slicky.update();
+
+      highlighter.bind('change:selected', function() {
+        console.log("selected");
+        var highlighted = this.get('selected');
+        console.log(highlighted);
+        pc.highlight(highlighted);
+      });
+
+      $('#keep_selected').click(function() {
+        dimensions.inliers();
+        pc.update(dimensions.get('data'));
+        pc.render();
+        dimensions.trigger('change:filtered');
+        return false;
+      });
+
+      $('#reset_selected').click(function() {
+        dimensions.set({data: reviewdata});
+        dimensions.clearFilter();
+        pc.update(dimensions.get('data'));
+        pc.render();
+        dimensions.trigger('change:filtered');
+        return false;
+      });
+      var user_ids = _.uniq(_(reviewdata).map(function(d) {
+           return "" + d["user_id"];
+        }));
+      console.log(user_ids);
+      $('#userid_search').typeahead({source : function(typeahead, query) {
+                                     var ids = pc.matchID(typeahead, "reviewer$user_id");
+                                      console.log("ids", ids);
+                                     pc.searchID(ids, "reviewer$user_id");
+                                     pc.highlightArray([]);
+                                     return ids;
+                                }});
+
+      $('#teamid_search').typeahead({source : function(typeahead, query) {
+                                     var ids = pc.matchID(typeahead, "reviewee$team_id");
+                                      console.log("ids", ids);
+                                     pc.searchID(ids, "reviewee$team_id");
+                                     pc.highlightArray([]);
+                                     return ids;
+                                }});
     });
-
-    $('#keep_selected').click(function() {
-      dimensions.inliers();
-      pc.update(dimensions.get('data'));
-      pc.render();
-      dimensions.trigger('change:filtered');
-      return false;
-    });
-
-    $('#reset_selected').click(function() {
-      dimensions.set({data: reviewdata});
-      dimensions.clearFilter();
-      pc.update(dimensions.get('data'));
-      pc.render();
-      dimensions.trigger('change:filtered');
-      return false;
-    });
-    var user_ids = _.uniq(_(reviewdata).map(function(d) {
-         return "" + d["user_id"];
-      }));
-    console.log(user_ids);
-    $('#userid_search').typeahead({source : function(typeahead, query) {
-                                   var ids = pc.matchID(typeahead, "reviewer$user_id");
-                                    console.log("ids", ids);
-                                   pc.searchID(ids, "reviewer$user_id");
-                                   pc.highlightArray([]);
-                                   return ids;
-                              }});
-
-    $('#teamid_search').typeahead({source : function(typeahead, query) {
-                                   var ids = pc.matchID(typeahead, "reviewee$team_id");
-                                    console.log("ids", ids);
-                                   pc.searchID(ids, "reviewee$team_id");
-                                   pc.highlightArray([]);
-                                   return ids;
-                              }});
-
   });
 </script>
 </body></html>
