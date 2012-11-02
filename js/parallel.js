@@ -40,7 +40,6 @@
 
       // FILTER DIMENSION SECTION
 
-
       dimensions.getActive = function(){
         return this.filter(function(d){
           return checkbox[d]["checked"];
@@ -260,7 +259,7 @@
       function path(d) {
         return line(dimensions.getActive().map(function(p) { return [position(p), y[p](d[p])]; }));
       }
-      
+ 
       // Handles a brush event, toggling the display of foreground lines.
       function brush() {
         var actives = dimensions.getActive().filter(function(p) {
@@ -295,6 +294,7 @@
         });
 
         model.set({filter: filter, y: y, dimensionType: dimensionType});
+        console.log("filter = ", filter);
         /***/
         foreground.style("display", function(d) {
           return actives.every(function(p, i) {
@@ -319,6 +319,47 @@
         return g.transition().duration(500);
       }
       
+      self.matchID = function(id, type) {
+        var typeahead = {};
+        _(model.get('data')).each(function(d) {
+                  var key = d[type] + "";
+                  if((key).indexOf(id) != -1) {
+                    typeahead[key] = key;
+                  }
+                  
+              });
+        typeahead = _.keys(typeahead);
+        return typeahead;
+      }
+      self.searchID = function(arr, type) {
+        /** To be factored **/
+        var filter = {};
+        model.set({ids: arr, id_type: type});
+      }     
+
+      self.highlightArray = function(arr) {
+        if (typeof arr == "undefined") {
+          d3.select("#parallel .foreground").style("opacity", function(d, j) {
+            return "1";
+          });
+          highlighted.remove();
+        } else {
+          d3.select("#parallel .foreground").style("opacity", function(d, j) {
+            return "0.35";
+          });
+          if (highlighted != null) {
+            highlighted.remove();
+          }
+          console.log("filtered", model.get('filtered'));
+          highlighted = svg.append("svg:g")
+                           .attr("class", "highlight")
+                         .selectAll("path")
+                           .data(model.get('filtered'))
+                         .enter().append("svg:path")
+                           .attr("d", path)
+        }
+      };
+    
       self.highlight = function(i) {
         if (typeof i == "undefined") {
           d3.select("#parallel .foreground").style("opacity", function(d, j) {

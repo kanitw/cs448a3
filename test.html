@@ -116,14 +116,23 @@
 
     </div>
   </div>
-  <input class="typeahead" type="text" onkeydown="search()" data-provide="typeahead">
+  <input id="userid_search" class="typeahead" type="text" onkeyup="userid_search();" data-provide="typeahead">
+  <input id="teamid_search" class="typeahead" type="text" onkeyup="teamid_search();" data-provide="typeahead">
   <div id="myGrid"> </div>
 </body>
 
 <script type="text/javascript">
-  function search() {
-      console.log("search");
+
+
+  function userid_search() {
+    if($("#userid_search").val() == "")
+      pc.highlightArray();
   }
+  function teamid_search() {
+    if($("#teamid_search").val() == "")
+      pc.highlightArray();
+  }
+  var pc;
   $(function() {
     var dimensions = new Filter();
     var highlighter = new Selector();
@@ -140,7 +149,7 @@
 
     var columns = _(reviewdata[0]).keys();
     var axes = _(columns).without('name', 'group');
-    var pc = parallel(dimensions,dimensionType);
+    pc = parallel(dimensions,dimensionType);
     var slicky = new grid({
       model: dimensions,
       selector: highlighter,
@@ -150,7 +159,6 @@
 
     // parallel_height = 500;
     // console.log("height"+$(window).height);
-
     (window.onResize = function(){
       $('#parallel').css({
           height: Math.round($(window).height()*0.6-100) + 'px',
@@ -161,9 +169,7 @@
 
     $(window).resize(window.onResize);
 
-
     slicky.update();
-    
 
     highlighter.bind('change:selected', function() {
       console.log("selected");
@@ -189,10 +195,24 @@
       return false;
     });
     var user_ids = _.uniq(_(reviewdata).map(function(d) {
-         return "" + d["user_id"]; 
+         return "" + d["user_id"];
       }));
     console.log(user_ids);
-    $('.typeahead').typeahead({source : user_ids});
+    $('#userid_search').typeahead({source : function(typeahead, query) {
+                                   var ids = pc.matchID(typeahead, "reviewer$user_id");
+                                    console.log("ids", ids);
+                                   pc.searchID(ids, "reviewer$user_id");
+                                   pc.highlightArray([]);
+                                   return ids;
+                              }});
+
+    $('#teamid_search').typeahead({source : function(typeahead, query) {
+                                   var ids = pc.matchID(typeahead, "reviewee$team_id");
+                                    console.log("ids", ids);
+                                   pc.searchID(ids, "reviewee$team_id");
+                                   pc.highlightArray([]);
+                                   return ids;
+                              }});
 
   });
 </script>
