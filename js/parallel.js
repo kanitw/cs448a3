@@ -34,6 +34,15 @@
     };
 
     var init = function(){
+      mydata = mydata.filter(function(d){
+        keys = d3.keys(mydata[0]);
+        return keys.every(function(key){
+          // console.log(d[key]);
+          return d[key]!="NULL";
+        });
+
+      })
+
 
       dimensions = d3.keys(mydata[0]).filter(function(d) {
         return d != "name";
@@ -150,16 +159,6 @@
       // var margin = {top: 30, right: 10, bottom: 10, left: 10},
       //     width = 960 - margin.right - margin.left,
       //     height = 500 - margin.top - margin.bottom;
-
-
-      mydata = mydata.filter(function(d){
-        keys = d3.keys(mydata[0]);
-        return keys.every(function(key){
-          // console.log(d[key]);
-          return d[key]!="NULL";
-        });
-
-      })
 
 
 
