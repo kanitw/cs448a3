@@ -18,7 +18,11 @@
   window.Filter = Backbone.Model.extend({
     defaults: {
       filter: {},
-      data: null
+      data: null,
+      y: {},
+      dimensionType: {},
+      ids: undefined,
+      id_type: undefined
     },
 
     initialize: function() {
@@ -28,6 +32,12 @@
       });
       this.bind('change:filter', function() {
         this.run();
+      });
+      this.bind('change:ids', function() {
+        this.run();  
+      });
+      this.bind('change:id_type', function() {
+        this.run();  
       });
     },
 
@@ -91,16 +101,36 @@
       var filter = this.get('filter')
       var dimensionType = this.get('dimensionType');
       var y = this.get('y');
+      var ids = this.get('ids');
+      var id_type = this.get('id_type');
+      var data;
       for (key in this.get('filter')) {
-        var data;
+
+        if(d[key] == NULL) return false;
         if(dimensionType[key] == ORDINAL_TYPE || dimensionType[key]== ID_TYPE)
           data = y[key](d[key])
         else
           data = d[key];
-        if ((data < filter[key].min) || (data > filter[key].max))
+        if ((data < filter[key].min) || (data > filter[key].max) || (id && data[id_type] != id))
           return false;
       }
-      return true;
+      
+      var match = false;
+      console.log("ids= ", ids);
+      if(ids) {
+        _(ids).each(function(id) {
+            if((d[id_type] + "").indexOf(id) != -1)
+                  match = true;
+        });
+      } 
+      return match;
+
+      for (var key in d) {
+       if (d.hasOwnProperty(key)) {
+          if(d[key] == "NULL")
+            return false;
+        }
+      }
     }
 
   });
