@@ -122,7 +122,6 @@
 
     </div>
   </div>
-
   <div id="myGrid"> </div>
 </body>
 
@@ -169,7 +168,7 @@
       // console.log("height"+$(window).height);
       (window.onResize = function(){
         $('#parallel').css({
-            height: Math.round($(window).height()*0.6-100) + 'px',
+            height: Math.max(Math.round($(window).height()*0.6-100),450) + 'px',
             width: $(window).width() + 'px'
         });
         pc.render();
