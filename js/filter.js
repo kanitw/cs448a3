@@ -109,7 +109,7 @@
           data = y[key](d[key])
         else
           data = d[key];
-        if ((data < filter[key].min) || (data > filter[key].max) || (id && data[id_type] != id))
+        if ((data < filter[key].min) || (data > filter[key].max)) 
           return false;
       }
       
