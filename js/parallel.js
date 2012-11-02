@@ -397,12 +397,18 @@
             });
 
           // console.log(_(dist).values());
-
-          var cx = d3.scale.linear().range([0,overlay_width*0.25]).domain(d3.extent(_(dist).values()));
+          var dist_keys = _(dist).keys();
+          var dist_values = _(dist).values();
+          var dist_pairs = _(dist).pairs();
+          var cx = d3.scale.linear().range([0,overlay_width*0.25]).domain(d3.extent(dist_values));
           // console.log("_"+_(dist).pairs);
 
-          var dist_pairs = _(dist).pairs();
           
+          var height = 2;
+          if(dimensionType[d] == ID_TYPE || dimensionType[d] == ORDINAL_TYPE){
+            height = Math.min(h/_.uniq(dist_keys).length-1,10);
+          }
+
           var bars = d3.select(this).selectAll(".bar")
             .data(dist_pairs);
           bars.exit().remove();
@@ -411,8 +417,8 @@
           bars.attr("class","bar")
               .attr("x",function(p){ return 0; })
               .attr("width",function(p){return cx(p[1]); /*cx(p[1]);*/})
-              .attr("y",function(p){ return y[d](p[0]); })
-              .attr("height",2);
+              .attr("y",function(p){ return y[d](p[0])-height/2; })
+              .attr("height",height);
 
 
 

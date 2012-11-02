@@ -43,6 +43,7 @@
 
 .bar {
   fill: red;
+  fill-opacity: 0.8;
 }
 
 .brush .extent {
