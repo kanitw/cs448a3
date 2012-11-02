@@ -378,13 +378,13 @@ body.inverted {
 
 .bottom-overlay{
   font-size:10px;
+  padding:0 5px;
   color: navy;
   background-color: #eee;
 }
 
 .bottom-overlay .close{
-  font-size: 15\8px;
-  padding-right:3px;
+  font-size: 15px;
   line-height: 15px;
 }
 
