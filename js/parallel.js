@@ -19,10 +19,15 @@
     var line = d3.svg.line().interpolate('cardinal').tension(0.85),
         axis = d3.svg.axis().orient("left"),
         background,
-        foreground;
+        foreground, 
+        charts,
+        overlay_width;
   
     var mydata = model.get('data');
     var dimensionType = dimensionType;
+    var dim_group={};
+
+    var dim_group_key=[];
     var checkbox = {};
     var x=null, y=null, svg=null;
     var bounds,m,w,h;
@@ -32,13 +37,19 @@
     };
 
     var init = function(){
+      mydata = mydata.filter(function(d){
+        keys = d3.keys(mydata[0]);
+        return keys.every(function(key){
+          // console.log(d[key]);
+          return d[key]!="NULL";
+        });
+
+      })
+
 
       dimensions = d3.keys(mydata[0]).filter(function(d) {
         return d != "name";
-        
       });
-
-      // FILTER DIMENSION SECTION
 
       dimensions.getActive = function(){
         return this.filter(function(d){
@@ -46,21 +57,63 @@
         });
       }; 
 
-      d3.select("#col-tab").selectAll("input")
-        .data(dimensions)
-        .enter().append("span").attr("class","dim-filter").each(function(d){
+      // FILTER DIMENSION SECTION
 
-          var block = d3.select(this); 
-          block.append("input").attr("type","checkbox")
-            .attr("checked",true)
+      _(dimensions).each(function(d){
+        var grp = d.substr(0,d.indexOf(COL_SPLIT));
+        if(!dim_group[grp]){
+          dim_group[grp] = [d];
+          dim_group_key.push(grp);
+        }else {
+          dim_group[grp].push(d);
+        }
+      });
+
+      d3.select("#col-tab").selectAll("div")
+        .data(dim_group_key)
+        .enter().append("div")
+        .attr("class","col-row")
+        .each(function(grp){
+          var grp_div = d3.select(this);
+          grp_div.append("span").attr("class","grp-header").html(grp);
+          var grp_sel = grp_div.append("span").attr("class","grp-sel");
+          
+          grp_sel.selectAll("span")
+            .data(dim_group[grp]).enter()
+            .append("span").attr("class","dim-filter")
             .each(function(d){
-            checkbox[d] = this;
-          }).on("click", function(d,i){
-            console.log(dimensions.getActive());
-            self.render();
-          });
-          block.append("span").html(d);
+
+              var block = d3.select(this); 
+              block.append("input").attr("type","checkbox")
+                .attr("checked",true)
+                .each(function(d){
+                checkbox[d] = this;
+              }).on("click", function(d,i){
+                console.log(dimensions.getActive());
+                self.render();
+              });
+              block.append("span").html(dim_col_name(d));
+            });
         });
+
+
+       
+
+      // d3.select("#col-tab").selectAll("input")
+      //   .data(dimensions)
+      //   .enter().append("span").attr("class","dim-filter").each(function(d){
+
+      //     var block = d3.select(this); 
+      //     block.append("input").attr("type","checkbox")
+      //       .attr("checked",true)
+      //       .each(function(d){
+      //       checkbox[d] = this;
+      //     }).on("click", function(d,i){
+      //       console.log(dimensions.getActive());
+      //       self.render();
+      //     });
+      //     block.append("span").html(d);
+      //   });
 
       // END OF FILTER DIMENSION SECTION
 
@@ -111,16 +164,6 @@
       //     height = 500 - margin.top - margin.bottom;
 
 
-      mydata = mydata.filter(function(d){
-        keys = d3.keys(mydata[0]);
-        return keys.every(function(key){
-          // console.log(d[key]);
-          return d[key]!="NULL";
-        });
-
-      })
-
-
 
 
 
@@ -145,19 +188,24 @@
 
     var activeDim = dimensions.getActive();
     var axis_distance = activeDim.length > 1 ? (position_div(activeDim[1])-position_div(activeDim[0])) : w;
-    var overlay_width = Math.min(150,axis_distance*0.9);
+    overlay_width = Math.min(150,axis_distance*0.9);
     
+    //overlay
 
     var overlays = d3.select("#overlays").selectAll(".axis-overlay")
       .data(activeDim);
     overlays.style("left",position_div);
     overlays.exit().remove();
     overlays.enter().append("div")
-      .attr("class","axis-overlay");
+      .attr("class","axis-overlay")
+      .append("a").attr("class","btn btn-mini btn-super-mini btn-toggle").html("<i class='icon-signal'></i>").on("click",function(d){
+
+      });
     overlays.style("left",position_div)
       .style("width",overlay_width)
       .style("margin-left",-overlay_width/2);
       
+      // does not work yet.
       // .call(d3.behavior.drag()
       //     .on("dragstart", dragstart)
       //     .on("drag", drag)
@@ -189,25 +237,37 @@
 
       // Add an axis and title.
       g.append("svg:g")
-          .attr("class", "axis")
-          .each(function(d) {
-            if(dimensionType[d] == ID_TYPE){
-              // d3.select(this).tickFormat("");
-              d3.select(this).attr("class","axis axis-id");
-            }
-             d3.select(this).call(axis.scale(y[d])); 
-            
-          })
+        .attr("class", "axis")
+        .each(function(d) {
+          if(dimensionType[d] == ID_TYPE){
+            // d3.select(this).tickFormat("");
+            d3.select(this).attr("class","axis axis-id");
+          }
+           d3.select(this).call(axis.scale(y[d])); 
+          
+        })
         .append("svg:text")
+          .attr("class","axis-head")
           .attr("text-anchor", "middle")
           .attr("y", -47)
           .text(String);
+
+      chart = g.append("svg:g")
+        .attr("class", "chart");
+
+      drawChart();
+        
+
+      var brushgroup = {};
 
 
       // Add and store a brush for each axis.
       g.append("svg:g")
           .attr("class", "brush")
-          .each(function(d) { d3.select(this).call(y[d].brush = d3.svg.brush().y(y[d]).on("brush", brush)); })
+          .each(function(d) { 
+            (brushgroup[d] = d3.select(this))
+              .call(y[d].brush = d3.svg.brush().y(y[d]).on("brush", brush)); 
+          })
         .selectAll("rect")
           .attr("x", -12)
           .attr("width", 24);
@@ -279,19 +339,33 @@
           }
         });
 
-        bottom_overlays.html(function(d){
+        bottom_overlays.each(function(d){
+          var b_overlay = d3.select(this);
+          b_overlay.selectAll("span").remove();
           if(!y[d].brush.empty()){
             var extent = y[d].brush.extent();
+            var detail = ""
             if(dimensionType[d] == ORDINAL_TYPE || dimensionType[d]==ID_TYPE){
-              return "*filtered*";
+              detail = "*filtered*";
+            }else{
+              detail = Math.floor(extent[0]).toString() + "&lt;" + dim_col_name(d) + "&lt;" + Math.ceil(extent[1]).toString();
             }
-
-            return Math.floor(extent[0]).toString() + "&lt;" + dim_col_name(d) + "&lt;" + Math.ceil(extent[1]).toString();
-          }else {
-            return "";
+            b_overlay.append("span").attr("class","detail").html(detail);
+            b_overlay.append("span").attr("class","cleaner")
+              .append("a").attr("class","close").attr("href","#")
+              .html("&times;").on("click",function(d){
+                y[d].brush.clear();
+                y[d].brush(brushgroup[d]);
+                brush();
+              });
           }
 
+
         });
+        
+
+          
+
 
         model.set({filter: filter, y: y, dimensionType: dimensionType});
         console.log("filter = ", filter);
@@ -307,7 +381,53 @@
               return extents[i][0] <= data && data <= extents[i][1];
           }) ? null : "none";
         });
+        drawChart();
       }
+
+      function drawChart(){
+        console.log("drawChart");
+        chart.each(function(d){
+          var dist = {};
+
+          model.get('filtered').forEach(function(row){
+              if(!dist[row[d]]){
+                dist[row[d]] =1;
+              }else {
+                dist[row[d]]++;
+              }
+            });
+
+          // console.log(_(dist).values());
+          var dist_keys = _(dist).keys();
+          var dist_values = _(dist).values();
+          var dist_pairs = _(dist).pairs();
+          var cx = d3.scale.linear().range([0,overlay_width*0.25]).domain(d3.extent(dist_values));
+          // console.log("_"+_(dist).pairs);
+
+          
+          var height = 2;
+          if(dimensionType[d] == ID_TYPE || dimensionType[d] == ORDINAL_TYPE){
+            height = Math.min(h/_.uniq(dist_keys).length-1,10);
+          }
+
+          var bars = d3.select(this).selectAll(".bar")
+            .data(dist_pairs);
+          bars.exit().remove();
+          bars.enter().append("rect").on("mouseover",function(p){
+            console.log(d+":"+p[0]+","+p[1]);
+          })
+
+          bars.attr("class","bar")
+              .attr("x",function(p){ return 0; })
+              .attr("width",function(p){return cx(p[1]); /*cx(p[1]);*/})
+              .attr("y",function(p){ return y[d](p[0])-height/2; })
+              .attr("height",height);
+
+
+
+        });
+      }
+
       function search(str) {
         foreground.style("display", function(d) {
           return actives.every(function(p, i) {
@@ -362,14 +482,11 @@
     
       self.highlight = function(i) {
         if (typeof i == "undefined") {
-          d3.select("#parallel .foreground").style("opacity", function(d, j) {
-            return "1";
-          });
+          d3.select("#parallel .foreground").classed("faded",false);
           highlighted.remove();
         } else {
-          d3.select("#parallel .foreground").style("opacity", function(d, j) {
-            return "0.35";
-          });
+          d3.select("#parallel .foreground").classed("faded",true);
+          console.log("fg"+d3.select("#parallel .foreground").attr("class"));
           if (highlighted != null) {
             highlighted.remove();
           }

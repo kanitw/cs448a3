@@ -27,13 +27,23 @@
 }
 
 .foreground path{
-  stroke: #354d84;
+  stroke: #1C9925;
 }
 
+.foreground.faded path{
+  /*stroke: #28ca26; */
+  opacity:0.6;
+}
 
 .highlight path {
-  stroke: #ff9900;
+  stroke: #E9670D;
   stroke-opacity: 1;
+
+}
+
+.bar {
+  fill: red;
+  fill-opacity: 0.8;
 }
 
 .brush .extent {
@@ -60,6 +70,7 @@
     1px 1px 0 #fff;
   cursor: move;
 }
+
 
 .dimension {
   background: blue;
