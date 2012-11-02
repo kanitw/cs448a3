@@ -364,7 +364,7 @@
             if(dimensionType[d] == ORDINAL_TYPE || dimensionType[d]==ID_TYPE){
               detail = "*filtered*";
             }else{
-              detail = Math.floor(extent[0]).toString() + "&lt;" + dim_col_name(d) + "&lt;" + Math.ceil(extent[1]).toString();
+              detail = Math.floor(extent[0]).toString() + " &lt; " + dim_col_name(d) + " &lt; " + Math.ceil(extent[1]).toString();
             }
             b_overlay.append("span").attr("class","detail").html(detail);
             b_overlay.append("span").attr("class","cleaner")
