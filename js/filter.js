@@ -106,7 +106,7 @@
       var data;
       for (key in this.get('filter')) {
 
-        if(d[key] == NULL) return false;
+        if(d[key] == null) return false;
         if(dimensionType[key] == ORDINAL_TYPE || dimensionType[key]== ID_TYPE)
           data = y[key](d[key])
         else
