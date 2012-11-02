@@ -421,8 +421,10 @@
         // console.log("drawChart");
         chart.each(function(d){
           var dist = {};
-
-          model.get('filtered').forEach(function(row){
+          var model_filtered = model.get('filtered');
+          console.log(model_filtered);
+          var len = model_filtered.length;
+          model_filtered.forEach(function(row){
               if(!dist[row[d]]){
                 dist[row[d]] =1;
               }else {
@@ -477,7 +479,8 @@
               })
               .attr("rel","tooltip")
               .attr("data-original-title",function(p){
-                return p[0]+ " ("+p[1]+")";
+                var percent = d3.format(".2f")(p[1]/len*100);
+                return p[0]+ " ("+p[1]+", "+ percent + "%)";
               })
               .each(function(p){
                 if(!bar_map[d]){
