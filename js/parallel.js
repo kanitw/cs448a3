@@ -198,15 +198,23 @@
     overlays.exit().remove();
     overlays.enter().append("div")
       .attr("class","axis-overlay")
-      .append("a").attr("class","btn btn-mini btn-super-mini btn-toggle")
-      .html(function(d){
-          if(d == "reviewer$user_id")
-            return "<input id='userid_search' class='id-search-box' type='text' onkeyup='userid_search();' data-provide='typeahead'>";
-          else if(d == "reviewee$team_id")
-            return "<input id='teamid_search' class='id-search-box' type='text' onkeyup='teamid_search();' data-provide='typeahead'>";
-          else 
-           return "";
-       });
+      // .append("a").attr("class","btn btn-mini btn-super-mini btn-toggle")
+      // .html("")
+      .append("div").attr("class","input-span")
+        .each(function(d){
+          var span = d3.select(this);
+          if(d == "reviewer$user_id"){
+            span.append("span").html("<input id='userid_search' class='id-search-box' type='text' onkeyup='userid_search();' data-provide='typeahead'>");
+            span.append("div").attr("class","icon-search-div")
+              .append("i").attr("class","icon-search");
+          }
+          else if(d == "reviewee$team_id"){
+            span.append("span").html("<input id='teamid_search' class='id-search-box' type='text' onkeyup='teamid_search();' data-provide='typeahead'>");
+            span.append("div").attr("class","icon-search-div")
+              .append("i").attr("class","icon-search");
+          }
+
+        });
     
 
     overlays.style("left",position_div)

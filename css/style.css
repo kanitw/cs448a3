@@ -367,6 +367,25 @@ body.inverted {
   text-align: center;
 }
 
+.axis-overlay .input-span{
+  max-width: 100%;
+  margin:0;
+  position:relative;
+}
+
+.icon-search-div{
+  position:absolute;
+  top:1px;
+  right:5px;
+  z-index: 1;
+}
+
+.axis-overlay .input-span input{
+  max-width: 100%;
+  width:auto;
+  font-size:10px;
+}
+
 .grp-header{
   width: 80px;
   display: inline-block;
