@@ -42,7 +42,6 @@
       mydata = mydata.filter(function(d){
         keys = d3.keys(mydata[0]);
         return keys.every(function(key){
-          // console.log(d[key]);
           return d[key]!="NULL";
         });
 
@@ -93,7 +92,6 @@
                     checkbox[d] = this;
                     this["checked"] = _(preset).contains(d) ;
                   }).on("click", function(d,i){
-                    console.log(dimensions.getActive());
                     self.render();
                   });
               block.append("span").html(dim_col_name(d));
@@ -149,12 +147,10 @@
       y = {};
 
 
-
       _(dimensions).each(function(d) {
         if(dimensionType[d]==ORDINAL_TYPE || dimensionType[d]==ID_TYPE){
           // scale data to work with ordinal
           cols = mydata.map(function(row){return row[d]}).sort().reverse();
-          // console.log(cols);
           y[d] = d3.scale.ordinal()
             .domain(cols)
             .rangePoints([h, 0],1);
@@ -303,7 +299,7 @@
             (brushgroup[d] = d3.select(this))
               .call(y[d].brush = d3.svg.brush().y(y[d]).on("brush", brush)); 
             if(oldy && oldy[d] && oldy[d].brush){
-              console.log(d+"hasoldy:"+oldy);
+              // console.log(d+"hasoldy:"+oldy);
               y[d].brush.extent(oldy[d].brush.extent());
               y[d].brush(brushgroup[d]);
             }
@@ -313,7 +309,6 @@
           .attr("width", 24);
 
       function dragstart(d){
-        console.log("dragstart"+d);
         dragging[d] = this.__origin__ = x(d);
         background.attr("visibility", "hidden");
       }
@@ -365,11 +360,8 @@
         var actives = dimensions.getActive().filter(function(p) {
           return !y[p].brush.empty();
          })
-
-
          
         var extents = actives.map(function(p) {
-          // console.log(y[p].brush);
           return y[p].brush.extent();
         });
         
@@ -407,8 +399,8 @@
         });
         
         model.set({filter: filter, y: y, dimensionType: dimensionType});
-        // console.log("filter = ", filter);
         /***/
+        console.log("brush foreground");
         foreground.style("display", function(d) {
           return actives.every(function(p, i) {
               var data;
@@ -432,7 +424,6 @@
         chart.each(function(d){
           var dist = {};
           var model_filtered = model.get('filtered');
-          // console.log(model_filtered);
           var len = model_filtered.length;
           model_filtered.forEach(function(row){
               if(!dist[row[d]]){
@@ -449,7 +440,6 @@
           }));
           var dist_values = _(dist).values();
           var dist_pairs = _(dist).pairs();
-          // console.log(dist_values);
           var cx = d3.scale.linear().range([0,overlay_width*0.25]).domain([0,d3.max(dist_values)]);
           // console.log("_"+_(dist).pairs);
 
@@ -509,13 +499,14 @@
         $(bar_map[d][key]).tooltip(show?'show':'hide');
       }
 
-      function search(str) {
-        foreground.style("display", function(d) {
-          return actives.every(function(p, i) {
-              return d[p] == str;
-          }) ? null : "none";
-        });
-      }      
+      // function search(str) {
+      //   console.log("search");
+      //   foreground.style("display", function(d) {
+      //     return actives.every(function(p, i) {
+      //         return d[p] == str;
+      //     }) ? null : "none";
+      //   });
+      // }      
       function transition(g) {
         return g.transition().duration(500);
       }
@@ -533,34 +524,52 @@
         return typeahead;
       }
       self.searchID = function(arr, type) {
+        var actives = dimensions.getActive().filter(function(p) {
+          return !y[p].brush.empty();
+         })
+         
+        var extents = actives.map(function(p) {
+          return y[p].brush.extent();
+        });
+        
         /** To be factored **/
         var filter = {};
+        _(actives).each(function(key, i) {
+          filter[key] = {
+            min: extents[i][0],
+            max: extents[i][1]
+          }
+        });
+        /** To be factored **/
         model.set({ids: arr, id_type: type});
+        console.log(foreground);
+        foreground.style("display", function(d) {
+          var isinbrush = actives.length == 0 ||  actives.every(function(p, i) {
+              var data;
+              if(dimensionType[p] == ORDINAL_TYPE || dimensionType[p]==ID_TYPE)
+                data = y[p](d[p])
+              else
+                data = d[p];
+
+              return extents[i][0] <= data && data <= extents[i][1];
+          });
+          var match = false;
+          _(arr).each(function(id) {
+              if((d[type] + "").indexOf(id) != -1){
+                console.log(arr +","+ type +","+ d[type] );
+                match = true;
+              }
+          });
+
+          var toreturn =  (isinbrush && match) ? null : "none";
+          console.log(d[type]+":"+toreturn)
+          return toreturn;
+        });
+        
+        drawChart();
+        updateCount();
       }     
 
-      self.highlightArray = function(arr) {
-        if (typeof arr == "undefined") {
-          d3.select("#parallel .foreground").style("opacity", function(d, j) {
-            return "1";
-          });
-          highlighted.remove();
-        } else {
-          d3.select("#parallel .foreground").style("opacity", function(d, j) {
-            return "0.35";
-          });
-          if (highlighted != null) {
-            highlighted.remove();
-          }
-          console.log("filtered", model.get('filtered'));
-          highlighted = svg.append("svg:g")
-                           .attr("class", "highlight")
-                         .selectAll("path")
-                           .data(model.get('filtered'))
-                         .enter().append("svg:path")
-                           .attr("d", path)
-        }
-      };
-    
       self.highlight = function(i) {
         if (typeof i == "undefined") {
           d3.select("#parallel .foreground").classed("faded",false);

@@ -137,12 +137,12 @@
 
 
   function userid_search() {
-    if($("#userid_search").val() == "")
-      pc.highlightArray();
+    /*if($("#userid_search").val() == "")
+      pc.highlightArray();*/
   }
   function teamid_search() {
-    if($("#teamid_search").val() == "")
-      pc.highlightArray();
+    /*if($("#teamid_search").val() == "")
+      pc.highlightArray();*/
   }
   var pc;
   $(function() {
@@ -177,7 +177,6 @@
       });
 
       // parallel_height = 500;
-      // console.log("height"+$(window).height);
       (window.onResize = function(){
         $('#parallel').css({
             height: Math.max(Math.round($(window).height()*0.6-100),450) + 'px',
@@ -191,9 +190,7 @@
       slicky.update();
 
       highlighter.bind('change:selected', function() {
-        console.log("selected");
         var highlighted = this.get('selected');
-        console.log(highlighted);
         pc.highlight(highlighted);
       });
 
@@ -217,18 +214,18 @@
       var user_ids = _.uniq(_(reviewdata).map(function(d) {
            return "" + d["user_id"];
         }));
-      console.log(user_ids);
       $('#userid_search').typeahead({source : function(typeahead, query) {
                                      var ids = pc.matchID(typeahead, "reviewer$user_id");
                                      pc.searchID(ids, "reviewer$user_id");
-                                     pc.highlightArray([]);
+                                     // pc.render();
+                                     //pc.highlightArray([]);
                                      return ids;
                                 }});
 
       $('#teamid_search').typeahead({source : function(typeahead, query) {
                                      var ids = pc.matchID(typeahead, "reviewee$team_id");
                                      pc.searchID(ids, "reviewee$team_id");
-                                     pc.highlightArray([]);
+                                     //pc.highlightArray([]);
                                      return ids;
                                 }});
     });
