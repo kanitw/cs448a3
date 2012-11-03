@@ -203,24 +203,35 @@
     overlays.style("left",position_div);
     overlays.exit().remove();
     overlays.enter().append("div")
-      .attr("class","axis-overlay")
+      .attr("class","axis-overlay");
       // .append("a").attr("class","btn btn-mini btn-super-mini btn-toggle")
       // .html("")
-      .append("div").attr("class","input-container")
-        .each(function(d){
-          var span = d3.select(this);
-          if(d == "reviewer$user_id"){
-            span.append("span").html("<input id='userid_search' class='id-search-box' type='text' onkeyup='userid_search();' data-provide='typeahead'>");
-            span.append("div").attr("class","icon-search-div")
-              .append("i").attr("class","icon-search");
-          }
-          else if(d == "reviewee$team_id"){
-            span.append("span").html("<input id='teamid_search' class='id-search-box' type='text' onkeyup='teamid_search();' data-provide='typeahead'>");
-            span.append("div").attr("class","icon-search-div")
-              .append("i").attr("class","icon-search");
-          }
+    // var axis_overlays = overlays.selectAll("div");
 
-        });
+    // axis_overlays.selectAll("div").data([]).exit().remove();
+    var tmp_search_user_id = $("#userid_search").val();
+    var tmp_search_team_id = $("#teamid_search").val();
+    console.log(tmp_search_user_id);
+
+    overlays.selectAll("div").remove();
+    var input_con = overlays.append("div").attr("class","input-container")
+    
+    input_con.each(function(d){
+      var span = d3.select(this);
+      if(d == "reviewer$user_id"){
+        span.append("div").html("<input id='userid_search' class='id-search-box' type='text' onkeyup='userid_search();' data-provide='typeahead'>");
+        span.append("div").attr("class","icon-search-div")
+          .append("i").attr("class","icon-search");
+        $("#userid_search").val(tmp_search_user_id);
+      }
+      else if(d == "reviewee$team_id"){
+        span.append("div").html("<input id='teamid_search' class='id-search-box' type='text' onkeyup='teamid_search();' data-provide='typeahead'>");
+        span.append("div").attr("class","icon-search-div")
+          .append("i").attr("class","icon-search");
+         $("#teamid_search").val(tmp_search_team_id);
+      }
+
+    });
     
 
     overlays.style("left",position_div)
