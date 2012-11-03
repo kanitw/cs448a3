@@ -223,12 +223,28 @@
         span.append("div").attr("class","icon-search-div")
           .append("i").attr("class","icon-search");
         $("#userid_search").val(tmp_search_user_id);
+
+        $('#userid_search').typeahead({source : function(typeahead, query) {
+                                       var ids = self.matchID(typeahead, "reviewer$user_id");
+                                       self.searchID(ids, "reviewer$user_id");
+                                       self.highlightArray([]);
+                                       return ids;
+                                  }});
+
       }
       else if(d == "reviewee$team_id"){
         span.append("div").html("<input id='teamid_search' class='id-search-box' type='text' onkeyup='teamid_search();' data-provide='typeahead'>");
         span.append("div").attr("class","icon-search-div")
           .append("i").attr("class","icon-search");
          $("#teamid_search").val(tmp_search_team_id);
+
+
+         $('#teamid_search').typeahead({source : function(typeahead, query) {
+                                        var ids = self.matchID(typeahead, "reviewee$team_id");
+                                        self.searchID(ids, "reviewee$team_id");
+                                        self.highlightArray([]);
+                                        return ids;
+                                   }});
       }
 
     });

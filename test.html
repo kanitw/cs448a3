@@ -218,19 +218,6 @@
            return "" + d["user_id"];
         }));
       console.log(user_ids);
-      $('#userid_search').typeahead({source : function(typeahead, query) {
-                                     var ids = pc.matchID(typeahead, "reviewer$user_id");
-                                     pc.searchID(ids, "reviewer$user_id");
-                                     pc.highlightArray([]);
-                                     return ids;
-                                }});
-
-      $('#teamid_search').typeahead({source : function(typeahead, query) {
-                                     var ids = pc.matchID(typeahead, "reviewee$team_id");
-                                     pc.searchID(ids, "reviewee$team_id");
-                                     pc.highlightArray([]);
-                                     return ids;
-                                }});
     });
 
 
