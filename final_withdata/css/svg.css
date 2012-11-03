@@ -1,0 +1,82 @@
+/* SVG Paralllel Coordinates */
+#parallel {
+  width: 100%;  /* vs jquery resizable */
+  height: 220px;
+  margin: 0px auto 0px;
+  
+  
+}
+#parallel svg {
+  font: 10px sans-serif;
+}
+
+.background path {
+  display: none;
+  fill: none;
+  stroke: #d4d4d4;
+  stroke-opacity: 1;
+  shape-rendering: crispEdges;
+}
+
+.foreground path,
+.highlight path {
+  fill: none;
+  
+  stroke-width: 1.5;
+  stroke-opacity: .2;
+}
+
+.foreground path{
+  stroke: #1C9925;
+}
+
+.foreground.faded path{
+  /*stroke: #28ca26; */
+  opacity:0.6;
+}
+
+.highlight path {
+  stroke: yellow;
+  stroke-width: 2;
+  stroke-opacity: 1;
+  /*stroke-shadow:
+   -1px -1px 0 #333,
+    1px -1px 0 #333,
+   -1px 1px 0 #333,
+    1px 1px 0 #333;*/
+}
+
+.bar {
+  fill: red;
+  fill-opacity: 0.8;
+}
+
+.brush .extent {
+  fill-opacity: .2;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.axis line, .axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis.axis-id > g > text {
+  display: none;
+}
+
+.axis text {
+  text-shadow:
+   -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+   -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  cursor: move;
+}
+
+
+.dimension {
+  background: blue;
+}

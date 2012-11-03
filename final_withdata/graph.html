@@ -1,0 +1,237 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Exploring Peer Evaluation on Venture-Lab Spring 2012</title>
+
+<script type="text/javascript" src="js/d3.v2.js"></script>
+<script type="text/javascript" src="js/parallel.js"></script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/backbone.js"></script>
+
+<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/filter.js"></script>
+<script type="text/javascript" src="js/fisheye.js"></script>
+
+<!-- SlickGrid -->
+<link rel="stylesheet" href="css/slick.grid.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="css/slick.grid.override.css" type="text/css" media="screen" charset="utf-8">
+<script src="js/jquery.event.drag-2.0.min.js"></script>
+<script src="js/slick.core.js"></script>
+<script src="js/slick.grid.js"></script>
+<script src="js/slick.dataview.js"></script>
+<script src="js/slick.pager.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/options.js"></script>
+<!-- <script src="js/data-table.js"></script> -->
+<!-- bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
+
+<link rel="stylesheet" href="css/svg.css" type="text/css" charset="utf-8">
+</head>
+
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      
+      <div class="brand">
+        &nbsp; Exploring Peer Evaluation on Venture-Lab Spring 2012
+      </div>
+      <ul class="nav pull-right">
+        <li>
+          
+          <a id="total-count"></a>
+        </li>
+      </ul>
+      <ul class="nav">
+
+        <li class="active">
+          <a href="#col-tab"  data-toggle="tab">
+            1. Select Axes
+          </a>
+        </li>
+        
+        <li>
+          <a href="#sub-tab"  data-toggle="tab">
+            2. Filter
+          </a>
+        </li>
+       <!--  <li>
+          <a href="#color-tab"  data-toggle="tab">
+            Color Coding?? (Just idea)
+          </a>
+        </li> -->
+        
+        <li>
+          <a href="#about-tab"  data-toggle="tab">
+            About
+          </a>
+        </li>
+      </ul> 
+    </div>
+  </div>
+
+  <div id="control-wrapper">
+
+    <div class="tab-content">
+      <div id="col-tab" class="tab-pane active"></div>
+
+      <div id="sub-tab" class="tab-pane">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="desc">
+              <p>Drag on each axis to use brush to filter a range of data. Drag each axis' head to swap their locations.  Use text filter to filter by value. </p>
+              <p>If you want to work on subset of data, filter the data you like and press "select" on the right.</p>
+            </div>
+          </div>
+          <div class="span4">
+            <h5>
+              Subsetting Data
+            </h5>
+            <a href="#" id="keep_selected" class="btn btn-mini btn-primary filter_control" rel="tooltip" title="Keep only currently filtered data.">Select</a>
+
+            <a href="#" id="reset_selected" class="btn btn-mini filter_control"> Reset </a>
+          </div>
+        </div>
+        
+        <script type="text/javascript">
+          $('#keep_selected').tooltip({placement:"bottom"});
+
+        </script>
+      </div>
+      <div id="color-tab" class="tab-pane">
+        Color!!!
+      </div>
+      <div id="about-tab" class="tab-pane">
+        Designed by Chih-Chiang Wei and Kanit Wongsuphasawat.  For Assignment 3 of CS448 class at Stanford. 
+      </div>
+    </div>  
+  </div>
+  <div id="parallel-wrapper">
+    
+    <div id="overlays">
+
+    </div>
+    <div id="charts">
+      
+    </div>
+
+  
+    <div id="parallel" class="ui-resizable"></div>
+    <div id="bottom-overlays">
+
+    </div>
+  </div>
+  <!-- <a id="tooltip-test" href="#" rel="tooltip" title="test">dd</a> -->
+  
+  <div id="myGrid"> </div>
+</body>
+
+<script type="text/javascript">
+
+
+  function userid_search() {
+    /*if($("#userid_search").val() == "")
+      pc.highlightArray();*/
+  }
+  function teamid_search() {
+    /*if($("#teamid_search").val() == "")
+      pc.highlightArray();*/
+  }
+  var pc;
+  $(function() {
+    // $("#tooltip-test").tooltip({placement:"right"});
+    // $("#tooltip-test").tooltip('show');
+    d3.csv("query_result.csv",function(reviewdata){
+      var dimensions = new Filter();
+      var highlighter = new Selector();
+
+      dimensions.set({data: reviewdata });
+      
+      var dimensionType={
+          "reviewer$gpa": ORDINAL_TYPE,
+          "reviewer$academic_major": ORDINAL_TYPE,
+          "reviewer$age_range": ORDINAL_TYPE,
+          "reviewer$location": ORDINAL_TYPE,
+          "reviewer$gender": ORDINAL_TYPE,
+          "reviewer$user_id": ID_TYPE,
+          "reviewee$team_id": ID_TYPE
+        };
+
+      var preset = ["reviewer$gender","reviewer$user_id","review$avg_score","reviewee$team_id","reviewee$team_size"];
+
+      var columns = _(reviewdata[0]).keys();
+      var axes = _(columns).without('name', 'group');
+      pc = parallel(dimensions,dimensionType,preset);
+      var slicky = new grid({
+        model: dimensions,
+        selector: highlighter,
+        width: $('body').width(),
+        columns: columns
+      });
+
+      // parallel_height = 500;
+      (window.onResize = function(){
+        $('#parallel').css({
+            height: Math.max(Math.round($(window).height()*0.6-100),450) + 'px',
+            width: $(window).width() + 'px'
+        });
+        pc.render();
+      })();
+
+      $(window).resize(window.onResize);
+
+      slicky.update();
+
+      highlighter.bind('change:selected', function() {
+        var highlighted = this.get('selected');
+        pc.highlight(highlighted);
+      });
+
+      $('#keep_selected').click(function() {
+        dimensions.inliers();
+        pc.update(dimensions.get('data'));
+        pc.render();
+        dimensions.trigger('change:filtered');
+        return false;
+      });
+
+      $('#reset_selected').click(function() {
+        dimensions.set({data: reviewdata});
+        dimensions.clearFilter();
+        pc.update(dimensions.get('data'));
+        pc.render();
+        dimensions.trigger('change:filtered');
+        return false;
+      });
+      
+      var user_ids = _.uniq(_(reviewdata).map(function(d) {
+           return "" + d["user_id"];
+        }));
+      $('#userid_search').typeahead({source : function(typeahead, query) {
+                                     var ids = pc.matchID(typeahead, "reviewer$user_id");
+                                     pc.searchID(ids, "reviewer$user_id");
+                                     pc.render();
+                                     //pc.highlightArray([]);
+                                     return ids;
+                                }});
+
+      $('#teamid_search').typeahead({source : function(typeahead, query) {
+                                     var ids = pc.matchID(typeahead, "reviewee$team_id");
+                                     pc.searchID(ids, "reviewee$team_id");
+                                     //pc.highlightArray([]);
+                                     return ids;
+                                }});
+    });
+
+
+  });
+
+</script>
+</body></html>

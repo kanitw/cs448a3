@@ -1,0 +1,1207 @@
+"reviewer$gpa","reviewer$academic_major","reviewer$age_range","reviewer$location","reviewer$gender","reviewer$signin_count","reviewer$user_id","review$avg_score","review$score1","review$score2","review$score3","review$score4","review$score5","reviewee$team_id","reviewee$team_size"
+"NULL","NULL","NULL","NULL","NULL",21,37212,5.6,9,6,3,5,5,5250,3
+"NULL","NULL","NULL","NULL","NULL",21,37212,4,7,5,5,1,2,5836,4
+"NULL","NULL","NULL","NULL","NULL",21,37212,6,8,7,6,6,3,5693,7
+"NULL","NULL","NULL","NULL","NULL",21,37212,5,4,7,4,4,6,5215,4
+"NULL","NULL","NULL","NULL","NULL",21,37212,7.6,8,8,8,8,6,5906,9
+"NULL","NULL","NULL","NULL","NULL",21,37212,4,4,5,6,4,1,5069,4
+"NULL","NULL","NULL","NULL","NULL",21,37212,7.4,8,7,7,6,9,5470,17
+"Does not apply","Science","26-30","Netherlands","Male",124,2230,6.8,7,7,8,7,5,5693,7
+"Does not apply","Science","26-30","Netherlands","Male",124,2230,2.2,2,1,3,4,1,5836,4
+"Do not want to disclose","Business","31-35","Spain","Male",80,2848,4.4,4,1,7,9,1,5069,4
+"3-3.49","Other","21-25","Spain","Female",75,2826,5,5,5,5,5,5,5215,4
+"3-3.49","Engineering","over 50","United States","Male",110,19502,3.6,5,5,2,3,3,5215,4
+"3.5-4.00","Science","36-40","Greece","Male",125,27386,3.6,3,6,5,3,1,5250,3
+"3-3.49","Engineering","over 50","United States","Male",110,19502,7,9,5,9,6,6,5693,7
+"3-3.49","Science","21-25","Saudi Arabia","Female",46,12292,3.4,5,1,1,9,1,5069,4
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,4,5,6,5,2,2,5215,4
+"3-3.49","Engineering","over 50","United States","Male",110,19502,6.6,9,5,5,9,5,5836,4
+"Does not apply","Engineering","18-20","Nigeria","Male",75,22958,2.8,4,4,3,2,1,5215,4
+"3-3.49","Science","21-25","Saudi Arabia","Female",46,12292,9,9,9,9,9,9,5693,7
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,4,1,7,5,5,2,5906,9
+"3-3.49","Science","21-25","Saudi Arabia","Female",46,12292,10,10,10,10,10,10,5906,9
+"NULL","NULL","NULL","Greece","NULL",5,33702,5,5,7,7,5,1,5069,4
+"NULL","NULL","NULL","United States","NULL",391,34624,5.4,5,6,7,5,4,5906,9
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,6,8,6,5,6,5,5836,4
+"Does not apply","Business","18-20","Canada","Male",28,26219,7.2,8,9,7,6,6,5250,3
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,7,8,8,7,8,4,5906,9
+"Does not apply","Business","36-40","Spain","Male",120,22862,2.2,5,2,2,1,1,5069,4
+"Do not want to disclose","Engineering","26-30","India","Male",230,8550,4.8,7,5,5,4,3,5836,4
+"3.5-4.00","Engineering","26-30","United States","Male",33,19544,3.4,6,4,3,3,1,5069,4
+"Does not apply","Science","26-30","Netherlands","Male",124,2230,6.6,9,9,5,5,5,5906,9
+"3-3.49","Other","21-25","Spain","Female",75,2826,6.4,5,5,10,4,8,5470,17
+"3.5-4.00","Science","36-40","Greece","Male",125,27386,1,1,1,1,1,1,5470,17
+"Does not apply","Business","21-25","Brazil","Male",43,29913,7,9,9,3,7,7,5693,7
+"Does not apply","Business","18-20","Canada","Male",28,26219,3.4,4,4,3,4,2,5069,4
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,6,9,9,6,3,3,5693,7
+"NULL","NULL","NULL","United States","NULL",391,34624,7.8,8,8,8,7,8,5215,4
+"3-3.49","Science","21-25","Saudi Arabia","Female",46,12292,5.4,9,3,9,3,3,5420,3
+"Does not apply","Business","18-20","Canada","Male",28,26219,3.4,5,3,4,3,2,5836,4
+"NULL","NULL","NULL","United States","NULL",391,34624,7.8,7,8,9,8,7,5250,3
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,7.6,9,8,7,7,7,5144,2
+"Does not apply","Engineering","26-30","Japan","Male",30,1342,7,8,9,7,10,1,5836,4
+"NULL","NULL","NULL","United States","NULL",391,34624,7.2,7,7,6,9,7,5424,1
+"Does not apply","Business","over 50","Australia","Male",55,9014,2.2,1,6,1,2,1,5215,4
+"NULL","NULL","NULL","United States","NULL",391,34624,5.2,7,3,6,5,5,5420,3
+"Does not apply","Business","over 50","Australia","Male",55,9014,4,2,7,2,7,2,5836,4
+"Does not apply","Business","over 50","Australia","Male",55,9014,8.8,9,9,9,7,10,5470,17
+"Does not apply","Engineering","26-30","Brazil","Male",152,12759,6.8,8,8,8,8,2,5215,4
+"NULL","NULL","NULL","United States","NULL",28,36188,5.8,7,7,6,6,3,5069,4
+"Does not apply","Engineering","26-30","Brazil","Male",152,12759,8.8,10,10,9,9,6,5906,9
+"NULL","NULL","NULL","United States","NULL",28,36188,6,8,7,7,4,4,5693,7
+"NULL","NULL","NULL","United States","NULL",28,36188,4.2,5,5,5,3,3,5215,4
+"Does not apply","Engineering","26-30","Brazil","Male",152,12759,3.8,5,4,4,5,1,5250,3
+"NULL","NULL","NULL","United States","NULL",28,36188,5.8,6,6,6,5,6,5627,5
+"Does not apply","Other","26-30","United States","Male",213,9811,8,8,8,8,8,8,5693,7
+"NULL","NULL","NULL","United States","NULL",391,34624,6.6,7,7,6,7,6,5144,2
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,8,9,7,9,9,6,5906,9
+"3.5-4.00","Engineering","Do not want to disclose","United States","Male",57,14192,5.6,8,6,5,7,2,5693,7
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,5.2,6,7,5,4,4,5250,3
+"3-3.49","Engineering","21-25","Trinidad and Tobago","Male",77,11494,2.8,5,2,3,2,2,5069,4
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,3.8,4,6,4,3,2,5250,3
+"Does not apply","Engineering","31-35","United States","Male",364,9491,3.6,4,4,4,4,2,5906,9
+"Does not apply","Humanities","18-20","New Zealand","Male",94,9061,7.2,10,8,7,9,2,5906,9
+"2.5-3","Business","over 50","United States","Male",61,5849,1,1,1,1,1,1,5215,4
+"2.5-3","Business","46-50","Norway","Male",62,22029,2.2,3,2,2,2,2,5069,4
+"Does not apply","Engineering","26-30","Chile","Male",53,9138,6.2,5,7,5,6,8,5250,3
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,5.4,4,6,7,6,4,5250,3
+"Does not apply","Engineering","26-30","Brazil","Male",152,12759,6.8,8,8,8,8,2,5190,6
+"Does not apply","Engineering","26-30","Brazil","Male",152,12759,6.6,8,6,7,6,6,5627,5
+"Does not apply","Engineering","26-30","Brazil","Male",152,12759,4.6,5,4,5,4,5,5424,1
+"NULL","NULL","NULL","United States","NULL",28,36188,6.6,7,7,6,6,7,5144,2
+"Does not apply","Engineering","26-30","Brazil","Male",152,12759,1.8,2,2,2,2,1,5004,5
+"Does not apply","Engineering","26-30","Brazil","Male",152,12759,1.8,2,2,2,2,1,5993,2
+"NULL","NULL","NULL","United States","NULL",28,36188,4.8,8,4,5,4,3,5288,2
+"Does not apply","Engineering","26-30","Brazil","Male",152,12759,5,6,6,5,6,2,5420,3
+"Does not apply","Engineering","26-30","Brazil","Male",152,12759,7,8,8,9,8,2,5536,4
+"3-3.49","Science","18-20","Philippines","Male",112,19750,5.4,5,7,6,5,4,5215,4
+"3-3.49","Science","18-20","Philippines","Male",112,19750,6.8,7,5,8,6,8,5470,17
+"2.5-3","Engineering","over 50","United States","Male",21,31244,5.6,7,8,6,4,3,5836,4
+"3.5-4.00","Engineering","21-25","China","Male",19,22172,6.4,5,7,5,6,9,5906,9
+"3.5-4.00","Engineering","21-25","Russian Federation","Male",62,15851,2.6,2,4,4,2,1,5069,4
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,6.4,9,5,9,8,1,5693,7
+"3.5-4.00","Science","36-40","United Arab Emirates","Male",27,31981,6,9,8,6,6,1,5906,9
+"Does not apply","Engineering","36-40","Russian Federation","Male",25,7607,6.4,8,7,4,9,4,5906,9
+"3.5-4.00","Science","36-40","United Arab Emirates","Male",27,31981,5,7,7,5,5,1,5836,4
+"Does not apply","Engineering","46-50","Iran, Islamic Republic of","Male",174,2481,4.6,5,5,4,4,5,5906,9
+"Does not apply","Engineering","36-40","Russian Federation","Male",25,7607,6.4,9,4,8,3,8,5470,17
+"Does not apply","Engineering","46-50","Iran, Islamic Republic of","Male",174,2481,6,6,6,7,6,5,5836,4
+"Does not apply","Engineering","46-50","Iran, Islamic Republic of","Male",174,2481,5.2,6,5,6,5,4,5250,3
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,3,4,2,4,3,2,5470,17
+"Does not apply","Science","over 50","Australia","Male",238,1006,5,7,6,5,6,1,5250,3
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,7.6,6,9,9,6,8,5250,3
+"3.5-4.00","Engineering","31-35","India","Male",107,16777,4,4,4,4,2,6,5069,4
+"3.5-4.00","Business","31-35","India","Male",58,8018,1,1,1,1,1,1,5906,9
+"NULL","NULL","NULL","United States","NULL",28,36188,5.6,7,7,6,5,3,5213,8
+"3.5-4.00","Engineering","21-25","Russian Federation","Male",62,15851,5.2,7,7,4,4,4,5836,4
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,8.2,8,7,8,9,9,5250,3
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,5.4,5,7,5,5,5,5069,4
+"3-3.49","Business","21-25","Ukraine","Male",29,2659,6.4,9,7,8,7,1,5693,7
+"Does not apply","Business","26-30","Spain","Male",176,5634,3,5,2,3,3,2,5069,4
+"Does not apply","Engineering","46-50","Iran, Islamic Republic of","Male",174,2481,5.2,6,5,6,5,4,5144,2
+"Does not apply","Engineering","46-50","Iran, Islamic Republic of","Male",174,2481,4.8,5,6,4,5,4,5190,6
+"Does not apply","Business","31-35","Slovakia","Male",141,11269,3,5,2,2,4,2,5069,4
+"Does not apply","Engineering","36-40","Spain","Male",62,3521,5.2,6,8,6,5,1,5250,3
+"Does not apply","Engineering","26-30","Spain","Male",53,3963,5.2,9,3,5,6,3,5906,9
+"Does not apply","Engineering","26-30","Spain","Male",53,3963,2.8,4,2,3,3,2,5693,7
+"Does not apply","Engineering","26-30","Spain","Male",53,3963,3.4,2,5,4,4,2,5250,3
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,2.4,2,4,2,2,2,5215,4
+"3.5-4.00","Engineering","31-35","India","Male",107,16777,4.4,6,4,5,5,2,5836,4
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,3.4,2,1,3,6,5,5114,5
+"NULL","NULL","NULL","NULL","NULL",17,37234,5.4,6,5,6,5,5,5250,3
+"NULL","NULL","NULL","NULL","NULL",17,37234,4.8,5,5,5,5,4,5906,9
+"3.5-4.00","Engineering","26-30","United States","Male",193,20079,5.4,6,5,6,6,4,5836,4
+"NULL","NULL","NULL","NULL","NULL",17,37234,4.8,4,5,5,5,5,5069,4
+"NULL","NULL","NULL","NULL","NULL",17,37234,4.6,5,5,5,4,4,5479,17
+"NULL","NULL","NULL","NULL","NULL",17,37234,4.6,5,4,5,5,4,5190,6
+"NULL","NULL","NULL","NULL","NULL",17,37234,4.2,5,5,5,5,1,5114,5
+"3.5-4.00","Engineering","26-30","United States","Male",193,20079,5.6,6,6,5,6,5,5906,9
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,9,9,9,9,9,9,5144,2
+"3.5-4.00","Business","31-35","Greece","Male",69,6020,7.6,8,10,6,7,7,5470,17
+"3-3.49","Science","26-30","Latvia","Male",435,4599,6.4,7,7,7,10,1,5906,9
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,8.2,9,10,9,7,6,5250,3
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,4.2,6,6,4,3,2,5693,7
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,3.2,4,3,3,4,2,5836,4
+"Does not apply","Other","31-35","France","Male",81,501,5,5,4,4,6,6,5470,17
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,1.8,2,2,2,2,1,5215,4
+"Does not apply","Engineering","36-40","Italy","Male",82,21546,3.8,7,3,4,3,2,5836,4
+"Does not apply","Business","31-35","Slovakia","Male",141,11269,8,9,8,9,9,5,5906,9
+"Does not apply","Engineering","26-30","Spain","Male",53,3963,2.4,2,3,1,3,3,5114,5
+"Does not apply","Science","over 50","Australia","Male",238,1006,3.2,3,6,3,3,1,5215,4
+"3.5-4.00","Engineering","31-35","India","Male",107,16777,1,1,1,1,1,1,5470,17
+"3.5-4.00","Engineering","Do not want to disclose","United States","Male",57,14192,3.4,3,4,5,4,1,5069,4
+"Does not apply","Business","31-35","Spain","Male",42,19404,4,6,6,6,1,1,5215,4
+"NULL","NULL","NULL","NULL","NULL",17,37234,5.4,6,5,6,5,5,5144,2
+"NULL","NULL","NULL","NULL","NULL",17,37234,4.8,5,5,4,5,5,5764,1
+"3.5-4.00","Engineering","26-30","United States","Male",193,20079,5,5,5,6,5,4,5215,4
+"NULL","NULL","NULL","NULL","NULL",17,37234,8.8,9,9,9,9,8,5475,5
+"3.5-4.00","Business","31-35","Greece","Male",69,6020,4.2,4,5,5,5,2,5069,4
+"3.5-4.00","Business","31-35","Greece","Male",69,6020,7.6,8,9,10,9,2,5693,7
+"2.5-3","Engineering","26-30","Turkey","Male",180,12093,5.4,5,4,5,6,7,5836,4
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,4.4,5,5,5,6,1,5627,5
+"Does not apply","Engineering","31-35","France","Male",87,21748,6.8,8,8,5,10,3,5906,9
+"2.5-3","Engineering","26-30","Turkey","Male",180,12093,3.4,3,7,3,2,2,5069,4
+"2.5-3","Engineering","26-30","Turkey","Male",180,12093,6,7,7,7,4,5,5693,7
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,4.4,4,7,5,5,1,5475,5
+"2.5-3","Engineering","26-30","Turkey","Male",180,12093,4.4,3,4,6,7,2,5479,17
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,1,1,1,1,1,1,5374,9
+"3-3.49","Science","26-30","United Kingdom","Male",24,16677,4.8,4,6,7,5,2,5250,3
+"3-3.49","Engineering","18-20","India","Male",112,7522,6.4,6,7,7,6,6,5069,4
+"3-3.49","Science","26-30","United Kingdom","Male",24,16677,2.6,2,3,3,3,2,5906,9
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,7.4,5,8,8,8,8,5539,2
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,5.6,7,8,8,4,1,5150,4
+"3-3.49","Engineering","21-25","Trinidad and Tobago","Male",77,11494,6.6,7,5,5,7,9,5470,17
+"2.5-3","Engineering","over 50","United States","Male",21,31244,4.8,8,4,5,4,3,5470,17
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,8,9,4,9,9,9,5170,2
+"2.5-3","Engineering","26-30","Turkey","Male",180,12093,5.8,8,6,6,3,6,5190,6
+"Do not want to disclose","Humanities","36-40","Spain","Female",40,21921,10,10,10,10,10,10,5906,9
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,3.6,3,4,4,4,3,5069,4
+"3.5-4.00","Business","31-35","India","Male",58,8018,1,1,1,1,1,1,5250,3
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,4,4,5,5,5,1,5601,1
+"3-3.49","Science","26-30","Latvia","Male",435,4599,3,3,3,4,4,1,5470,17
+"3-3.49","Engineering","46-50","Iran, Islamic Republic of","Female",420,19447,4.8,6,7,5,5,1,5215,4
+"Does not apply","Law","26-30","United Kingdom","Female",27,19203,6.6,5,7,6,8,7,5836,4
+"Does not apply","Science","26-30","Russian Federation","Female",48,11977,5.6,5,4,7,4,8,5069,4
+"Does not apply","Other","36-40","United Kingdom","Male",115,13070,3.2,3,3,4,3,3,5215,4
+"Does not apply","Engineering","31-35","France","Male",87,21748,6.8,6,4,8,8,8,5470,17
+"2.5-3","Engineering","26-30","Turkey","Male",180,12093,3,4,4,3,2,2,5114,5
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,6.6,6,7,8,5,7,5479,17
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,2.2,2,2,3,3,1,5374,9
+"Does not apply","Business","21-25","Germany","Male",83,14340,5.4,6,4,10,6,1,5906,9
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,1.6,1,2,2,2,1,7054,0
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,8.2,9,8,8,8,8,5190,6
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,7.4,7,8,8,7,7,5204,6
+"Do not want to disclose","Engineering","21-25","Ukraine","Male",47,30182,5.4,2,5,5,5,10,5836,4
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,9,9,9,9,9,9,5536,4
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,4,4,7,4,4,1,5752,6
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,1.4,1,1,1,3,1,5118,4
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,6,8,8,8,5,1,5562,2
+"Does not apply","Other","31-35","France","Male",81,501,4.6,6,4,6,6,1,5836,4
+"Does not apply","Other","31-35","France","Male",81,501,6,10,6,4,6,4,5906,9
+"Does not apply","Other","31-35","France","Male",81,501,4.2,5,4,4,3,5,5479,17
+"Does not apply","Other","31-35","France","Male",81,501,1,1,1,1,1,1,5374,9
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,4.8,7,5,4,4,4,5226,1
+"Does not apply","Other","31-35","France","Male",81,501,4.8,7,5,3,3,6,5539,2
+"NULL","NULL","NULL","United States","NULL",28,36188,8.6,9,9,9,8,8,5226,1
+"NULL","NULL","NULL","United States","NULL",28,36188,4.2,6,5,4,4,2,5536,4
+"3.5-4.00","Science","over 50","Italy","Male",95,30064,5.6,5,7,7,7,2,5215,4
+"NULL","NULL","NULL","United States","NULL",28,36188,7.6,8,8,8,7,7,5479,17
+"NULL","NULL","NULL","United States","NULL",28,36188,1.8,2,2,2,2,1,5374,9
+"3.5-4.00","Science","36-40","Greece","Male",125,27386,6.2,8,6,6,6,5,5693,7
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,2.4,5,3,2,1,1,5069,4
+"3.5-4.00","Engineering","Do not want to disclose","United States","Male",57,14192,8,8,9,8,7,8,5470,17
+"3.5-4.00","Science","over 50","Italy","Male",95,30064,6.2,5,8,8,7,3,5250,3
+"Does not apply","Business","41-45","Spain","Male",14,18839,8.4,10,8,7,8,9,5906,9
+"Does not apply","Engineering","31-35","Romania","Male",89,8144,5.4,7,7,5,7,1,5470,17
+"Does not apply","Engineering","21-25","Mexico","Male",15,1452,5.8,10,7,6,5,1,5906,9
+"3.5-4.00","Engineering","46-50","United States","Female",27,15096,3.2,4,3,3,4,2,5836,4
+"Does not apply","Engineering","46-50","Spain","Male",131,14869,5.8,6,5,7,5,6,5836,4
+"Does not apply","Business","26-30","Germany","Male",54,13839,5.2,5,8,5,3,5,5250,3
+"NULL","NULL","NULL","United States","NULL",28,36188,6.4,6,7,7,7,5,5539,2
+"3.5-4.00","Science","36-40","Greece","Male",125,27386,6.4,6,9,7,6,4,5226,1
+"3.5-4.00","Other","26-30","Belarus","Female",58,8684,6,8,6,8,6,2,5836,4
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,4.6,8,3,5,3,4,5170,2
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,5,5,5,5,5,5,5836,4
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,3.8,4,3,3,3,6,5190,6
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,7.6,8,8,7,7,8,5150,4
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,4.8,8,5,5,3,3,5562,2
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,5.2,7,6,5,5,3,5226,1
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,8.2,9,8,8,7,9,5536,4
+"Does not apply","Other","26-30","United States","Male",213,9811,8.4,9,9,8,8,8,5906,9
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,7.4,9,8,7,7,6,5479,17
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,8,9,9,8,9,5,5536,4
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,7.8,9,9,8,5,8,5150,4
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,3.4,5,3,4,4,1,5475,5
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,6.2,9,6,6,5,5,5226,1
+"Do not want to disclose","Engineering","41-45","United States","Male",37,19506,6.2,8,5,5,8,5,5470,17
+"Do not want to disclose","Engineering","41-45","United States","Male",37,19506,5,7,5,7,5,1,5069,4
+"Does not apply","Humanities","31-35","United States","Female",118,8491,4.6,8,4,4,3,4,5906,9
+"Does not apply","Humanities","31-35","United States","Female",118,8491,4.4,6,4,4,5,3,5250,3
+"Does not apply","Business","36-40","Spain","Male",120,22862,3.2,3,6,3,2,2,5693,7
+"Does not apply","Humanities","31-35","United States","Female",118,8491,3.2,5,3,3,3,2,5836,4
+"Does not apply","Humanities","31-35","United States","Female",118,8491,2.6,5,3,2,2,1,5562,2
+"Does not apply","Humanities","31-35","United States","Female",118,8491,3.6,5,2,2,2,7,5424,1
+"Does not apply","Humanities","31-35","United States","Female",118,8491,5,7,5,3,4,6,5627,5
+"Does not apply","Humanities","31-35","United States","Female",118,8491,2.2,4,3,1,1,2,5363,1
+"3.5-4.00","Engineering","over 50","Bolivia","Male",131,27480,4.4,7,4,4,3,4,5069,4
+"Does not apply","Engineering","31-35","Canada","Female",53,13145,2.2,3,2,2,2,2,5069,4
+"Does not apply","Business","36-40","Spain","Male",120,22862,4.6,6,7,5,3,2,5470,17
+"3.5-4.00","Engineering","18-20","Brazil","Male",72,8716,4.8,6,3,7,7,1,5836,4
+"Does not apply","Science","41-45","Denmark","Male",204,12328,3.2,4,3,4,3,2,5215,4
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,6.8,7,8,8,3,8,5424,1
+"Does not apply","Business","26-30","Germany","Female",99,20323,7.6,9,9,9,7,4,5693,7
+"Does not apply","Humanities","31-35","United States","Female",118,8491,3.8,7,3,3,4,2,5663,7
+"Does not apply","Humanities","31-35","United States","Female",118,8491,3.8,6,4,3,4,2,5601,1
+"Does not apply","Humanities","31-35","United States","Female",118,8491,1.2,2,1,1,1,1,7054,0
+"3.5-4.00","Engineering","21-25","India","Female",160,19307,5.4,5,5,6,5,6,5069,4
+"Does not apply","Other","over 50","India","Male",143,17491,3,4,4,3,2,2,5069,4
+"Does not apply","Medicine","36-40","United States","Female",89,14680,4.8,5,8,4,4,3,5215,4
+"Does not apply","Medicine","36-40","United States","Female",89,14680,4.2,3,5,5,4,4,5693,7
+"Does not apply","Medicine","36-40","United States","Female",89,14680,5.4,6,8,6,1,6,5069,4
+"Does not apply","Medicine","36-40","United States","Female",89,14680,5.6,7,8,6,1,6,5144,2
+"3.5-4.00","Engineering","21-25","India","Female",160,19307,7.2,8,6,8,6,8,5906,9
+"3.5-4.00","Engineering","26-30","United States","Male",33,19544,5.2,7,6,6,5,2,5470,17
+"Does not apply","Engineering","31-35","Spain","Male",94,2765,4.2,7,8,3,2,1,5069,4
+"Do not want to disclose","Engineering","26-30","India","Male",230,8550,1.4,2,2,1,1,1,5069,4
+"3.5-4.00","Engineering","26-30","United States","Male",33,19544,6.4,9,6,7,8,2,5906,9
+"Does not apply","Engineering","31-35","Spain","Male",94,2765,2,4,1,1,2,2,5470,17
+"Does not apply","Engineering","31-35","Spain","Male",94,2765,6.2,5,8,8,7,3,5215,4
+"Do not want to disclose","Engineering","26-30","India","Male",230,8550,4.2,7,5,4,4,1,5470,17
+"Do not want to disclose","Engineering","26-30","India","Male",230,8550,4.2,3,6,6,5,1,5213,8
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,8,9,9,9,9,4,7024,3
+"Does not apply","Other","31-35","France","Male",81,501,5,7,7,5,4,2,7024,3
+"Does not apply","Other","31-35","France","Male",81,501,3.8,4,5,3,4,3,5307,6
+"Does not apply","Science","36-40","Russian Federation","Male",29,10665,1.6,2,2,2,1,1,5069,4
+"Does not apply","Other","over 50","India","Male",143,17491,6,4,7,6,8,5,5215,4
+"Does not apply","Science","36-40","Russian Federation","Male",29,10665,9,9,10,9,9,8,5906,9
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,7.2,7,10,9,8,2,5213,8
+"NULL","NULL","NULL","France","NULL",18,35897,5.6,8,6,7,6,1,5693,7
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,3,4,1,3,5,2,5470,17
+"Does not apply","Engineering","36-40","Italy","Male",82,21546,6,9,3,5,5,8,5470,17
+"Does not apply","Other","31-35","France","Male",81,501,5,5,5,5,5,5,5817,1
+"3.5-4.00","Business","41-45","United States","Male",87,14242,1,1,1,1,1,1,5470,17
+"Does not apply","Engineering","26-30","Russian Federation","Male",305,18289,3.6,3,6,3,4,2,5215,4
+"3.5-4.00","Engineering","26-30","United States","Male",33,19544,6.4,9,7,5,6,5,5213,8
+"Do not want to disclose","Engineering","26-30","India","Male",230,8550,4.6,6,6,4,3,4,5424,1
+"Does not apply","Other","over 50","India","Male",143,17491,5.4,9,4,4,4,6,5693,7
+"Does not apply","Business","31-35","Slovakia","Male",141,11269,2.2,7,1,1,1,1,5470,17
+"Does not apply","Business","31-35","Slovakia","Male",141,11269,3.2,4,4,5,1,2,5817,1
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,7,6,4,9,9,7,5836,4
+"Do not want to disclose","Engineering","26-30","Albania","Male",86,8787,4.8,4,4,4,5,7,5250,3
+"Do not want to disclose","Engineering","26-30","Albania","Male",86,8787,4.4,3,4,5,6,4,5906,9
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,3.8,5,5,6,2,1,5906,9
+"Do not want to disclose","Engineering","26-30","Albania","Male",86,8787,3.2,2,3,3,3,5,5470,17
+"Does not apply","Business","31-35","Slovakia","Male",141,11269,7,9,4,7,8,7,5539,2
+"3-3.49","Engineering","26-30","Australia","Male",46,1675,8.2,9,8,9,8,7,5906,9
+"NULL","NULL","NULL","France","NULL",18,35897,5.2,6,8,6,5,1,5215,4
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,4,7,5,3,3,2,5360,3
+"3-3.49","Science","26-30","Australia","Male",64,1771,6.6,6,8,7,7,5,5215,4
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,7.2,6,7,7,7,9,5151,2
+"3.5-4.00","Engineering","26-30","Italy","Male",32,3108,5.4,9,8,5,3,2,5693,7
+"3.5-4.00","Engineering","26-30","Italy","Male",32,3108,4.6,7,9,3,3,1,5215,4
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,4.8,7,5,3,5,4,5151,2
+"3-3.49","Science","26-30","Latvia","Male",435,4599,8,10,7,7,7,9,5250,3
+"3.5-4.00","Science","36-40","United Arab Emirates","Male",27,31981,5.6,8,7,7,2,4,5693,7
+"Does not apply","Other","over 50","India","Male",143,17491,5,7,6,5,3,4,5151,2
+"2.5-3","Engineering","over 50","United States","Male",21,31244,7.2,7,8,7,8,6,5906,9
+"Does not apply","Business","31-35","Russian Federation","Female",141,30184,6,8,8,7,6,1,5069,4
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,7.6,5,6,9,9,9,6633,2
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,2.4,3,2,2,3,2,5106,2
+"Does not apply","Science","26-30","Netherlands","Male",124,2230,1.8,2,2,2,2,1,5360,3
+"Does not apply","Science","36-40","Russian Federation","Male",29,10665,7.6,8,8,7,8,7,5693,7
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.4,3,4,2,2,1,5693,7
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,1,1,1,1,1,1,7024,3
+"Does not apply","Engineering","21-25","Norway","Male",23,16741,4.6,4,5,8,5,1,5215,4
+"Does not apply","Business","31-35","Slovakia","Male",141,11269,8,9,9,9,9,4,5204,6
+"3-3.49","Other","21-25","Spain","Female",75,2826,7.8,7,7,5,10,10,5836,4
+"3.5-4.00","Science","over 50","Italy","Male",95,30064,5,5,4,5,8,3,5069,4
+"3-3.49","Science","26-30","Australia","Male",64,1771,6.4,7,8,6,6,5,5250,3
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,4.4,7,5,7,2,1,5226,1
+"Does not apply","Business","36-40","Spain","Male",120,22862,4.2,7,4,5,3,2,5288,2
+"Does not apply","Business","41-45","Spain","Male",14,18839,4.8,7,4,4,5,4,5215,4
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,4.6,6,5,6,5,1,5363,1
+"NULL","NULL","NULL","France","NULL",18,35897,6,6,8,8,7,1,5470,17
+"Does not apply","Business","41-45","Spain","Male",14,18839,4.8,6,5,4,4,5,5693,7
+"Does not apply","Engineering","31-35","Spain","Male",96,8444,7.2,9,7,8,7,5,5906,9
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,5.4,7,6,6,5,3,5151,2
+"Does not apply","Engineering","31-35","Spain","Male",96,8444,4.6,5,4,6,5,3,5069,4
+"3.5-4.00","Engineering","41-45","United States","Male",104,17120,5,5,6,6,5,3,5069,4
+"NULL","NULL","NULL","France","NULL",18,35897,6.6,6,9,8,6,4,5363,1
+"Does not apply","Engineering","31-35","Spain","Male",96,8444,4,3,7,6,2,2,5215,4
+"3.5-4.00","Engineering","41-45","United States","Male",35,23915,7,9,9,7,5,5,5536,4
+"Does not apply","Business","41-45","Spain","Male",14,18839,3.4,4,4,3,4,2,5424,1
+"NULL","NULL","NULL","France","NULL",18,35897,5,5,9,5,5,1,5360,3
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,4.4,6,5,4,4,3,5363,1
+"Does not apply","Other","26-30","Spain","Female",79,24834,3.2,1,7,5,2,1,5069,4
+"Does not apply","Other","26-30","Spain","Female",79,24834,4.2,9,5,4,2,1,5693,7
+"Does not apply","Other","26-30","Spain","Female",79,24834,3,2,5,4,3,1,5215,4
+"3.5-4.00","Science","36-40","Greece","Male",125,27386,4.4,4,7,6,4,1,5993,2
+"Does not apply","Other","26-30","Spain","Female",79,24834,1.6,2,2,2,1,1,5150,4
+"NULL","NULL","NULL","United States","NULL",391,34624,4.2,6,2,7,5,1,5993,2
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,2,3,2,2,2,1,5226,1
+"3.5-4.00","Science","36-40","Greece","Male",125,27386,7.6,7,8,8,7,8,5204,6
+"Does not apply","Engineering","31-35","United States","Male",364,9491,4,4,5,5,4,2,5215,4
+"NULL","NULL","NULL","United States","NULL",391,34624,4,4,2,2,3,9,5170,2
+"3-3.49","Science","26-30","United States","Male",71,16519,4.8,8,5,6,3,2,5250,3
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,3.4,5,4,2,2,4,5817,1
+"Does not apply","Engineering","41-45","India","Female",109,19302,1,1,1,1,1,1,5906,9
+"Does not apply","Engineering","31-35","Romania","Male",89,8144,5,5,7,6,4,3,5693,7
+"Does not apply","Engineering","31-35","Spain","Male",96,8444,4.4,4,2,4,3,9,5106,2
+"Does not apply","Engineering","26-30","Spain","Male",54,3585,6.2,5,5,6,8,7,5470,17
+"Does not apply","Other","26-30","United States","Male",213,9811,8,8,8,8,8,8,5836,4
+"3.5-4.00","Science","36-40","Greece","Male",125,27386,8,9,8,8,9,6,5627,5
+"Do not want to disclose","Engineering","41-45","United States","Male",37,19506,5.6,8,7,6,5,2,5906,9
+"Does not apply","Engineering","31-35","United States","Male",364,9491,7.2,9,9,8,8,2,5693,7
+"3.5-4.00","Science","36-40","Greece","Male",125,27386,5.8,3,8,8,7,3,5213,8
+"Does not apply","Engineering","31-35","United States","Male",364,9491,3.2,5,4,3,3,1,5993,2
+"Do not want to disclose","Engineering","41-45","United States","Male",37,19506,4.4,6,2,2,5,7,5170,2
+"Does not apply","Engineering","36-40","Spain","Female",26,15171,7.8,9,6,6,10,8,5470,17
+"Does not apply","Engineering","36-40","Spain","Female",26,15171,7.6,10,6,7,6,9,5906,9
+"Do not want to disclose","Engineering","41-45","United States","Male",37,19506,7.2,9,3,7,8,9,5369,2
+"Does not apply","Engineering","36-40","Spain","Female",26,15171,9.2,10,9,9,9,9,5250,3
+"3-3.49","Business","21-25","Spain","Female",48,9079,5.2,2,8,10,2,4,5250,3
+"Does not apply","Engineering","36-40","Spain","Female",26,15171,7.2,9,8,8,8,3,5627,5
+"Does not apply","Engineering","36-40","Spain","Female",26,15171,6.2,6,6,6,7,6,5764,1
+"Do not want to disclose","Engineering","41-45","United States","Male",37,19506,4.6,6,5,6,5,1,5562,2
+"3-3.49","Business","21-25","Spain","Female",48,9079,7.6,10,6,5,9,8,5906,9
+"Do not want to disclose","Engineering","41-45","United States","Male",37,19506,5.6,7,1,7,6,7,5235,4
+"3.5-4.00","Other","26-30","Belarus","Female",58,8684,4.4,5,6,5,4,2,5215,4
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,2.4,2,3,4,1,2,5215,4
+"3-3.49","Business","21-25","Spain","Female",48,9079,4.4,5,3,7,2,5,5215,4
+"Does not apply","Engineering","21-25","Norway","Male",23,16741,6.6,8,5,7,8,5,5836,4
+"Do not want to disclose","Engineering","41-45","United States","Male",37,19506,1.4,1,1,3,1,1,5374,9
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,5.8,6,8,5,4,6,5470,17
+"Do not want to disclose","Engineering","41-45","United States","Male",37,19506,7.8,8,8,8,8,7,5150,4
+"NULL","NULL","NULL","United States","NULL",391,34624,7.4,8,8,7,9,5,5150,4
+"Does not apply","Business","21-25","Germany","Male",83,14340,4.4,6,2,3,8,3,5693,7
+"3.5-4.00","Science","36-40","Greece","Male",125,27386,8.4,9,9,8,8,8,5369,2
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,5.4,2,4,6,6,9,5369,2
+"Does not apply","Business","36-40","Germany","Male",354,21907,5.6,3,8,6,6,5,5250,3
+"3.5-4.00","Other","26-30","Belarus","Female",58,8684,4.2,5,4,6,4,2,5069,4
+"Does not apply","Engineering","31-35","United States","Male",364,9491,3.6,6,4,4,2,2,5288,2
+"Does not apply","Engineering","36-40","Spain","Female",26,15171,6.4,8,5,7,5,7,5663,7
+"3.5-4.00","Science","26-30","Russian Federation","Male",145,1820,5.2,6,6,4,6,4,5250,3
+"3.5-4.00","Engineering","31-35","United States","Female",85,4274,2,2,2,2,2,2,5470,17
+"3.5-4.00","Other","over 50","Canada","Male",164,7841,1,1,1,1,1,1,5470,17
+"3.5-4.00","Science","21-25","United States","Female",22,23155,6.2,7,6,5,4,9,5906,9
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,5.8,6,6,5,7,5,5470,17
+"NULL","NULL","NULL","United States","NULL",391,34624,4.2,5,8,3,4,1,5562,2
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,6.4,8,8,7,6,3,5906,9
+"Does not apply","Science","31-35","Sweden","Male",27,7371,5.2,10,5,4,6,1,5906,9
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,6.6,8,7,4,6,8,5875,3
+"3.5-4.00","Other","over 50","Canada","Male",164,7841,5.4,7,5,5,5,5,5906,9
+"Does not apply","Science","31-35","United States","Male",52,11471,7.8,8,8,6,7,10,5250,3
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,2.4,2,2,3,3,2,5980,0
+"Does not apply","Science","31-35","United States","Male",52,11471,2.6,4,2,3,3,1,5215,4
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,4,2,2,6,3,7,5170,2
+"Does not apply","Science","31-35","United States","Male",52,11471,3,3,4,2,3,3,5069,4
+"Does not apply","Science","31-35","United States","Male",52,11471,5.8,6,4,4,7,8,5539,2
+"Does not apply","Other","31-35","France","Male",81,501,3.4,3,3,3,3,5,5106,2
+"Does not apply","Other","31-35","France","Male",81,501,3,4,5,4,1,1,5635,2
+"Does not apply","Science","31-35","United States","Male",52,11471,4.8,2,3,5,7,7,5118,4
+"Does not apply","Other","31-35","France","Male",81,501,3.2,4,3,3,3,3,5283,3
+"Does not apply","Other","31-35","France","Male",81,501,4.4,6,4,7,3,2,5190,6
+"Does not apply","Science","31-35","United States","Male",52,11471,7,8,8,5,6,8,7024,3
+"Does not apply","Science","31-35","United States","Male",52,11471,7.2,8,4,7,9,8,6633,2
+"Does not apply","Science","31-35","United States","Male",52,11471,5.8,5,4,5,8,7,5369,2
+"Does not apply","Business","31-35","Russian Federation","Female",141,30184,7,7,7,7,7,7,5250,3
+"Does not apply","Business","31-35","Slovakia","Male",141,11269,1,1,1,1,1,1,5635,2
+"Does not apply","Other","31-35","France","Male",81,501,2.8,2,2,5,2,3,5980,0
+"Does not apply","Other","31-35","France","Male",81,501,4.2,8,5,2,3,3,5151,2
+"Does not apply","Business","31-35","Slovakia","Male",141,11269,4.2,5,4,7,3,2,5479,17
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,4.4,7,3,4,4,4,5836,4
+"Does not apply","Humanities","31-35","United States","Female",118,8491,4,5,4,3,3,5,5106,2
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,5.4,6,7,7,3,4,6083,2
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,5.2,4,5,8,6,3,5215,4
+"2.5-3","Science","21-25","Trinidad and Tobago","Male",66,15143,6.2,7,10,1,7,6,5250,3
+"3.5-4.00","Other","over 50","Canada","Male",164,7841,4.8,7,4,4,5,4,5069,4
+"Does not apply","Business","36-40","Spain","Male",120,22862,4.2,6,6,5,2,2,5635,2
+"Does not apply","Business","36-40","Spain","Male",120,22862,3.2,6,4,2,2,2,5144,2
+"Does not apply","Science","26-30","Netherlands","Male",124,2230,5,5,4,6,5,5,5635,2
+"3.5-4.00","Engineering","31-35","United States","Male",25,17940,5,6,5,6,6,2,5470,17
+"3.5-4.00","Engineering","31-35","United States","Male",25,17940,5.4,6,6,7,5,3,5215,4
+"3.5-4.00","Engineering","31-35","United States","Male",25,17940,7.4,8,9,8,6,6,5250,3
+"Does not apply","Business","31-35","Greece","Male",64,11645,5.4,9,4,7,5,2,5836,4
+"Does not apply","Business","31-35","Greece","Male",64,11645,3.6,5,3,5,3,2,5693,7
+"Does not apply","Business","31-35","Greece","Male",64,11645,4.8,6,6,5,6,1,5069,4
+"Does not apply","Engineering","41-45","India","Female",109,19302,4.4,4,4,5,4,5,5215,4
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.4,3,4,2,1,2,5635,2
+"Does not apply","Business","31-35","Greece","Male",64,11645,5.4,8,4,4,6,5,5151,2
+"Does not apply","Engineering","31-35","Romania","Male",89,8144,4.2,5,6,3,5,2,7024,3
+"Does not apply","Business","31-35","Greece","Male",64,11645,3.4,3,2,7,3,2,5363,1
+"Does not apply","Engineering","31-35","Romania","Male",89,8144,3.4,5,3,5,3,1,5635,2
+"Does not apply","Engineering","31-35","Romania","Male",89,8144,3.6,6,4,5,2,1,5288,2
+"Does not apply","Engineering","31-35","Romania","Male",89,8144,4.8,4,4,4,4,8,5536,4
+"Does not apply","Business","36-40","Spain","Male",120,22862,3.8,6,6,4,2,1,5226,1
+"Does not apply","Science","26-30","United Kingdom","Male",42,4574,6.6,7,9,9,5,3,5250,3
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,6.4,8,7,5,5,7,5213,8
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,9.8,10,10,9,10,10,5250,3
+"NULL","NULL","NULL","United States","NULL",391,34624,4.2,4,1,4,8,4,5363,1
+"Does not apply","Science","26-30","United Kingdom","Male",42,4574,6.8,8,6,7,5,8,5470,17
+"Does not apply","Business","36-40","Spain","Male",120,22862,2.2,4,3,2,1,1,7024,3
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,4.8,5,7,5,4,3,5470,17
+"Does not apply","Engineering","31-35","Romania","Male",89,8144,1,1,1,1,1,1,5836,4
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,4,7,3,5,3,2,5836,4
+"Does not apply","Engineering","31-35","Romania","Male",89,8144,6.2,7,8,5,5,6,5627,5
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,9.2,10,9,9,9,9,5875,3
+"Does not apply","Other","31-35","France","Male",81,501,3,3,3,3,3,3,5363,1
+"2.5-3","Business","36-40","India","Male",325,17528,3.8,4,4,5,5,1,5693,7
+"Do not want to disclose","Business","31-35","United Kingdom","Male",49,26036,4.8,6,5,5,3,5,5836,4
+"Does not apply","Engineering","41-45","India","Female",109,19302,5,4,5,6,5,5,5250,3
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,5.8,8,3,7,8,3,5693,7
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,5.6,7,8,5,5,3,5250,3
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,3,3,4,3,3,2,5360,3
+"Does not apply","Business","36-40","Spain","Male",120,22862,3,3,5,4,2,1,5360,3
+"Does not apply","Business","21-25","Spain","Male",42,4905,9,10,9,7,10,9,5906,9
+"Does not apply","Business","36-40","Spain","Male",120,22862,2.6,3,5,2,2,1,5993,2
+"Does not apply","Business","36-40","Spain","Male",120,22862,1,1,1,1,1,1,5578,3
+"Does not apply","Business","36-40","Spain","Male",120,22862,6.6,8,6,6,5,8,5875,3
+"Does not apply","Business","21-25","Spain","Male",42,4905,2.4,2,3,3,2,2,5215,4
+"Does not apply","Business","36-40","Spain","Male",120,22862,2.2,2,3,3,2,1,5539,2
+"Does not apply","Business","21-25","Spain","Male",42,4905,6.2,7,7,8,6,3,5250,3
+"Does not apply","Business","36-40","Spain","Male",120,22862,3,3,3,3,2,4,5106,2
+"Does not apply","Business","36-40","Spain","Male",120,22862,4.2,5,5,5,4,2,5114,5
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,2.4,2,2,4,2,2,5578,3
+"Does not apply","Engineering","21-25","Mexico","Male",15,1452,7.2,10,8,7,6,5,5693,7
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,5.6,5,7,8,5,3,5663,7
+"Does not apply","Engineering","21-25","Mexico","Male",15,1452,6.6,8,8,8,5,4,5470,17
+"3.5-4.00","Engineering","18-20","Brazil","Male",72,8716,3.8,3,6,6,3,1,5693,7
+"Does not apply","Business","31-35","Russian Federation","Female",141,30184,7.2,8,8,8,8,4,5693,7
+"Does not apply","Engineering","31-35","Spain","Male",94,2765,3.4,7,1,3,3,3,5663,7
+"Does not apply","Business","36-40","Spain","Male",120,22862,2.6,3,2,2,2,4,5424,1
+"Does not apply","Business","36-40","Spain","Male",120,22862,1.6,3,1,1,1,2,5663,7
+"Does not apply","Business","36-40","Spain","Male",120,22862,5.2,5,6,5,5,5,5204,6
+"Does not apply","Business","36-40","Spain","Male",120,22862,6,7,6,7,5,5,6109,1
+"Does not apply","Business","36-40","Spain","Male",120,22862,3,4,3,1,1,6,5170,2
+"Does not apply","Business","36-40","Spain","Male",120,22862,4.8,6,5,6,2,5,5235,4
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,1.4,1,2,2,1,1,5578,3
+"NULL","NULL","NULL","United States","NULL",391,34624,7.8,9,9,7,7,7,5752,6
+"NULL","NULL","NULL","United States","NULL",38,33263,4.2,5,4,4,4,4,5470,17
+"3-3.49","Engineering","21-25","New Zealand","Male",475,4115,5,6,9,5,3,2,5215,4
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.6,3,5,2,1,2,7024,3
+"Does not apply","Business","21-25","Germany","Male",83,14340,4.4,7,5,8,1,1,5470,17
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,4.6,7,2,7,5,2,5288,2
+"NULL","NULL","NULL","United States","NULL",38,33263,3.8,4,6,4,3,2,5069,4
+"NULL","NULL","NULL","United States","NULL",38,33263,3.2,2,5,4,3,2,5836,4
+"NULL","NULL","NULL","United States","NULL",38,33263,1,1,1,1,1,1,5277,7
+"NULL","NULL","NULL","United States","NULL",38,33263,5,6,6,5,5,3,5095,3
+"NULL","NULL","NULL","United States","NULL",38,33263,7.2,7,7,8,7,7,5103,2
+"3-3.49","Engineering","21-25","New Zealand","Male",475,4115,7.4,7,9,7,6,8,5250,3
+"3.5-4.00","Business","over 50","Pakistan","Male",154,22224,3.4,4,3,4,5,1,5215,4
+"3-3.49","Engineering","21-25","New Zealand","Male",475,4115,2.8,5,3,2,3,1,5069,4
+"Does not apply","Humanities","18-20","New Zealand","Male",94,9061,3.2,4,6,3,2,1,5069,4
+"Does not apply","Humanities","18-20","New Zealand","Male",94,9061,6,7,7,6,6,4,5693,7
+"3.5-4.00","Science","36-40","Greece","Male",125,27386,6,7,7,7,7,2,5103,2
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,6.6,9,9,8,5,2,5103,2
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,3.8,1,8,5,4,1,5511,1
+"Does not apply","Business","36-40","Spain","Male",120,22862,3.8,5,5,2,3,4,5842,3
+"Does not apply","Business","36-40","Spain","Male",120,22862,4,5,4,3,5,3,5150,4
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.8,3,4,2,3,2,5103,2
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,1,1,1,1,1,1,6850,4
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,3,6,3,3,2,1,5536,4
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,1,1,1,1,1,1,5685,6
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,3.8,4,6,3,2,4,6083,2
+"Does not apply","Business","31-35","Slovakia","Male",141,11269,8.2,7,7,9,9,9,5473,5
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.6,3,4,2,2,2,6134,2
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,5.6,7,7,5,5,4,5906,9
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,1.8,2,2,2,1,2,5151,2
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,4.4,5,6,4,5,2,5223,1
+"NULL","NULL","NULL","Canada","NULL",34,36194,3,3,5,2,3,2,5069,4
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,6.4,7,7,5,5,8,6382,2
+"Does not apply","Business","36-40","Spain","Male",120,22862,3,2,4,4,3,2,6271,4
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,8.8,10,10,7,7,10,5752,6
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,3,3,2,4,2,4,5758,5
+"3.5-4.00","Other","31-35","United States","Male",127,19363,6.4,8,9,6,6,3,5250,3
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,5,6,6,6,6,1,5307,6
+"Does not apply","Science","Do not want to disclose","India","Do not want to disclose",70,27165,3.4,5,5,3,2,2,5069,4
+"NULL","NULL","NULL","Canada","NULL",34,36194,5.4,8,3,5,6,5,5906,9
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,6.8,8,7,7,5,7,5758,5
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,7.2,8,8,7,6,7,5758,5
+"3.5-4.00","Engineering","36-40","United States","Male",56,14656,2.2,4,2,2,2,1,5069,4
+"3.5-4.00","Engineering","36-40","United States","Male",56,14656,4.6,4,4,6,7,2,5836,4
+"Does not apply","Science","41-45","Denmark","Male",204,12328,7.8,8,8,5,10,8,5906,9
+"3.5-4.00","Engineering","36-40","United States","Male",56,14656,4.2,4,5,5,5,2,5215,4
+"Does not apply","Science","41-45","Denmark","Male",204,12328,4,8,4,3,3,2,5250,3
+"3-3.49","Engineering","21-25","Trinidad and Tobago","Male",77,11494,7.4,6,8,8,7,8,5693,7
+"Does not apply","Science","41-45","Denmark","Male",204,12328,3.6,6,3,3,3,3,5787,3
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,3.8,6,3,5,3,2,5069,4
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,6.6,8,8,8,5,4,5693,7
+"Does not apply","Business","26-30","Colombia","Female",62,13777,1,1,1,1,1,1,5693,7
+"NULL","NULL","NULL","United States","NULL",391,34624,5.2,5,4,5,4,8,5283,3
+"Do not want to disclose","Engineering","over 50","Canada","Male",159,22632,4,3,7,5,4,1,5215,4
+"3.5-4.00","Engineering","21-25","Pakistan","Male",22,7844,1.2,2,1,1,1,1,5836,4
+"Do not want to disclose","Engineering","over 50","Canada","Male",159,22632,5,7,5,5,5,3,5470,17
+"3-3.49","Engineering","21-25","Trinidad and Tobago","Male",77,11494,4.2,5,5,5,3,3,5223,1
+"3-3.49","Engineering","21-25","Trinidad and Tobago","Male",77,11494,6,7,6,7,5,5,5787,3
+"3.5-4.00","Engineering","41-45","United States","Male",104,17120,4.8,7,5,6,4,2,5250,3
+"NULL","NULL","NULL","United States","NULL",38,33263,3.6,3,3,3,3,6,5223,1
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.2,2,2,2,3,2,5601,1
+"NULL","NULL","NULL","United States","NULL",38,33263,5.8,5,6,6,5,7,5213,8
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,3.8,2,5,4,1,7,5223,1
+"Does not apply","Business","26-30","Colombia","Female",62,13777,9,8,9,10,10,8,5470,17
+"Does not apply","Science","41-45","Denmark","Male",204,12328,3.8,3,6,3,5,2,5601,1
+"Do not want to disclose","Engineering","over 50","Canada","Male",159,22632,5.8,8,7,7,5,2,5069,4
+"Does not apply","Business","36-40","Germany","Male",354,21907,4.4,4,4,4,5,5,5906,9
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,1,1,1,1,1,1,6485,7
+"3.5-4.00","Science","21-25","Germany","Male",98,16101,3.6,4,5,4,4,1,5069,4
+"3.5-4.00","Other","26-30","Belarus","Female",58,8684,4,5,6,5,3,1,5601,1
+"3-3.49","Engineering","21-25","Trinidad and Tobago","Male",77,11494,5.2,5,4,6,6,5,5283,3
+"Does not apply","Engineering","31-35","United Kingdom","Male",41,17060,2.2,3,3,2,2,1,5069,4
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,1,1,1,1,1,1,6792,6
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,3.2,5,6,3,1,1,5562,2
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,3.8,6,8,1,3,1,5429,2
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,5,6,6,5,4,4,5015,0
+"Does not apply","Other","over 50","India","Male",143,17491,7.2,5,7,7,8,9,5106,2
+"Does not apply","Other","over 50","India","Male",143,17491,4.2,6,4,4,5,2,5475,5
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.6,1,2,2,3,5,5369,2
+"3.5-4.00","Engineering","over 50","Bolivia","Male",131,27480,3.8,4,4,5,3,3,5250,3
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.4,2,3,2,2,3,5026,2
+"NULL","NULL","NULL","Canada","NULL",34,36194,4.4,4,3,6,6,3,5693,7
+"NULL","NULL","NULL","Canada","NULL",34,36194,1.2,1,1,1,2,1,5939,4
+"3.5-4.00","Engineering","26-30","India","Male",27,14389,5.6,9,8,4,3,4,5817,1
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,3.6,2,5,4,2,5,5899,6
+"Does not apply","Business","26-30","Colombia","Female",62,13777,8.8,10,6,8,10,10,5906,9
+"Does not apply","Business","26-30","Colombia","Female",62,13777,7,5,7,8,5,10,5921,3
+"Does not apply","Business","26-30","Colombia","Female",62,13777,3.8,1,4,5,4,5,5516,2
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,8,8,7,8,8,9,5307,6
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,7.4,9,9,9,8,2,5004,5
+"3-3.49","Other","21-25","Spain","Female",75,2826,4,6,3,5,1,5,5787,3
+"Does not apply","Engineering","31-35","Romania","Male",89,8144,5.4,7,5,3,6,6,5150,4
+"Does not apply","Humanities","31-35","United States","Female",118,8491,3.4,7,4,3,2,1,5539,2
+"Does not apply","Engineering","31-35","Romania","Male",89,8144,4.8,1,6,6,6,5,6083,2
+"3.5-4.00","Other","31-35","United States","Male",127,19363,7.2,7,5,7,9,8,5470,17
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,7,7,7,5,6,10,5504,7
+"3.5-4.00","Other","31-35","United States","Male",127,19363,6.4,7,5,8,9,3,5836,4
+"3.5-4.00","Other","31-35","United States","Male",127,19363,3.4,5,4,4,2,2,5353,3
+"2.5-3","Business","over 50","United States","Male",61,5849,1,1,1,1,1,1,5250,3
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.6,2,4,2,3,2,5752,6
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,5.2,7,7,5,5,2,5764,1
+"Does not apply","Other","over 50","India","Male",143,17491,5.6,9,5,4,6,4,5758,5
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,6.4,9,3,10,6,4,5813,4
+"Do not want to disclose","Engineering","36-40","United Kingdom","Male",380,26989,3.4,6,4,2,3,2,5470,17
+"3.5-4.00","Engineering","26-30","India","Male",74,13947,7.8,8,8,7,9,7,5250,3
+"2.5-3","Business","over 50","United States","Male",61,5849,3.6,3,5,3,5,2,5069,4
+"2.5-3","Business","over 50","United States","Male",61,5849,1,1,1,1,1,1,6831,7
+"3.5-4.00","Other","31-35","United States","Male",127,19363,4.6,7,5,5,3,3,5624,3
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,4,5,3,6,5,1,5836,4
+"3.5-4.00","Other","31-35","United States","Male",127,19363,4.2,3,5,5,4,4,5103,2
+"3.5-4.00","Other","31-35","United States","Male",127,19363,3.4,3,3,5,3,3,5631,4
+"2.5-3","Business","over 50","United States","Male",61,5849,5.4,7,8,3,5,4,5365,2
+"3-3.49","Engineering","over 50","Argentina","Male",63,13197,4.4,7,1,4,6,4,5470,17
+"2.5-3","Business","over 50","United States","Male",61,5849,4.8,5,6,5,6,2,5556,1
+"3.5-4.00","Other","31-35","United States","Male",127,19363,3.6,5,3,3,4,3,5223,1
+"NULL","NULL","NULL","Romania","NULL",56,36409,4,5,5,2,3,5,5836,4
+"3.5-4.00","Other","31-35","United States","Male",127,19363,3,2,4,4,3,2,5958,2
+"3-3.49","Engineering","over 50","Argentina","Male",63,13197,5.4,7,6,6,4,4,5693,7
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,1.4,1,1,2,2,1,6387,0
+"Does not apply","Science","41-45","Denmark","Male",204,12328,5.6,8,8,5,5,2,5635,2
+"3.5-4.00","Other","31-35","United States","Male",127,19363,3.6,5,3,5,3,2,7054,0
+"NULL","NULL","NULL","Romania","NULL",56,36409,4.8,6,3,4,5,6,5250,3
+"3-3.49","Engineering","over 50","Argentina","Male",63,13197,6.8,8,8,7,6,5,5215,4
+"Does not apply","Science","41-45","Denmark","Male",204,12328,8.6,8,9,9,9,8,5663,7
+"3-3.49","Engineering","over 50","Argentina","Male",63,13197,4.4,6,4,5,5,2,7074,1
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,7.6,8,6,7,8,9,6633,2
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,3.4,8,2,5,1,1,5470,17
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,3.2,6,1,6,1,2,5693,7
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,6,6,6,6,6,6,5921,3
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,3,5,3,3,1,3,5223,1
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,3.6,7,2,6,2,1,5464,5
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,3.6,3,1,6,3,5,5980,0
+"Does not apply","Business","21-25","Brazil","Male",43,29913,4.4,3,9,5,3,2,5250,3
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,5.2,7,6,6,2,5,5420,3
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,7.2,10,8,4,4,10,5921,3
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,8.4,8,9,10,9,6,5921,3
+"Do not want to disclose","Science","31-35","Germany","Male",80,20142,5,5,5,5,5,5,5069,4
+"3.5-4.00","Science","41-45","Colombia","Female",37,14451,5.2,5,5,5,5,6,5069,4
+"Does not apply","Business","21-25","Brazil","Male",43,29913,6.4,7,9,7,6,3,5215,4
+"Does not apply","Business","21-25","Brazil","Male",43,29913,1,1,1,1,1,1,6442,7
+"2.5-3","Other","over 50","United States","Male",88,35,2,2,3,2,2,1,5215,4
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,5.6,5,8,5,5,5,5817,1
+"Does not apply","Business","21-25","Brazil","Male",43,29913,2.4,3,2,3,2,2,7047,1
+"2.5-3","Other","over 50","United States","Male",88,35,5.8,7,7,6,6,3,5693,7
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,4.2,5,3,6,5,2,5017,4
+"2.5-3","Other","over 50","United States","Male",88,35,8.2,9,8,7,8,9,5906,9
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,4.4,2,5,5,5,5,5118,4
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,4.8,5,4,4,3,8,5283,3
+"2.5-3","Other","over 50","United States","Male",88,35,6.4,10,9,6,5,2,5988,27
+"2.5-3","Other","over 50","United States","Male",88,35,6.4,7,7,6,6,6,5921,3
+"2.5-3","Other","over 50","United States","Male",88,35,1,1,1,1,1,1,5578,3
+"2.5-3","Other","over 50","United States","Male",88,35,4.4,4,4,5,5,4,5190,6
+"Does not apply","Science","46-50","United States","Female",63,17600,3.6,5,6,3,3,1,5069,4
+"Do not want to disclose","Other","36-40","Japan","Male",233,19656,1.6,2,2,2,1,1,5693,7
+"Does not apply","Engineering","26-30","Australia","Male",22,2290,6.8,8,8,8,4,6,5250,3
+"3.5-4.00","Business","41-45","United States","Male",87,14242,1,1,1,1,1,1,5069,4
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,3,5,1,5,3,1,5360,3
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,3,6,1,6,1,1,5667,1
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,3.4,3,5,4,3,2,5309,7
+"3.5-4.00","Other","21-25","Italy","Male",37,3113,5.6,2,10,7,7,2,5215,4
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,3.4,5,2,5,3,2,5363,1
+"Does not apply","Science","21-25","India","Male",72,12665,4,4,6,6,3,1,5069,4
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,4.2,7,5,5,3,1,5479,17
+"NULL","NULL","NULL","Romania","NULL",56,36409,4.8,6,6,4,5,3,5069,4
+"Does not apply","Science","21-25","India","Male",72,12665,7.6,10,9,9,7,3,5906,9
+"NULL","NULL","NULL","Romania","NULL",56,36409,8,10,8,7,9,6,5627,5
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,4,3,4,3,2,8,5608,2
+"Does not apply","Science","46-50","United States","Female",63,17600,3.8,5,3,3,3,5,5470,17
+"Does not apply","Science","21-25","India","Male",72,12665,4.2,5,8,3,3,2,5215,4
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,3.2,3,2,4,5,2,6382,2
+"Does not apply","Business","21-25","Brazil","Male",43,29913,1.2,2,1,1,1,1,5374,9
+"NULL","NULL","NULL","Romania","NULL",56,36409,4.2,5,3,3,7,3,5144,2
+"NULL","NULL","NULL","Romania","NULL",56,36409,6.2,8,7,3,6,7,5213,8
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,4,8,1,1,5,5,5663,7
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,4.4,6,4,5,5,2,5226,1
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,4.6,5,5,8,3,2,5663,7
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,4.4,3,7,6,4,2,5980,0
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,2.8,4,3,2,4,1,5993,2
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,3,5,5,2,2,1,5106,2
+"Does not apply","Business","26-30","Czech Republic","Male",137,14203,4.8,8,2,5,5,4,5875,3
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,8.8,9,8,9,9,9,5539,2
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,3,4,4,4,2,1,5601,1
+"3-3.49","Engineering","26-30","United States","Female",86,237,6.2,8,6,5,8,4,5836,4
+"Does not apply","Humanities","31-35","United States","Female",118,8491,2,3,2,2,2,1,5360,3
+"Does not apply","Humanities","31-35","United States","Female",118,8491,4,4,3,3,4,6,5170,2
+"Does not apply","Humanities","31-35","United States","Female",118,8491,5.2,6,5,5,5,5,5204,6
+"Does not apply","Science","41-45","Denmark","Male",204,12328,4.2,4,6,4,4,3,5288,2
+"Does not apply","Science","46-50","United States","Female",63,17600,6,9,7,6,5,3,5250,3
+"Does not apply","Science","46-50","United States","Female",63,17600,1.4,3,1,1,1,1,5223,1
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,6,5,8,6,6,5,5151,2
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,3.8,4,5,3,5,2,6204,1
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,6.6,8,7,8,7,3,7024,3
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,1,1,1,1,1,1,5511,1
+"Does not apply","Engineering","31-35","Spain","Male",133,3339,6.8,8,6,6,8,6,5504,7
+"Does not apply","Business","36-40","Germany","Male",354,21907,3.2,3,5,4,2,2,5215,4
+"Does not apply","Engineering","26-30","Russian Federation","Male",305,18289,7,9,8,7,7,4,5906,9
+"NULL","NULL","26-30","Argentina","Male",67,31078,3.8,5,3,5,5,1,5470,17
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,2.6,6,2,2,2,1,5452,4
+"Does not apply","Medicine","18-20","United Kingdom","Male",54,23187,2.4,4,1,2,4,1,5250,3
+"Does not apply","Science","46-50","United States","Female",63,17600,3.2,6,4,2,3,1,5536,4
+"Does not apply","Business","26-30","Colombia","Female",62,13777,7,5,7,8,9,6,5114,5
+"2.5-3","Business","36-40","India","Male",325,17528,5.6,6,5,5,5,7,5069,4
+"2.5-3","Engineering","31-35","Colombia","Male",86,15622,6.4,8,7,8,8,1,5836,4
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,5.8,8,5,4,7,5,5875,3
+"NULL","NULL","NULL","United States","NULL",391,34624,1,1,1,1,1,1,5685,6
+"Does not apply","Business","36-40","Germany","Male",354,21907,3.4,4,4,4,2,3,5562,2
+"3.5-4.00","Business","over 50","Pakistan","Male",154,22224,6,7,6,6,6,5,5906,9
+"3.5-4.00","Business","41-45","United States","Male",87,14242,1,1,1,1,1,1,5906,9
+"3.5-4.00","Business","over 50","Pakistan","Male",154,22224,3.6,3,6,3,4,2,5693,7
+"Does not apply","Engineering","31-35","United States","Male",364,9491,6.4,7,7,7,4,7,5817,1
+"3.5-4.00","Engineering","46-50","United States","Female",27,15096,5.8,7,5,5,5,7,5693,7
+"Does not apply","Science","over 50","Australia","Male",238,1006,5,5,6,4,4,6,5470,17
+"Does not apply","Science","over 50","Australia","Male",238,1006,4.4,6,4,3,4,5,5939,4
+"Does not apply","Science","over 50","Australia","Male",238,1006,4.8,3,7,5,3,6,6382,2
+"Does not apply","Science","over 50","Australia","Male",238,1006,3,3,4,2,3,3,5429,2
+"3.5-4.00","Engineering","41-45","United States","Male",104,17120,3.6,6,3,4,3,2,5906,9
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,6.6,8,7,7,7,4,6083,2
+"3-3.49","Science","26-30","Spain","Male",16,11937,4.8,4,7,5,4,4,5069,4
+"3-3.49","Science","26-30","Spain","Male",16,11937,4.6,6,4,3,5,5,5693,7
+"3-3.49","Science","26-30","Spain","Male",16,11937,5.4,3,8,5,5,6,5470,17
+"Does not apply","Engineering","26-30","Finland","Male",16,32973,4,5,4,3,3,5,5069,4
+"Does not apply","Engineering","26-30","Finland","Male",16,32973,8,7,10,9,9,5,5906,9
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,2.4,2,2,3,3,2,5651,0
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,5.4,5,3,6,6,7,5154,3
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,4.6,6,5,5,4,3,5475,5
+"Does not apply","Engineering","26-30","Finland","Male",16,32973,6.6,8,6,9,6,4,5693,7
+"Does not apply","Engineering","26-30","Russian Federation","Male",305,18289,4.6,6,5,4,4,4,5693,7
+"3.5-4.00","Business","41-45","United States","Male",87,14242,3,4,4,3,2,2,5369,2
+"3-3.49","Engineering","31-35","Argentina","Male",104,13853,2.4,3,4,2,2,1,5836,4
+"3-3.49","Engineering","over 50","Argentina","Male",63,13197,5.2,7,6,5,4,4,5150,4
+"3.5-4.00","Engineering","26-30","United States","Male",33,19544,2.4,3,3,2,3,1,5758,5
+"3.5-4.00","Engineering","31-35","India","Male",107,16777,7.4,7,7,7,6,10,5154,3
+"NULL","NULL","NULL","United States","NULL",391,34624,4.4,6,4,6,4,2,5026,2
+"Does not apply","Business","36-40","Germany","Male",354,21907,4.4,5,1,6,6,4,5424,1
+"3.5-4.00","Medicine","36-40","United States","Male",171,5489,4.8,6,5,4,4,5,5906,9
+"Does not apply","Science","31-35","Australia","Male",36,997,3.6,5,4,5,3,1,5836,4
+"3.5-4.00","Engineering","46-50","United States","Female",27,15096,5.4,8,8,5,5,1,5069,4
+"Does not apply","Engineering","26-30","Finland","Male",16,32973,6.8,9,9,8,6,2,5213,8
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6.6,7,8,6,7,5,5693,7
+"3.5-4.00","Business","36-40","United States","Male",101,19752,5.4,6,7,4,4,6,5215,4
+"3.5-4.00","Business","36-40","United States","Male",101,19752,5.6,6,7,6,4,5,5470,17
+"3.5-4.00","Business","36-40","United States","Male",101,19752,4.4,5,6,4,4,3,5154,3
+"3.5-4.00","Business","36-40","United States","Male",101,19752,4.8,6,6,5,3,4,5516,2
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6.2,6,7,6,6,6,6109,1
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,5.2,8,7,8,2,1,5516,2
+"Does not apply","Engineering","26-30","Finland","Male",16,32973,5.8,8,7,7,6,1,7074,1
+"Does not apply","Engineering","26-30","Finland","Male",16,32973,1,1,1,1,1,1,6442,7
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,5.2,6,4,4,4,8,5154,3
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,3.8,7,3,5,3,1,7074,1
+"Does not apply","Business","26-30","Spain","Male",176,5634,3.8,1,4,7,6,1,5836,4
+"Does not apply","Business","26-30","Spain","Male",176,5634,8.8,10,9,10,10,5,5250,3
+"Does not apply","Business","26-30","Spain","Male",176,5634,5,5,6,5,6,3,7074,1
+"Does not apply","Business","26-30","Spain","Male",176,5634,8.2,5,10,9,8,9,5154,3
+"3.5-4.00","Business","36-40","United States","Male",101,19752,1,1,1,1,1,1,5277,7
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6.6,7,7,7,6,6,5667,1
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6.8,7,7,7,7,6,5608,2
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6,6,7,6,5,6,6277,3
+"3.5-4.00","Business","31-35","United States","Male",61,12978,3.2,3,9,2,1,1,5069,4
+"3.5-4.00","Business","31-35","United States","Male",61,12978,3.8,2,8,5,2,2,5693,7
+"Does not apply","Business","31-35","Ireland","Female",52,9066,5,5,7,6,5,2,5069,4
+"Does not apply","Business","31-35","Ireland","Female",52,9066,3.6,3,5,5,4,1,5250,3
+"Does not apply","Engineering","36-40","Spain","Male",31,4655,5.8,8,5,6,5,5,5693,7
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,2.4,3,4,3,1,1,5599,7
+"Does not apply","Engineering","36-40","Spain","Female",26,15171,5,6,4,5,5,5,7074,1
+"Does not apply","Engineering","36-40","Spain","Male",31,4655,7.2,10,8,6,9,3,5906,9
+"Does not apply","Engineering","36-40","Spain","Female",26,15171,6,9,4,4,7,6,5667,1
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,7.4,8,7,7,6,9,5667,1
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,4.8,6,7,5,4,2,7074,1
+"Does not apply","Business","26-30","Spain","Male",176,5634,9,9,9,8,9,10,5875,3
+"Does not apply","Engineering","36-40","Spain","Male",31,4655,6.8,8,8,7,7,4,5250,3
+"3.5-4.00","Business","41-45","United States","Male",87,14242,5.8,5,6,6,6,6,5154,3
+"3-3.49","Science","26-30","United States","Male",71,16519,1.6,3,1,1,2,1,5069,4
+"3-3.49","Science","26-30","United States","Male",71,16519,6.6,8,7,7,8,3,5470,17
+"Does not apply","Engineering","26-30","Russian Federation","Male",305,18289,2.8,4,3,3,3,1,7074,1
+"3-3.49","Engineering","31-35","Argentina","Male",104,13853,2.2,2,4,2,1,2,5250,3
+"3-3.49","Engineering","31-35","Argentina","Male",104,13853,5.2,5,8,7,4,2,5215,4
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,3,3,3,2,1,6,5069,4
+"3-3.49","Engineering","31-35","Argentina","Male",104,13853,1,1,1,1,1,1,7074,1
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,4.8,4,6,5,6,3,5693,7
+"NULL","NULL","NULL","Canada","NULL",34,36194,6.6,7,7,7,7,5,5921,3
+"3-3.49","Engineering","31-35","Argentina","Male",104,13853,3.2,6,4,2,2,2,6382,2
+"Do not want to disclose","Business","31-35","United Kingdom","Male",49,26036,3.6,3,5,4,3,3,5693,7
+"Does not apply","Engineering","31-35","United States","Male",364,9491,3.2,4,2,5,4,1,6148,4
+"3.5-4.00","Business","36-40","United States","Male",101,19752,7.4,8,7,8,8,6,5921,3
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6.6,7,6,8,6,6,5369,2
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6.2,7,4,7,6,7,5204,6
+"3.5-4.00","Business","36-40","United States","Male",101,19752,5.8,7,5,6,6,5,5635,2
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6.4,6,7,5,8,6,5103,2
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6.8,7,9,4,8,6,5026,2
+"3.5-4.00","Business","36-40","United States","Male",101,19752,5.8,6,5,6,6,6,5283,3
+"3.5-4.00","Business","36-40","United States","Male",101,19752,4.8,5,6,5,4,4,5309,7
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6.4,7,6,7,7,5,5235,4
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6,6,5,7,6,6,5787,3
+"3.5-4.00","Science","21-25","United States","Male",42,17471,4.6,6,6,6,4,1,5069,4
+"Does not apply","Business","26-30","Spain","Male",176,5634,8,10,8,8,8,6,5473,5
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,6,8,5,7,5,5,5667,1
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,1,1,1,1,1,1,5475,5
+"Does not apply","Engineering","26-30","Russian Federation","Male",305,18289,5,6,6,4,4,5,5235,4
+"Does not apply","Science","Do not want to disclose","United States","Do not want to disclose",105,18415,4,5,8,2,4,1,5906,9
+"3.5-4.00","Business","36-40","United States","Male",101,19752,6.4,6,7,6,7,6,6271,4
+"Does not apply","Engineering","41-45","Italy","Male",74,15131,3.8,3,5,2,1,8,5235,4
+"Does not apply","Science","41-45","Denmark","Male",204,12328,4.4,8,4,4,3,3,5921,3
+"3.5-4.00","Business","41-45","United States","Male",87,14242,1,1,1,1,1,1,5758,5
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,5.4,8,9,7,1,2,5667,1
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,7.2,9,6,7,5,9,5307,6
+"Do not want to disclose","Science","26-30","Ireland","Female",26,11836,9,9,9,9,9,9,5693,7
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,5,8,8,5,2,2,5353,3
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,4,3,2,8,3,4,5939,4
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,6,5,7,9,4,5,5556,1
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,4,9,1,8,1,1,5050,8
+"NULL","NULL","NULL","Germany","NULL",37,37541,5.8,7,8,7,6,1,5250,3
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,5.6,7,2,9,4,6,5899,6
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,1,1,1,1,1,1,6792,6
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,6.4,7,7,8,9,1,5752,6
+"3.5-4.00","Business","26-30","Iran, Islamic Republic of","Male",96,17796,6.6,6,3,7,7,10,5842,3
+"Does not apply","Business","36-40","Germany","Male",354,21907,4.4,5,5,4,4,4,5095,3
+"3-3.49","Humanities","26-30","United States","Male",15,7763,5.6,10,5,6,6,1,5693,7
+"3-3.49","Humanities","26-30","United States","Male",15,7763,2.2,2,1,2,5,1,5906,9
+"3-3.49","Humanities","26-30","United States","Male",15,7763,3,4,3,4,3,1,5069,4
+"Does not apply","Business","36-40","Germany","Male",354,21907,4.6,4,5,5,4,5,5283,3
+"3.5-4.00","Medicine","36-40","United States","Male",171,5489,5.8,7,6,6,5,5,5693,7
+"3-3.49","Humanities","26-30","United States","Male",15,7763,2,2,4,2,1,1,5599,7
+"3.5-4.00","Medicine","36-40","United States","Male",171,5489,5.2,7,6,4,4,5,5215,4
+"3.5-4.00","Medicine","36-40","United States","Male",171,5489,4.8,7,4,5,5,3,6134,2
+"3.5-4.00","Medicine","36-40","United States","Male",171,5489,1,1,1,1,1,1,6485,7
+"3.5-4.00","Medicine","31-35","United States","Male",51,21959,5.2,6,5,5,5,5,5906,9
+"3-3.49","Humanities","26-30","United States","Male",15,7763,1,1,1,1,1,1,5015,0
+"3-3.49","Humanities","26-30","United States","Male",15,7763,1,1,1,1,1,1,6387,0
+"3.5-4.00","Medicine","31-35","United States","Male",51,21959,6,7,6,6,6,5,5836,4
+"3.5-4.00","Medicine","31-35","United States","Male",51,21959,6.2,8,6,6,6,5,5250,3
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,8.8,9,9,9,8,9,5752,6
+"Does not apply","Engineering","26-30","Russian Federation","Male",305,18289,2.2,3,2,2,2,2,5223,1
+"Does not apply","Engineering","31-35","United States","Male",364,9491,4,5,3,5,5,2,5283,3
+"3.5-4.00","Engineering","31-35","India","Male",107,16777,3.4,3,4,5,3,2,5283,3
+"3.5-4.00","Business","31-35","Colombia","Male",14,29648,5.2,7,5,7,6,1,5470,17
+"Does not apply","Business","36-40","Germany","Male",354,21907,5,6,7,6,4,2,6083,2
+"3.5-4.00","Medicine","31-35","United States","Male",51,21959,1,1,1,1,1,1,6850,4
+"3.5-4.00","Medicine","31-35","United States","Male",51,21959,5.8,7,6,6,6,4,5764,1
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,5.4,6,5,5,5,6,5470,17
+"3.5-4.00","Engineering","over 50","Bolivia","Male",131,27480,3.6,3,3,3,4,5,5906,9
+"3.5-4.00","Engineering","over 50","Bolivia","Male",131,27480,3.8,3,4,5,4,3,5095,3
+"Does not apply","Business","41-45","Faroe Islands","Male",26,4638,7,10,8,9,6,2,5906,9
+"3.5-4.00","Engineering","over 50","Bolivia","Male",131,27480,3,2,3,3,2,5,5118,4
+"Do not want to disclose","Science","31-35","Germany","Male",80,20142,7.8,7,9,9,7,7,5693,7
+"Do not want to disclose","Science","31-35","Germany","Male",80,20142,7.4,7,8,7,7,8,5250,3
+"Do not want to disclose","Science","31-35","Germany","Male",80,20142,6.6,9,6,7,6,5,5307,6
+"2.5-3","Science","21-25","Trinidad and Tobago","Male",66,15143,5.8,2,6,8,6,7,5906,9
+"3.5-4.00","Science","21-25","United States","Male",42,17471,5.6,8,9,5,4,2,5906,9
+"3-3.49","Business","21-25","Canada","Male",84,17408,4.8,5,8,4,6,1,5215,4
+"3-3.49","Business","21-25","Canada","Male",84,17408,5,5,5,5,9,1,5470,17
+"3-3.49","Business","21-25","Canada","Male",84,17408,6.6,10,7,7,6,3,5906,9
+"3.5-4.00","Science","21-25","United States","Male",42,17471,5.2,5,10,5,4,2,5836,4
+"3.5-4.00","Science","21-25","United States","Male",42,17471,6.4,6,10,5,6,5,5307,6
+"Does not apply","Science","Do not want to disclose","United States","Do not want to disclose",105,18415,2.6,4,4,2,2,1,5215,4
+"Does not apply","Science","Do not want to disclose","United States","Do not want to disclose",105,18415,4.4,5,7,3,6,1,5069,4
+"Does not apply","Science","Do not want to disclose","United States","Do not want to disclose",105,18415,7.4,9,8,5,5,10,5421,6
+"Does not apply","Science","Do not want to disclose","United States","Do not want to disclose",105,18415,6,5,7,8,9,1,7054,0
+"Does not apply","Business","26-30","Spain","Female",190,11472,7.2,9,9,8,6,4,5906,9
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,4.4,6,4,5,2,5,5635,2
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,2.8,1,5,6,1,1,5578,3
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,2.8,8,3,1,1,1,5050,8
+"Do not want to disclose","Other","36-40","Japan","Male",233,19656,3.8,4,3,4,6,2,5836,4
+"Does not apply","Business","41-45","Faroe Islands","Male",26,4638,3.2,6,2,3,3,2,5693,7
+"Do not want to disclose","Science","31-35","Germany","Male",80,20142,2.6,2,2,3,3,3,5374,9
+"3-3.49","Engineering","46-50","Iran, Islamic Republic of","Female",420,19447,3.2,4,3,3,3,3,5069,4
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,7.4,9,8,7,7,6,5473,5
+"Does not apply","Science","Do not want to disclose","United States","Do not want to disclose",105,18415,5.6,6,3,6,6,7,5473,5
+"2.5-3","Science","21-25","Trinidad and Tobago","Male",66,15143,4.8,4,3,8,6,3,5215,4
+"Does not apply","Business","26-30","Spain","Female",190,11472,2.2,1,3,4,2,1,5215,4
+"Do not want to disclose","Science","31-35","Germany","Male",80,20142,4,3,4,5,5,3,6148,4
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.2,2,3,2,3,1,5958,2
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,1.6,1,1,1,4,1,5631,4
+"Do not want to disclose","Science","31-35","Germany","Male",80,20142,7.2,8,6,7,7,8,5154,3
+"3.5-4.00","Science","36-40","United States","Male",83,19690,4.2,6,5,5,4,1,5836,4
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,5,8,6,5,4,2,5464,5
+"3-3.49","Other","21-25","Indonesia","Male",109,16805,4.2,5,6,4,4,2,5069,4
+"3.5-4.00","Engineering","26-30","Saudi Arabia","Male",16,20245,7.6,9,6,6,9,8,5906,9
+"Does not apply","Science","Do not want to disclose","United States","Do not want to disclose",105,18415,3,4,3,5,2,1,5141,19
+"Does not apply","Other","over 50","India","Male",143,17491,5.8,8,6,6,5,4,5420,3
+"Do not want to disclose","Other","over 50","United States","Female",183,24235,5.6,10,5,5,4,4,5470,17
+"Does not apply","Engineering","36-40","United States","Male",82,23485,5.8,7,6,6,6,4,5906,9
+"Does not apply","Engineering","36-40","United States","Male",82,23485,1,1,1,1,1,1,5215,4
+"Does not apply","Engineering","26-30","Russian Federation","Male",305,18289,2.2,2,3,2,3,1,5360,3
+"Does not apply","Engineering","36-40","United States","Male",82,23485,5,6,4,4,7,4,5470,17
+"Does not apply","Engineering","36-40","United States","Male",82,23485,6.8,9,4,5,7,9,5421,6
+"Does not apply","Engineering","36-40","United States","Male",82,23485,6.6,7,7,7,8,4,5017,4
+"Do not want to disclose","Engineering","36-40","United Kingdom","Male",380,26989,5.6,7,8,8,2,3,5693,7
+"Does not apply","Engineering","36-40","United States","Male",82,23485,1.8,2,2,2,2,1,5004,5
+"Does not apply","Engineering","46-50","Spain","Male",131,14869,2.2,3,2,2,2,2,5069,4
+"Does not apply","Engineering","46-50","Spain","Male",131,14869,2.4,4,4,2,1,1,5215,4
+"Does not apply","Engineering","46-50","Spain","Male",131,14869,2.2,4,2,2,2,1,5190,6
+"Do not want to disclose","Engineering","36-40","United Kingdom","Male",380,26989,4.4,4,3,7,7,1,5836,4
+"Do not want to disclose","Engineering","36-40","United Kingdom","Male",380,26989,2.8,2,8,1,2,1,6271,4
+"Does not apply","Science","41-45","Denmark","Male",204,12328,3.8,3,7,3,3,3,6271,4
+"3-3.49","Engineering","46-50","Iran, Islamic Republic of","Female",420,19447,5,5,6,6,6,2,5836,4
+"Does not apply","Engineering","26-30","Russian Federation","Male",305,18289,5.8,5,7,6,8,3,5475,5
+"Does not apply","Other","26-30","United States","Male",213,9811,7,7,7,6,7,8,5651,0
+"Do not want to disclose","Science","31-35","Germany","Male",80,20142,5.4,7,5,6,5,4,5365,2
+"3.5-4.00","Science","36-40","United States","Male",83,19690,3.8,4,6,4,4,1,5069,4
+"NULL","NULL","NULL","Germany","NULL",37,37541,7,8,5,8,7,7,5693,7
+"2.5-3","Business","41-45","United Kingdom","Female",463,11835,7,7,7,7,7,7,6633,2
+"3.5-4.00","Business","31-35","Spain","Male",29,4508,5.2,7,6,7,4,2,5215,4
+"Does not apply","Science","41-45","Denmark","Male",204,12328,4.2,6,6,3,3,3,5015,0
+"Do not want to disclose","Engineering","36-40","United Kingdom","Male",380,26989,5.2,10,6,6,2,2,5026,2
+"Does not apply","Science","46-50","United States","Female",63,17600,3.6,5,4,4,3,2,6271,4
+"Do not want to disclose","Engineering","36-40","United Kingdom","Male",380,26989,2.8,3,1,1,1,8,5651,0
+"Does not apply","Science","46-50","United States","Female",63,17600,2.2,2,3,2,2,2,7047,1
+"Does not apply","Science","46-50","United States","Female",63,17600,3,3,4,4,3,1,5980,0
+"3.5-4.00","Other","over 50","Canada","Male",164,7841,3.2,4,3,3,3,3,6204,1
+"3-3.49","Engineering","26-30","United States","Female",88,30098,4,5,4,5,5,1,5836,4
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,4,5,6,6,1,2,6204,1
+"3.5-4.00","Engineering","31-35","India","Male",107,16777,8,9,7,8,8,8,5402,4
+"3.5-4.00","Science","over 50","Italy","Male",95,30064,4.6,5,4,7,6,1,6204,1
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,3.6,5,4,4,4,1,5069,4
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,3.2,2,5,4,4,1,5215,4
+"Do not want to disclose","Engineering","36-40","United Kingdom","Male",380,26989,2.8,2,5,5,1,1,6204,1
+"Do not want to disclose","Engineering","36-40","United Kingdom","Male",380,26989,1,1,1,1,1,1,6831,7
+"Do not want to disclose","Engineering","36-40","United Kingdom","Male",380,26989,6.2,9,8,6,6,2,5473,5
+"Do not want to disclose","Engineering","41-45","United States","Male",101,22698,3,2,4,2,4,3,5215,4
+"Do not want to disclose","Engineering","41-45","United States","Male",101,22698,4.8,7,6,6,3,2,5906,9
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,8,8,9,8,7,8,5906,9
+"3.5-4.00","Engineering","21-25","Pakistan","Male",46,8295,4.6,5,3,4,6,5,5069,4
+"3.5-4.00","Engineering","21-25","Pakistan","Male",46,8295,5.4,4,6,6,4,7,5693,7
+"3.5-4.00","Engineering","21-25","Pakistan","Male",46,8295,5.6,7,6,6,5,4,5906,9
+"3.5-4.00","Engineering","21-25","Pakistan","Male",46,8295,4.2,5,4,5,4,3,5986,33
+"3.5-4.00","Engineering","21-25","Pakistan","Male",46,8295,3.4,3,4,4,4,2,5758,5
+"Does not apply","Engineering","26-30","Russian Federation","Male",305,18289,5.6,7,7,4,5,5,5986,33
+"Do not want to disclose","Engineering","41-45","United States","Male",101,22698,1,1,1,1,1,1,5250,3
+"Do not want to disclose","Engineering","41-45","United States","Male",101,22698,6.8,7,4,7,7,9,5369,2
+"3.5-4.00","Engineering","31-35","India","Male",107,16777,3.8,4,5,4,4,2,6204,1
+"3-3.49","Engineering","46-50","Iran, Islamic Republic of","Female",420,19447,5.6,7,5,6,6,4,5402,4
+"3.5-4.00","Other","over 50","Canada","Male",164,7841,9.4,9,9,9,10,10,5402,4
+"2.5-3","Humanities","36-40","Peru","Female",49,30368,2.6,4,2,2,3,2,5693,7
+"3.5-4.00","Science","over 50","Italy","Male",95,30064,4.6,5,6,7,3,2,5986,33
+"Does not apply","Science","26-30","Russian Federation","Female",48,11977,4.6,5,3,6,6,3,5470,17
+"3.5-4.00","Engineering","26-30","Chile","Male",10,23957,6,7,3,6,5,9,5693,7
+"3.5-4.00","Engineering","31-35","United States","Female",85,4274,8.8,9,9,9,9,8,5215,4
+"3.5-4.00","Engineering","31-35","United States","Female",85,4274,5.4,8,8,4,4,3,5836,4
+"3.5-4.00","Engineering","31-35","United States","Female",85,4274,10,10,10,10,10,10,5309,7
+"3.5-4.00","Engineering","31-35","United States","Female",85,4274,4.4,5,4,4,4,5,5939,4
+"NULL","NULL","NULL","United States","NULL",391,34624,4.6,2,2,6,4,9,5309,7
+"3.5-4.00","Engineering","31-35","United States","Female",85,4274,5,6,5,5,8,1,5986,33
+"3.5-4.00","Engineering","31-35","United States","Female",85,4274,3.2,4,4,5,2,1,5479,17
+"Does not apply","Science","21-25","India","Male",72,12665,8.2,9,9,9,8,6,5986,33
+"3.5-4.00","Engineering","31-35","United States","Female",85,4274,2.4,2,5,2,2,1,5363,1
+"Does not apply","Engineering","26-30","Russian Federation","Male",305,18289,2,2,1,2,2,3,5651,0
+"3.5-4.00","Engineering","26-30","Chile","Male",10,23957,3.4,2,6,5,3,1,5906,9
+"3.5-4.00","Engineering","26-30","Chile","Male",10,23957,5.4,4,9,8,5,1,5215,4
+"Does not apply","Other","26-30","United States","Male",213,9811,6.6,8,6,8,6,5,6382,2
+"Does not apply","Other","26-30","United States","Male",213,9811,6,7,6,7,7,3,7074,1
+"Does not apply","Other","26-30","United States","Male",213,9811,7.8,8,8,8,8,7,5106,2
+"Does not apply","Engineering","36-40","United States","Male",82,23485,5.6,6,4,4,5,9,5309,7
+"3.5-4.00","Business","41-45","United States","Male",87,14242,6,8,8,4,5,5,5144,2
+"3.5-4.00","Business","over 50","Pakistan","Male",154,22224,7.4,7,7,8,8,7,5939,4
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,4.4,7,5,3,5,2,5226,1
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,1.8,1,2,3,2,1,5635,2
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,6.6,7,7,8,6,5,5875,3
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,3.6,3,4,4,3,4,5283,3
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,8,8,6,8,9,9,5663,7
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,5,6,5,6,5,3,5026,2
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,4.2,5,5,3,3,5,5223,1
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,2.8,3,3,3,2,3,5562,2
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,5,7,5,5,3,5,5939,4
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,5.2,5,7,6,4,4,5150,4
+"Does not apply","Business","21-25","Germany","Male",83,14340,6,8,3,7,9,3,5026,2
+"3.5-4.00","Business","41-45","United States","Male",87,14242,4.6,5,7,4,4,3,5939,4
+"3.5-4.00","Engineering","31-35","United States","Male",68,4156,4,6,2,5,2,5,5693,7
+"1.5-2","Engineering","21-25","India","Male",108,16816,3.2,2,4,3,2,5,5250,3
+"Does not apply","Business","26-30","Germany","Male",54,13839,5.4,9,5,5,4,4,5906,9
+"Does not apply","Business","26-30","Germany","Male",54,13839,5.2,8,7,6,1,4,5470,17
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.6,3,4,2,2,2,6382,2
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2,2,3,2,1,2,5921,3
+"Does not apply","Engineering","41-45","Sweden","Female",260,8394,6,8,7,7,7,1,5906,9
+"Does not apply","Other","26-30","United States","Male",213,9811,9,9,9,9,9,9,5752,6
+"Does not apply","Other","26-30","United States","Male",213,9811,8.4,8,8,8,9,9,5473,5
+"Does not apply","Other","26-30","United States","Male",213,9811,6.4,8,7,7,7,3,5993,2
+"Does not apply","Law","31-35","France","Male",7,23306,4.6,5,5,5,5,3,5470,17
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,3.4,3,4,3,3,4,5939,4
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,2.6,3,3,2,3,2,5114,5
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,2.8,3,4,3,3,1,5601,1
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,4.4,5,5,4,3,5,5536,4
+"Do not want to disclose","Engineering","46-50","Australia","Male",65,15773,3.4,6,4,2,4,1,5693,7
+"Do not want to disclose","Engineering","46-50","Australia","Male",65,15773,7.4,9,6,8,6,8,5470,17
+"Does not apply","Other","26-30","United States","Male",213,9811,7.8,8,8,8,8,7,5026,2
+"Does not apply","Engineering","31-35","United States","Male",364,9491,4.2,5,4,4,3,5,5608,2
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.6,3,2,3,1,4,5170,2
+"Do not want to disclose","Engineering","46-50","Australia","Male",65,15773,2.8,3,4,3,2,2,5069,4
+"Do not want to disclose","Engineering","46-50","Australia","Male",65,15773,4.4,5,6,5,4,2,5026,2
+"3-3.49","Science","18-20","Philippines","Male",112,19750,6.2,7,6,8,5,5,5693,7
+"Do not want to disclose","Engineering","46-50","Australia","Male",65,15773,4.8,7,3,2,2,10,5560,0
+"Do not want to disclose","Engineering","46-50","Australia","Male",65,15773,6.2,8,5,8,4,6,5764,1
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.2,3,1,2,1,4,5560,0
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,5.6,6,6,7,4,5,5608,2
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,5.6,5,5,5,7,6,5307,6
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,4.4,4,5,5,4,4,5360,3
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,3.8,4,3,4,5,3,5369,2
+"Does not apply","Other","26-30","United States","Male",213,9811,7.2,8,8,8,7,5,5608,2
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,8.8,10,8,8,9,9,5752,6
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,5.2,6,7,5,4,4,5667,1
+"Does not apply","Business","21-25","Germany","Male",83,14340,5.4,6,4,4,9,4,5539,2
+"3.5-4.00","Business","41-45","United States","Male",87,14242,1,1,1,1,1,1,5288,2
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,4,6,5,3,3,3,5151,2
+"3.5-4.00","Science","21-25","Germany","Male",98,16101,5.8,3,8,4,6,8,5215,4
+"3.5-4.00","Science","21-25","Germany","Male",98,16101,3.6,3,1,5,7,2,5836,4
+"3.5-4.00","Science","21-25","Germany","Male",98,16101,4.8,5,1,6,3,9,5608,2
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,3.2,5,2,1,2,6,5608,2
+"3.5-4.00","Science","21-25","Germany","Male",98,16101,9.4,10,8,9,10,10,5752,6
+"Does not apply","Business","41-45","Faroe Islands","Male",26,4638,4.6,6,7,5,3,2,5836,4
+"Does not apply","Business","41-45","Faroe Islands","Male",26,4638,6.2,9,6,6,6,4,7024,3
+"Does not apply","Engineering","31-35","United States","Male",364,9491,3.6,5,3,3,5,2,5473,5
+"Does not apply","Engineering","26-30","Ukraine","Male",85,5742,6.2,4,9,8,9,1,5250,3
+"3.5-4.00","Business","over 50","Pakistan","Male",154,22224,8,8,8,8,8,8,5154,3
+"3-3.49","Business","36-40","United States","Male",48,9259,5.4,5,8,8,5,1,5069,4
+"3-3.49","Business","36-40","United States","Male",48,9259,5.8,5,9,5,8,2,5250,3
+"3-3.49","Business","36-40","United States","Male",48,9259,3.4,3,3,5,5,1,5906,9
+"3.5-4.00","Other","over 50","Canada","Male",164,7841,4.2,4,4,4,4,5,5631,4
+"3.5-4.00","Other","over 50","Canada","Male",164,7841,2.6,3,3,3,3,1,5442,2
+"3.5-4.00","Other","over 50","Canada","Male",164,7841,2.4,3,2,3,2,2,5421,6
+"2.5-3","Humanities","36-40","Peru","Female",49,30368,5,7,7,5,4,2,5836,4
+"3.5-4.00","Science","36-40","United Arab Emirates","Male",27,31981,3.2,8,2,2,2,2,5631,4
+"2.5-3","Humanities","36-40","Peru","Female",49,30368,2.8,2,4,3,3,2,5250,3
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,4.2,6,3,5,4,3,5442,2
+"2.5-3","Humanities","36-40","Peru","Female",49,30368,2.4,3,2,3,2,2,5631,4
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,4.4,4,5,5,5,3,5516,2
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,1.8,3,1,3,1,1,5464,5
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,4.2,7,2,6,3,3,5235,4
+"Does not apply","Engineering","31-35","Spain","Male",94,2765,4.6,8,6,5,3,1,5095,3
+"Does not apply","Other","36-40","United Kingdom","Male",115,13070,5.8,5,9,7,7,1,5250,3
+"Does not apply","Other","36-40","United Kingdom","Male",115,13070,6.2,7,7,5,8,4,5906,9
+"3-3.49","Engineering","46-50","Iran, Islamic Republic of","Female",420,19447,4.8,6,4,4,4,6,5213,8
+"2.5-3","Science","21-25","Trinidad and Tobago","Male",66,15143,7.8,8,7,10,9,5,5204,6
+"2.5-3","Humanities","36-40","Peru","Female",49,30368,4,5,2,6,5,2,5473,5
+"Does not apply","Other","36-40","United Kingdom","Male",115,13070,3.4,2,3,4,4,4,6109,1
+"3-3.49","Business","36-40","United States","Male",48,9259,4.6,3,7,5,6,2,5599,7
+"Does not apply","Other","26-30","United States","Male",213,9811,6.2,7,7,7,5,5,5365,2
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,3.2,3,4,2,4,3,5473,5
+"3-3.49","Engineering","46-50","Iran, Islamic Republic of","Female",420,19447,1.8,2,2,2,2,1,5374,9
+"3-3.49","Engineering","46-50","Iran, Islamic Republic of","Female",420,19447,1,1,1,1,1,1,6850,4
+"Do not want to disclose","Humanities","46-50","Italy","Female",213,16306,8.2,9,6,8,9,9,6633,2
+"3-3.49","Engineering","46-50","Iran, Islamic Republic of","Female",420,19447,3.2,4,3,4,2,3,5958,2
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,1,1,1,1,1,1,6831,7
+"Does not apply","Law","26-30","Argentina","Male",27,13179,6.2,8,4,8,9,2,5470,17
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,1.2,1,2,1,1,1,7047,1
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,2.2,3,2,2,2,2,5631,4
+"3.5-4.00","Humanities","41-45","United States","Male",25,14482,2.4,2,5,2,1,2,5215,4
+"Does not apply","Medicine","18-20","United Kingdom","Male",54,23187,3,5,5,2,1,2,5069,4
+"3.5-4.00","Other","26-30","Belarus","Female",58,8684,4,5,4,5,4,2,5026,2
+"3.5-4.00","Other","over 50","Canada","Male",164,7841,6,7,6,6,4,7,5511,1
+"Does not apply","Other","26-30","United States","Male",213,9811,6.2,8,8,8,4,3,5601,1
+"Do not want to disclose","Engineering","46-50","India","Female",101,24314,5,4,6,5,5,5,5442,2
+"Does not apply","Science","26-30","Russian Federation","Female",48,11977,5.8,7,7,6,4,5,5693,7
+"2-2.49","Architecture","31-35","Spain","Male",59,14823,7.2,8,9,7,6,6,5836,4
+"3.5-4.00","Business","36-40","Italy","Male",588,3417,7,8,7,6,6,8,6277,3
+"3.5-4.00","Science","36-40","United States","Male",83,19690,4.4,5,5,7,4,1,5470,17
+"3.5-4.00","Engineering","31-35","United States","Male",68,4156,4.8,8,2,2,4,8,5470,17
+"3.5-4.00","Engineering","31-35","United States","Male",68,4156,3,2,5,3,4,1,5069,4
+"3.5-4.00","Engineering","31-35","United States","Male",68,4156,2.6,2,1,1,2,7,5651,0
+"3.5-4.00","Engineering","31-35","United States","Male",68,4156,1,1,1,1,1,1,6442,7
+"3.5-4.00","Engineering","31-35","United States","Male",68,4156,2,2,4,2,1,1,5429,2
+"3.5-4.00","Engineering","31-35","United States","Male",68,4156,3.2,4,3,7,1,1,5475,5
+"3.5-4.00","Business","over 50","Pakistan","Male",154,22224,7.4,7,7,7,7,9,5402,4
+"Does not apply","Other","26-30","United States","Male",213,9811,9,9,9,9,9,9,5402,4
+"Does not apply","Business","36-40","Germany","Male",354,21907,5.6,6,6,6,4,6,5402,4
+"Does not apply","Medicine","18-20","United Kingdom","Male",54,23187,3.8,7,2,2,5,3,5470,17
+"3.5-4.00","Engineering","31-35","United States","Male",68,4156,2,4,2,2,1,1,6204,1
+"2.5-3","Science","21-25","Trinidad and Tobago","Male",66,15143,6.6,7,7,9,5,5,5758,5
+"3-3.49","Science","26-30","Egypt","Male",98,2295,6.8,10,8,6,5,5,5693,7
+"3.5-4.00","Engineering","over 50","Bolivia","Male",131,27480,2.8,3,3,3,4,1,5402,4
+"Does not apply","Business","36-40","Germany","Male",354,21907,3.8,6,5,4,2,2,5986,33
+"Does not apply","Business","36-40","Germany","Male",354,21907,3.2,5,3,2,2,4,5651,0
+"Does not apply","Business","36-40","Germany","Male",354,21907,1,1,1,1,1,1,6792,6
+"Does not apply","Business","36-40","Germany","Male",354,21907,4.2,7,7,5,1,1,5787,3
+"Does not apply","Business","36-40","Germany","Male",354,21907,1,1,1,1,1,1,6485,7
+"Does not apply","Business","36-40","Germany","Male",354,21907,1,1,1,1,1,1,6387,0
+"Does not apply","Business","36-40","Germany","Male",354,21907,1.6,2,2,2,1,1,7054,0
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.6,2,4,2,2,3,5556,1
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,1,1,1,1,1,1,5277,7
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,5.4,7,6,6,6,2,6271,4
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2,2,2,2,2,2,5015,0
+"Does not apply","Other","over 50","India","Male",143,17491,5,5,2,4,6,8,5899,6
+"Does not apply","Business","36-40","Germany","Male",354,21907,2.2,5,3,1,1,1,5764,1
+"3.5-4.00","Engineering","21-25","India","Male",144,9963,5.6,7,7,5,5,4,5250,3
+"3.5-4.00","Engineering","21-25","India","Male",100,10849,3.4,4,4,4,3,2,5004,5
+"Does not apply","Humanities","46-50","United States","Female",87,23314,1,1,1,1,1,1,5250,3
+"Does not apply","Humanities","46-50","United States","Female",87,23314,1,1,1,1,1,1,5906,9
+"Does not apply","Humanities","46-50","United States","Female",87,23314,1,1,1,1,1,1,5470,17
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.8,3,2,4,2,3,5402,4
+"3.5-4.00","Other","Do not want to disclose","United States","Male",39,5107,5.4,7,9,5,5,1,5836,4
+"3.5-4.00","Other","Do not want to disclose","United States","Male",39,5107,3.8,5,3,4,4,3,5693,7
+"3.5-4.00","Other","Do not want to disclose","United States","Male",39,5107,2.6,5,3,1,3,1,5069,4
+"3.5-4.00","Engineering","21-25","India","Male",144,9963,4,5,4,4,4,3,5836,4
+"3.5-4.00","Engineering","21-25","India","Male",144,9963,2.8,3,3,3,3,2,5906,9
+"3.5-4.00","Engineering","18-20","India","Male",27,15387,5.6,6,6,5,4,7,5470,17
+"3-3.49","Engineering","26-30","United States","Male",25,33030,3.4,3,6,3,3,2,5250,3
+"3-3.49","Engineering","26-30","United States","Male",25,33030,5,6,3,6,5,5,5693,7
+"Do not want to disclose","Other","36-40","Japan","Male",233,19656,4,5,4,4,3,4,5470,17
+"Does not apply","Other","26-30","United States","Male",213,9811,6.2,7,7,7,7,3,5452,4
+"3-3.49","Engineering","21-25","Trinidad and Tobago","Male",77,11494,4.8,3,2,7,7,5,5118,4
+"Does not apply","Business","36-40","Germany","Male",354,21907,5.4,6,6,4,6,5,5817,1
+"3.5-4.00","Other","26-30","Belarus","Female",58,8684,2,2,2,2,1,3,5190,6
+"Does not apply","Engineering","26-30","Chile","Male",53,9138,4.4,5,6,5,4,2,5693,7
+"3.5-4.00","Engineering","26-30","India","Male",74,13947,2.2,3,2,2,2,2,5215,4
+"3.5-4.00","Engineering","26-30","India","Male",74,13947,3.2,3,3,4,3,3,5069,4
+"3-3.49","Business","21-25","Lithuania","Male",40,8301,4.6,5,5,4,4,5,5470,17
+"Does not apply","Business","31-35","Spain","Male",42,19404,5,6,6,5,4,4,5069,4
+"Does not apply","Business","31-35","Spain","Male",42,19404,4,5,6,5,3,1,5250,3
+"3-3.49","Science","26-30","Australia","Male",64,1771,6.4,8,6,7,6,5,5693,7
+"Does not apply","Business","26-30","Spain","Female",190,11472,3.2,3,5,5,2,1,5069,4
+"3-3.49","Science","26-30","Australia","Male",64,1771,4,5,4,5,4,2,5353,3
+"3-3.49","Science","26-30","Australia","Male",64,1771,2.2,2,1,6,1,1,5802,9
+"Does not apply","Science","31-35","Australia","Male",36,997,4.6,7,5,3,5,3,5250,3
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,5.8,5,6,6,5,7,6633,2
+"Does not apply","Science","31-35","Australia","Male",36,997,4.2,6,4,5,4,2,5069,4
+"Does not apply","Other","36-40","United Kingdom","Male",115,13070,8.6,9,8,8,8,10,6633,2
+"Does not apply","Other","36-40","United Kingdom","Male",115,13070,2.2,2,2,5,1,1,5802,9
+"Does not apply","Other","36-40","United Kingdom","Male",115,13070,1.2,2,1,1,1,1,6232,1
+"Does not apply","Other","36-40","United Kingdom","Male",115,13070,3.6,7,3,3,3,2,5353,3
+"Does not apply","Other","36-40","United Kingdom","Male",115,13070,4.2,10,4,3,1,3,5050,8
+"Does not apply","Business","36-40","Germany","Male",354,21907,5.4,4,6,6,4,7,6633,2
+"Does not apply","Other","26-30","United States","Male",213,9811,4.6,5,5,5,5,3,5420,3
+"Does not apply","Other","26-30","United States","Male",213,9811,9.2,9,9,9,9,10,5813,4
+"2.5-3","Humanities","36-40","Peru","Female",49,30368,2,2,2,2,2,2,6232,1
+"2.5-3","Humanities","36-40","Peru","Female",49,30368,4.6,5,5,5,4,4,5980,0
+"2.5-3","Humanities","36-40","Peru","Female",49,30368,1,1,1,1,1,1,5685,6
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,1.8,1,2,3,2,1,5578,3
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,1.2,1,1,2,1,1,5141,19
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,2.6,2,3,4,3,1,5899,6
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,3.8,6,2,4,4,3,6134,2
+"NULL","NULL","NULL","Iran, Islamic Republic of","NULL",59,34883,3.2,4,3,4,3,2,6204,1
+"Does not apply","Engineering","36-40","Spain","Male",43,17297,1,1,1,1,1,1,5836,4
+"2.5-3","Humanities","36-40","Peru","Female",49,30368,4,5,5,4,4,2,6083,2
+"3.5-4.00","Humanities","41-45","United States","Male",25,14482,4,4,3,5,3,5,5069,4
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,7.8,7,9,9,8,6,5906,9
+"Does not apply","Business","31-35","Spain","Male",42,19404,4.8,6,3,3,4,8,5560,0
+"Does not apply","Business","31-35","Spain","Male",42,19404,5.6,7,6,5,6,4,5624,3
+"Does not apply","Business","41-45","Malaysia","Male",502,4812,2.6,2,5,4,1,1,5353,3
+"Do not want to disclose","Science","26-30","Ireland","Female",26,11836,7.6,8,6,8,8,8,5836,4
+"Does not apply","Engineering","31-35","United Kingdom","Male",41,17060,2.8,3,6,3,1,1,5215,4
+"Do not want to disclose","Science","26-30","Ireland","Female",26,11836,8,10,8,8,8,6,5906,9
+"3.5-4.00","Business","41-45","United States","Male",87,14242,3.4,3,5,3,3,3,5556,1
+"3.5-4.00","Business","41-45","United States","Male",87,14242,2,2,2,2,2,2,5353,3
+"3.5-4.00","Business","41-45","United States","Male",87,14242,2,2,2,2,2,2,6232,1
+"2.5-3","Humanities","36-40","Peru","Female",49,30368,6.2,8,7,6,7,3,5103,2
+"2.5-3","Humanities","36-40","Peru","Female",49,30368,3.2,3,4,3,4,2,5353,3
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,4.8,2,8,7,4,3,5556,1
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,5.4,7,5,2,4,9,5402,4
+"3.5-4.00","Business","41-45","United States","Male",87,14242,1.8,2,2,2,2,1,5802,9
+"Does not apply","Business","31-35","Spain","Male",42,19404,3.4,6,2,2,5,2,5223,1
+"3-3.49","Engineering","26-30","United States","Female",126,7663,3.6,3,4,5,5,1,5906,9
+"3.5-4.00","Humanities","41-45","United States","Male",25,14482,4,6,2,4,7,1,5470,17
+"3.5-4.00","Science","36-40","United States","Male",77,17461,4.2,3,7,4,4,3,5906,9
+"3.5-4.00","Science","36-40","United States","Male",77,17461,4.8,6,3,4,7,4,5470,17
+"3.5-4.00","Science","36-40","United States","Male",77,17461,4.6,6,3,5,6,3,5069,4
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,7.8,8,8,7,7,9,6277,3
+"3-3.49","Engineering","26-30","United States","Male",45,23889,3,5,4,2,3,1,5069,4
+"3-3.49","Engineering","26-30","United States","Male",45,23889,3.6,6,3,4,4,1,5470,17
+"Does not apply","Business","41-45","Faroe Islands","Male",26,4638,8.6,10,7,10,8,8,6277,3
+"Does not apply","Other","26-30","United States","Male",213,9811,8,8,8,8,8,8,5980,0
+"Does not apply","Other","26-30","United States","Male",213,9811,2,2,2,2,2,2,5370,10
+"3.5-4.00","Engineering","46-50","United States","Female",27,15096,1.6,1,4,1,1,1,5370,10
+"3.5-4.00","Engineering","21-25","United States","Male",149,19580,7.8,9,8,7,7,8,5250,3
+"3.5-4.00","Engineering","21-25","United States","Male",149,19580,5.2,6,5,5,5,5,5906,9
+"3.5-4.00","Engineering","21-25","United States","Male",149,19580,3.4,3,4,4,3,3,5069,4
+"3-3.49","Engineering","26-30","United States","Female",126,7663,3.4,5,3,3,5,1,5693,7
+"3.5-4.00","Other","26-30","Belarus","Female",58,8684,5.2,5,5,7,5,4,5758,5
+"Does not apply","Business","31-35","Spain","Male",42,19404,4,7,5,4,3,1,5601,1
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,5.2,8,5,4,6,3,5813,4
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,2.4,3,4,3,1,1,6148,4
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,2.2,1,3,5,1,1,5370,10
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,2.4,2,3,2,4,1,6271,4
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,3.6,3,4,4,4,3,5170,2
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,3.8,5,5,3,5,1,5353,3
+"Does not apply","Engineering","36-40","Australia","Male",116,32678,4.2,7,2,5,6,1,5288,2
+"Does not apply","Other","26-30","United States","Male",213,9811,5.2,8,7,7,2,2,6148,4
+"3-3.49","Engineering","26-30","United States","Female",126,7663,5.6,8,6,6,6,2,5250,3
+"3-3.49","Engineering","26-30","United States","Female",126,7663,6.2,7,7,7,7,3,5813,4
+"Do not want to disclose","Engineering","21-25","Ukraine","Male",47,30182,1,1,1,1,1,1,5069,4
+"3.5-4.00","Engineering","21-25","United States","Male",149,19580,4.2,5,4,5,4,3,6082,3
+"Does not apply","Science","46-50","United Kingdom","Female",34,14381,4.8,5,5,7,5,2,5215,4
+"Does not apply","Science","46-50","United Kingdom","Female",34,14381,6.4,6,7,7,5,7,5250,3
+"Does not apply","Science","46-50","United Kingdom","Female",34,14381,5.2,6,6,5,4,5,5693,7
+"3.5-4.00","Engineering","21-25","United States","Male",149,19580,1.4,1,2,2,1,1,5256,4
+"3.5-4.00","Engineering","21-25","United States","Male",149,19580,6.8,10,5,7,7,5,5980,0
+"Does not apply","Other","26-30","United States","Male",213,9811,8,8,8,8,8,8,5817,1
+"3-3.49","Engineering","26-30","United States","Female",126,7663,1,1,1,1,1,1,5256,4
+"3-3.49","Engineering","26-30","United States","Female",126,7663,4.6,9,3,3,3,5,5631,4
+"Does not apply","Business","41-45","United Kingdom","Male",438,17928,3.6,3,6,6,2,1,6082,3
+"3.5-4.00","Other","26-30","Belarus","Female",58,8684,5.4,7,5,5,5,5,5813,4
+"Does not apply","Engineering","31-35","Lithuania","Male",24,10476,4.6,6,6,6,3,2,6082,3
+"Does not apply","Other","26-30","United States","Male",213,9811,7.2,8,8,8,7,5,6082,3
+"Does not apply","Other","26-30","United States","Male",213,9811,7.6,8,8,8,8,6,7070,1
+"Does not apply","Other","26-30","United States","Male",213,9811,5.4,6,6,6,6,3,5114,5
+"Does not apply","Science","36-40","United Kingdom","Male",12,7040,6.8,9,9,5,4,7,5470,17
+"Does not apply","Science","36-40","United Kingdom","Male",12,7040,3.6,4,5,5,2,2,5215,4
+"Do not want to disclose","Engineering","26-30","India","Male",230,8550,4.2,8,2,2,2,7,6109,1
+"3.5-4.00","Business","31-35","Spain","Male",29,4508,5.6,7,5,5,7,4,5470,17
+"3.5-4.00","Business","over 50","United States","Male",137,25607,6,6,7,8,6,3,5693,7
+"Does not apply","Other","26-30","United States","Male",213,9811,9,9,9,9,9,9,5369,2
+"Does not apply","Other","26-30","United States","Male",213,9811,8,8,8,8,8,8,5504,7
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,4.2,4,5,4,4,4,5693,7
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,4.8,5,4,6,5,4,5178,6
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,1.6,4,1,1,1,1,6082,3
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,4.8,7,4,5,5,3,7024,3
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,6.2,8,7,6,6,4,5752,6
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,3.6,3,5,3,3,4,5667,1
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,3.4,3,3,4,3,4,5993,2
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,6,6,6,5,7,6,6633,2
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,3.8,6,5,6,1,1,5154,3
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,5,4,5,6,6,4,5204,6
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,4.6,4,5,4,6,4,5151,2
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,3.8,4,5,5,3,2,6083,2
+"3-3.49","Science","26-30","Egypt","Male",98,2295,4,8,4,3,3,2,5069,4
+"3-3.49","Science","26-30","Egypt","Male",98,2295,5.6,8,8,5,5,2,5906,9
+"3-3.49","Science","26-30","Egypt","Male",98,2295,7,8,8,8,5,6,5307,6
+"3-3.49","Science","26-30","Egypt","Male",98,2295,8.4,7,8,9,8,10,7070,1
+"3-3.49","Science","26-30","Egypt","Male",98,2295,7.8,9,8,8,5,9,6204,1
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,4,6,7,5,1,1,5624,3
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,5.2,4,5,7,7,3,5631,4
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,4.4,5,5,5,4,3,5015,0
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,5.2,5,6,6,6,3,5421,6
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,3,3,4,3,2,3,5004,5
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,1,1,1,1,1,1,6109,1
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,5.8,8,5,7,5,4,5504,7
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,2,2,2,2,2,2,5256,4
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,3.4,3,3,5,4,2,6134,2
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,2,2,2,2,2,2,5802,9
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,1,1,1,1,1,1,6792,6
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,2,2,2,2,2,2,6387,0
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,5.2,7,5,7,6,1,5452,4
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,5,5,6,6,6,2,5516,2
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,4.8,3,7,6,6,2,5429,2
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,1,1,1,1,1,1,6442,7
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,3,3,4,4,3,1,5095,3
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,5.2,5,6,6,6,3,5511,1
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,2.2,2,2,3,2,2,5141,19
+"3-3.49","Science","31-35","Iran, Islamic Republic of","Female",69,795,1,1,1,1,1,1,5906,9
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,3.8,4,4,4,5,2,5899,6
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,2.6,2,3,3,2,3,7068,0
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,5.2,6,6,5,6,3,5114,5
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,5,6,5,6,5,3,5608,2
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,1.2,2,1,1,1,1,6831,7
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,1,1,1,1,1,1,5556,1
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,4.2,4,5,5,4,3,6148,4
+"Does not apply","Engineering","41-45","Bolivia","Male",272,30993,4.4,5,5,5,4,3,5103,2
+"2.5-3","Engineering","over 50","United States","Male",21,31244,5.6,8,6,4,6,4,5178,6
+"2.5-3","Engineering","over 50","United States","Male",21,31244,6,6,7,6,6,5,5081,3
+"2.5-3","Engineering","over 50","United States","Male",21,31244,1,1,1,1,1,1,6617,7
+"2.5-3","Engineering","over 50","United States","Male",21,31244,5.4,6,5,7,6,3,7068,0
+"Does not apply","Other","26-30","United States","Male",213,9811,6.6,8,8,8,5,4,5178,6
+"Does not apply","Other","26-30","United States","Male",213,9811,1,1,1,1,1,1,6617,7
