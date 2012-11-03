@@ -524,6 +524,7 @@
         return typeahead;
       }
       self.searchID = function(arr, type) {
+        console.log("searchID:"+arr)
         var actives = dimensions.getActive().filter(function(p) {
           return !y[p].brush.empty();
          })
@@ -542,7 +543,7 @@
         });
         /** To be factored **/
         model.set({ids: arr, id_type: type});
-        console.log(foreground);
+        // console.log(foreground);
         foreground.style("display", function(d) {
           var isinbrush = actives.length == 0 ||  actives.every(function(p, i) {
               var data;
@@ -556,13 +557,14 @@
           var match = false;
           _(arr).each(function(id) {
               if((d[type] + "").indexOf(id) != -1){
-                console.log(arr +","+ type +","+ d[type] );
+
+                // console.log(arr +","+ type +","+ d[type] );
                 match = true;
               }
           });
 
           var toreturn =  (isinbrush && match) ? null : "none";
-          console.log(d[type]+":"+toreturn)
+          if (match) console.log(d[type]+":"+isinbrush);
           return toreturn;
         });
         
