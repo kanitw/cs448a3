@@ -145,7 +145,9 @@
       
 
       x = d3.scale.ordinal().rangePoints([0, w], 1);
+      oldy=y;
       y = {};
+
 
 
       _(dimensions).each(function(d) {
@@ -300,6 +302,11 @@
           .each(function(d) { 
             (brushgroup[d] = d3.select(this))
               .call(y[d].brush = d3.svg.brush().y(y[d]).on("brush", brush)); 
+            if(oldy && oldy[d] && oldy[d].brush){
+              console.log(d+"hasoldy:"+oldy);
+              y[d].brush.extent(oldy[d].brush.extent());
+              y[d].brush(brushgroup[d]);
+            }
           })
         .selectAll("rect")
           .attr("x", -12)
@@ -358,8 +365,11 @@
         var actives = dimensions.getActive().filter(function(p) {
           return !y[p].brush.empty();
          })
+
+
          
         var extents = actives.map(function(p) {
+          // console.log(y[p].brush);
           return y[p].brush.extent();
         });
         
@@ -397,7 +407,7 @@
         });
         
         model.set({filter: filter, y: y, dimensionType: dimensionType});
-        console.log("filter = ", filter);
+        // console.log("filter = ", filter);
         /***/
         foreground.style("display", function(d) {
           return actives.every(function(p, i) {
@@ -422,7 +432,7 @@
         chart.each(function(d){
           var dist = {};
           var model_filtered = model.get('filtered');
-          console.log(model_filtered);
+          // console.log(model_filtered);
           var len = model_filtered.length;
           model_filtered.forEach(function(row){
               if(!dist[row[d]]){
@@ -439,7 +449,7 @@
           }));
           var dist_values = _(dist).values();
           var dist_pairs = _(dist).pairs();
-          console.log(dist_values);
+          // console.log(dist_values);
           var cx = d3.scale.linear().range([0,overlay_width*0.25]).domain([0,d3.max(dist_values)]);
           // console.log("_"+_(dist).pairs);
 
